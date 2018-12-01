@@ -1,0 +1,5 @@
+// Microsoft Developer Studio generated Help ID include file.
+// Used by Chess.rc
+//
+#define HIDC_Queen6                     0x8066040e    // IDD_CHESS_DIALOG [English (U.S.)]
+#define HIDC_Queen7                     0x8066040f    // IDD_CHESS_DIALOG [English (U.S.)]
