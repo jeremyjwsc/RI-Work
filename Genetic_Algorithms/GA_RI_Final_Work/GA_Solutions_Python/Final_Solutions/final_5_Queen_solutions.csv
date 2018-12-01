@@ -1,0 +1,24 @@
+Final result: 
+"	1_4_2_0_3"
+
+All solutions:
+0_2_4_1_3
+0_3_1_4_2
+1_3_0_2_4
+1_4_2_0_3
+2_0_3_1_4
+2_4_1_3_0
+3_0_2_4_1
+3_1_4_2_0
+4_1_3_0_2
+4_2_0_3_1
+
+"	Total: 10 solutions"
+
+"	Total number of queens: 5"
+
+"	DONE!!!"
+
+"	Execution time: 1.8429441452026367 seconds"
+
+"	Date: Sat Nov 24 20:52:18 2018"

@@ -1,0 +1,209 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CHESS_DIALOG DIALOGEX 0, 0, 396, 217
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "my demo"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Exit",IDOK,339,196,50,14
+    EDITTEXT        IDC_Generation,351,177,38,15,ES_AUTOHSCROLL
+    LTEXT           "",IDC_MyStatic,5,18,205,188,WS_BORDER
+    EDITTEXT        IDC_Population,349,6,40,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_Iteration,349,23,40,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Population :",IDC_STATIC,307,8,38,8
+    LTEXT           "Iteration :",IDC_STATIC,315,24,30,8
+    DEFPUSHBUTTON   "Start",IDC_Start,336,117,53,15
+    EDITTEXT        IDC_Mutation,349,40,40,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Mutation factor :",IDC_STATIC,293,42,52,8
+    LTEXT           "Results---------------------------------------",IDC_STATIC,287,131,102,8
+    LTEXT           "No. Of Generation :",IDC_STATIC,285,180,62,8
+    EDITTEXT        IDC_ChessBoard,349,57,40,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Board rows :",IDC_STATIC,305,59,40,8
+    CONTROL         "With Animation",IDC_GrAnimate,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,294,89,63,10
+    EDITTEXT        IDC_BestAnswer,311,143,78,14,ES_AUTOHSCROLL
+    LTEXT           "The best answer :",IDC_STATIC,246,146,58,8
+    EDITTEXT        IDC_BestCost,351,160,38,15,ES_AUTOHSCROLL
+    LTEXT           "The Best Cost :",IDC_STATIC,297,164,50,8
+    LTEXT           "8 Queen Demo",IDC_STATIC,5,6,49,8
+    CONTROL         "Iteration Display",IDC_Graphic,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,291,76,66,10
+    CONTROL         "Display The best Answer",IDC_BestDisplay,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,263,103,94,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "FileDescription", "Chess MFC Application"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "Chess"
+            VALUE "LegalCopyright", "Copyright (C) 2005"
+            VALUE "OriginalFilename", "Chess.EXE"
+            VALUE "ProductName", "Chess Application"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_CHESS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 389
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 210
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_CHESS_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Persian (fa-IR) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FAR)
+LANGUAGE LANG_PERSIAN, SUBLANG_DEFAULT
+#pragma code_page(1256)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Chess.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Chess.ico"
+
+#endif    // Persian (fa-IR) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\Chess.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
