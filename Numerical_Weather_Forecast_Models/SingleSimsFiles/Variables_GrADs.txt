@@ -1,0 +1,58 @@
+[cloudera@quickstart GRADS]$ grads
+
+Grid Analysis and Display System (GrADS) Version 2.0.a9
+Copyright (c) 1988-2010 by Brian Doty and the
+Institute for Global Environment and Society (IGES)
+GrADS comes with ABSOLUTELY NO WARRANTY
+See file COPYRIGHT for more information
+
+Config: v2.0.a9 little-endian readline printim grib2 netcdf hdf4-sds hdf5 opendap-grids geotiff shapefile
+Issue 'q config' command for more detailed configuration information
+Landscape mode? ('n' for portrait):  
+GX Package Initialization: Size = 11 8.5 
+ga-> open gradsplots.ctl 
+Scanning description file:  gradsplots.ctl
+Data file gradsplots.dat is open as file 1
+LON set to 258.048 283.952 
+LAT set to 16.4289 33.0131 
+LEV set to 1 1 
+Time values set: 2005:8:28:0 2005:8:28:0 
+E set to 1 1 
+ga-> q file
+File 1 : OUTPUT FROM WRF V3.8.1 MODEL
+  Descriptor: gradsplots.ctl
+  Binary: gradsplots.dat
+  Type = Gridded
+  Xsize = 97  Ysize = 69  Zsize = 29  Tsize = 9  Esize = 1
+  Number of Variables = 30
+     pressure  29  0  Model pressure (hPa)
+     geopt  29  0  Geopotential (m2/s2)
+     height  29  0  Model height (km)
+     tk  29  0  Temperature (K)
+     tc  29  0  Temperature (C)
+     theta  29  0  Potential Temperature (K)
+     td  29  0  Dewpoint Temperature (C)
+     td2  1  0  Dewpoint Temperature at 2m (C)
+     rh  29  0  Relative Humidity (%)
+     clflo  1  0  Low Cloud Fraction (%)
+     clfmi  1  0  Mid Cloud Fraction (%)
+     clfhi  1  0  High Cloud Fraction (%)
+     rh2  1  0  Relative Humidity at 2m (%)
+     wspd  29  0  Wind Speed (m s-1)
+     wdir  29  0  Wind Direction (Degrees)
+     ws10  1  0  Wind Speed at 10 M (m s-1)
+     wd10  1  0  Wind Direction at 10 M (Degrees)
+     umet  29  0  Rotated wind component (m s-1)
+     vmet  29  0  Rotated wind component (m s-1)
+     u10m  1  0  Rotated wind component (m s-1)
+     v10m  1  0  Rotated wind component (m s-1)
+     slp  1  0  Sea Levelp Pressure (hPa)
+     dbz  29  0  Reflectivity (-)
+     max_dbz  1  0  Max Reflectivity (-)
+     cape  29  0  CAPE (J/kg)
+     cin  29  0  CIN (J/kg)
+     mcape  1  0  MCAPE (J/kg)
+     mcin  1  0  MCIN (J/kg)
+     lcl  1  0  LCL (meters AGL)
+     lfc  1  0  LFC (meters AGL)
+

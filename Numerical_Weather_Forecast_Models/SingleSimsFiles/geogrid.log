@@ -1,0 +1,255 @@
+2019-01-12 08:04:50.762 ---  *** Starting program geogrid.exe ***
+2019-01-12 08:04:50.780 --- Using the following namelist variables:
+2019-01-12 08:04:50.780 --- &SHARE
+2019-01-12 08:04:50.780 ---   WRF_CORE         = ARW
+2019-01-12 08:04:50.780 ---   MAX_DOM          = 1
+2019-01-12 08:04:50.780 ---   START_YEAR       = 0
+2019-01-12 08:04:50.780 ---   START_MONTH      = 0
+2019-01-12 08:04:50.780 ---   START_DAY        = 0
+2019-01-12 08:04:50.780 ---   START_HOUR       = 0
+2019-01-12 08:04:50.780 ---   START_MINUTE     = 0
+2019-01-12 08:04:50.781 ---   START_SECOND     = 0
+2019-01-12 08:04:50.781 ---   END_YEAR         = 0
+2019-01-12 08:04:50.781 ---   END_MONTH        = 0
+2019-01-12 08:04:50.781 ---   END_DAY          = 0
+2019-01-12 08:04:50.781 ---   END_HOUR         = 0
+2019-01-12 08:04:50.781 ---   END_MINUTE       = 0
+2019-01-12 08:04:50.781 ---   END_SECOND       = 0
+2019-01-12 08:04:50.781 ---   START_DATE       = 2005-08-28_00:00:00
+2019-01-12 08:04:50.781 ---   END_DATE         = 2005-08-30_00:00:00
+2019-01-12 08:04:50.781 ---   INTERVAL_SECONDS = 21600
+2019-01-12 08:04:50.781 ---   IO_FORM_GEOGRID  = 2
+2019-01-12 08:04:50.781 ---   OPT_OUTPUT_FROM_GEOGRID_PATH = ./
+2019-01-12 08:04:50.781 ---   SUBGRID_RATIO_X  = 1
+2019-01-12 08:04:50.781 ---   SUBGRID_RATIO_Y  = 1
+2019-01-12 08:04:50.781 ---   DEBUG_LEVEL      = 0
+2019-01-12 08:04:50.781 ---   ACTIVE_GRID      = .TRUE.
+2019-01-12 08:04:50.781 ---   NOCOLONS         = .FALSE.
+2019-01-12 08:04:50.781 --- /
+2019-01-12 08:04:50.781 --- &GEOGRID
+2019-01-12 08:04:50.781 ---   PARENT_ID         = 1
+2019-01-12 08:04:50.781 ---   PARENT_GRID_RATIO = 1
+2019-01-12 08:04:50.781 ---   I_PARENT_START    = 1
+2019-01-12 08:04:50.781 ---   J_PARENT_START    = 1
+2019-01-12 08:04:50.781 ---   S_WE              = 1
+2019-01-12 08:04:50.781 ---   E_WE              = 98
+2019-01-12 08:04:50.781 ---   S_SN              = 1
+2019-01-12 08:04:50.781 ---   E_SN              = 70
+2019-01-12 08:04:50.781 ---   GEOG_DATA_RES     = 2deg+gtopo_10m+usgs_10m+10m+nesdis_greenfrac
+2019-01-12 08:04:50.781 ---   DX                = 30000.000000
+2019-01-12 08:04:50.782 ---   DY                = 30000.000000
+2019-01-12 08:04:50.782 ---   MAP_PROJ          = mercator
+2019-01-12 08:04:50.782 ---   POLE_LAT          = 90.000000
+2019-01-12 08:04:50.782 ---   POLE_LON          = 0.000000
+2019-01-12 08:04:50.782 ---   REF_LAT           = 25.000000
+2019-01-12 08:04:50.782 ---   REF_LON           = -89.000000
+2019-01-12 08:04:50.782 ---   REF_X             = 100000002004087734272.000000
+2019-01-12 08:04:50.782 ---   REF_Y             = 100000002004087734272.000000
+2019-01-12 08:04:50.782 ---   TRUELAT1          = 0.000000
+2019-01-12 08:04:50.782 ---   TRUELAT2          = 0.000000
+2019-01-12 08:04:50.782 ---   STAND_LON         = -89.000000
+2019-01-12 08:04:50.782 ---   GEOG_DATA_PATH    = /home/cloudera/RI/Build_WRF/WPS_GEOG/
+2019-01-12 08:04:50.782 ---   OPT_GEOGRID_TBL_PATH = geogrid/
+2019-01-12 08:04:50.782 --- /
+2019-01-12 08:04:50.790 --- Processing domain 1 of 1
+2019-01-12 08:04:50.790 --- INFORM: For HGT_M, couldn't find interpolator sequence for resolution 2deg.
+2019-01-12 08:04:50.790 --- INFORM: Using gtopo_10m interpolator sequence for HGT_M.
+2019-01-12 08:04:50.790 --- INFORM: For HGT_M, couldn't find 2deg data source.
+2019-01-12 08:04:50.790 --- INFORM: Using gtopo_10m data source for HGT_M.
+2019-01-12 08:04:50.791 --- INFORM: For LANDUSEF, couldn't find interpolator sequence for resolution 2deg.
+2019-01-12 08:04:50.791 --- INFORM: For LANDUSEF, couldn't find interpolator sequence for resolution gtopo_10m.
+2019-01-12 08:04:50.791 --- INFORM: Using usgs_10m interpolator sequence for LANDUSEF.
+2019-01-12 08:04:50.791 --- INFORM: For LANDUSEF, couldn't find 2deg data source.
+2019-01-12 08:04:50.791 --- INFORM: For LANDUSEF, couldn't find gtopo_10m data source.
+2019-01-12 08:04:50.791 --- INFORM: Using usgs_10m data source for LANDUSEF.
+2019-01-12 08:04:50.792 --- INFORM: For SOILTEMP, couldn't find interpolator sequence for resolution 2deg.
+2019-01-12 08:04:50.792 --- INFORM: For SOILTEMP, couldn't find interpolator sequence for resolution gtopo_10m.
+2019-01-12 08:04:50.792 --- INFORM: For SOILTEMP, couldn't find interpolator sequence for resolution usgs_10m.
+2019-01-12 08:04:50.792 --- INFORM: For SOILTEMP, couldn't find interpolator sequence for resolution 10m.
+2019-01-12 08:04:50.792 --- INFORM: For SOILTEMP, couldn't find interpolator sequence for resolution nesdis_greenfrac.
+2019-01-12 08:04:50.792 --- INFORM: Using default interpolator sequence for SOILTEMP.
+2019-01-12 08:04:50.793 --- INFORM: For SOILTEMP, couldn't find 2deg data source.
+2019-01-12 08:04:50.793 --- INFORM: For SOILTEMP, couldn't find gtopo_10m data source.
+2019-01-12 08:04:50.793 --- INFORM: For SOILTEMP, couldn't find usgs_10m data source.
+2019-01-12 08:04:50.793 --- INFORM: For SOILTEMP, couldn't find 10m data source.
+2019-01-12 08:04:50.793 --- INFORM: For SOILTEMP, couldn't find nesdis_greenfrac data source.
+2019-01-12 08:04:50.793 --- INFORM: Using default data source for SOILTEMP.
+2019-01-12 08:04:50.794 --- INFORM: For SOILCTOP, couldn't find interpolator sequence for resolution 2deg.
+2019-01-12 08:04:50.794 --- INFORM: For SOILCTOP, couldn't find interpolator sequence for resolution gtopo_10m.
+2019-01-12 08:04:50.794 --- INFORM: For SOILCTOP, couldn't find interpolator sequence for resolution usgs_10m.
+2019-01-12 08:04:50.794 --- INFORM: Using 10m interpolator sequence for SOILCTOP.
+2019-01-12 08:04:50.794 --- INFORM: For SOILCTOP, couldn't find 2deg data source.
+2019-01-12 08:04:50.794 --- INFORM: For SOILCTOP, couldn't find gtopo_10m data source.
+2019-01-12 08:04:50.794 --- INFORM: For SOILCTOP, couldn't find usgs_10m data source.
+2019-01-12 08:04:50.794 --- INFORM: Using 10m data source for SOILCTOP.
+2019-01-12 08:04:50.795 --- INFORM: For SOILCBOT, couldn't find interpolator sequence for resolution 2deg.
+2019-01-12 08:04:50.796 --- INFORM: For SOILCBOT, couldn't find interpolator sequence for resolution gtopo_10m.
+2019-01-12 08:04:50.796 --- INFORM: For SOILCBOT, couldn't find interpolator sequence for resolution usgs_10m.
+2019-01-12 08:04:50.796 --- INFORM: Using 10m interpolator sequence for SOILCBOT.
+2019-01-12 08:04:50.796 --- INFORM: For SOILCBOT, couldn't find 2deg data source.
+2019-01-12 08:04:50.796 --- INFORM: For SOILCBOT, couldn't find gtopo_10m data source.
+2019-01-12 08:04:50.796 --- INFORM: For SOILCBOT, couldn't find usgs_10m data source.
+2019-01-12 08:04:50.796 --- INFORM: Using 10m data source for SOILCBOT.
+2019-01-12 08:04:50.797 --- INFORM: For ALBEDO12M, couldn't find interpolator sequence for resolution 2deg.
+2019-01-12 08:04:50.797 --- INFORM: For ALBEDO12M, couldn't find interpolator sequence for resolution gtopo_10m.
+2019-01-12 08:04:50.797 --- INFORM: For ALBEDO12M, couldn't find interpolator sequence for resolution usgs_10m.
+2019-01-12 08:04:50.797 --- INFORM: For ALBEDO12M, couldn't find interpolator sequence for resolution 10m.
+2019-01-12 08:04:50.797 --- INFORM: For ALBEDO12M, couldn't find interpolator sequence for resolution nesdis_greenfrac.
+2019-01-12 08:04:50.797 --- INFORM: Using default interpolator sequence for ALBEDO12M.
+2019-01-12 08:04:50.797 --- INFORM: For ALBEDO12M, couldn't find 2deg data source.
+2019-01-12 08:04:50.797 --- INFORM: For ALBEDO12M, couldn't find gtopo_10m data source.
+2019-01-12 08:04:50.797 --- INFORM: For ALBEDO12M, couldn't find usgs_10m data source.
+2019-01-12 08:04:50.797 --- INFORM: For ALBEDO12M, couldn't find 10m data source.
+2019-01-12 08:04:50.797 --- INFORM: For ALBEDO12M, couldn't find nesdis_greenfrac data source.
+2019-01-12 08:04:50.797 --- INFORM: Using default data source for ALBEDO12M.
+2019-01-12 08:04:50.798 --- INFORM: For GREENFRAC, couldn't find interpolator sequence for resolution 2deg.
+2019-01-12 08:04:50.798 --- INFORM: For GREENFRAC, couldn't find interpolator sequence for resolution gtopo_10m.
+2019-01-12 08:04:50.798 --- INFORM: For GREENFRAC, couldn't find interpolator sequence for resolution usgs_10m.
+2019-01-12 08:04:50.798 --- INFORM: For GREENFRAC, couldn't find interpolator sequence for resolution 10m.
+2019-01-12 08:04:50.798 --- INFORM: Using nesdis_greenfrac interpolator sequence for GREENFRAC.
+2019-01-12 08:04:50.798 --- INFORM: For GREENFRAC, couldn't find 2deg data source.
+2019-01-12 08:04:50.798 --- INFORM: For GREENFRAC, couldn't find gtopo_10m data source.
+2019-01-12 08:04:50.798 --- INFORM: For GREENFRAC, couldn't find usgs_10m data source.
+2019-01-12 08:04:50.798 --- INFORM: For GREENFRAC, couldn't find 10m data source.
+2019-01-12 08:04:50.798 --- INFORM: Using nesdis_greenfrac data source for GREENFRAC.
+2019-01-12 08:04:50.798 --- INFORM: For LAI12M, couldn't find interpolator sequence for resolution 2deg.
+2019-01-12 08:04:50.798 --- INFORM: For LAI12M, couldn't find interpolator sequence for resolution gtopo_10m.
+2019-01-12 08:04:50.799 --- INFORM: For LAI12M, couldn't find interpolator sequence for resolution usgs_10m.
+2019-01-12 08:04:50.799 --- INFORM: For LAI12M, couldn't find interpolator sequence for resolution 10m.
+2019-01-12 08:04:50.799 --- INFORM: For LAI12M, couldn't find interpolator sequence for resolution nesdis_greenfrac.
+2019-01-12 08:04:50.799 --- INFORM: Using default interpolator sequence for LAI12M.
+2019-01-12 08:04:50.799 --- INFORM: For LAI12M, couldn't find 2deg data source.
+2019-01-12 08:04:50.799 --- INFORM: For LAI12M, couldn't find gtopo_10m data source.
+2019-01-12 08:04:50.799 --- INFORM: For LAI12M, couldn't find usgs_10m data source.
+2019-01-12 08:04:50.799 --- INFORM: For LAI12M, couldn't find 10m data source.
+2019-01-12 08:04:50.799 --- INFORM: For LAI12M, couldn't find nesdis_greenfrac data source.
+2019-01-12 08:04:50.799 --- INFORM: Using default data source for LAI12M.
+2019-01-12 08:04:50.799 --- INFORM: For SNOALB, couldn't find interpolator sequence for resolution 2deg.
+2019-01-12 08:04:50.799 --- INFORM: For SNOALB, couldn't find interpolator sequence for resolution gtopo_10m.
+2019-01-12 08:04:50.799 --- INFORM: For SNOALB, couldn't find interpolator sequence for resolution usgs_10m.
+2019-01-12 08:04:50.799 --- INFORM: For SNOALB, couldn't find interpolator sequence for resolution 10m.
+2019-01-12 08:04:50.799 --- INFORM: For SNOALB, couldn't find interpolator sequence for resolution nesdis_greenfrac.
+2019-01-12 08:04:50.799 --- INFORM: Using default interpolator sequence for SNOALB.
+2019-01-12 08:04:50.799 --- INFORM: For SNOALB, couldn't find 2deg data source.
+2019-01-12 08:04:50.800 --- INFORM: For SNOALB, couldn't find gtopo_10m data source.
+2019-01-12 08:04:50.800 --- INFORM: For SNOALB, couldn't find usgs_10m data source.
+2019-01-12 08:04:50.800 --- INFORM: For SNOALB, couldn't find 10m data source.
+2019-01-12 08:04:50.800 --- INFORM: For SNOALB, couldn't find nesdis_greenfrac data source.
+2019-01-12 08:04:50.800 --- INFORM: Using default data source for SNOALB.
+2019-01-12 08:04:50.800 --- INFORM: For SLOPECAT, couldn't find interpolator sequence for resolution 2deg.
+2019-01-12 08:04:50.800 --- INFORM: For SLOPECAT, couldn't find interpolator sequence for resolution gtopo_10m.
+2019-01-12 08:04:50.800 --- INFORM: For SLOPECAT, couldn't find interpolator sequence for resolution usgs_10m.
+2019-01-12 08:04:50.800 --- INFORM: For SLOPECAT, couldn't find interpolator sequence for resolution 10m.
+2019-01-12 08:04:50.800 --- INFORM: For SLOPECAT, couldn't find interpolator sequence for resolution nesdis_greenfrac.
+2019-01-12 08:04:50.800 --- INFORM: Using default interpolator sequence for SLOPECAT.
+2019-01-12 08:04:50.800 --- INFORM: For SLOPECAT, couldn't find 2deg data source.
+2019-01-12 08:04:50.800 --- INFORM: For SLOPECAT, couldn't find gtopo_10m data source.
+2019-01-12 08:04:50.800 --- INFORM: For SLOPECAT, couldn't find usgs_10m data source.
+2019-01-12 08:04:50.800 --- INFORM: For SLOPECAT, couldn't find 10m data source.
+2019-01-12 08:04:50.800 --- INFORM: For SLOPECAT, couldn't find nesdis_greenfrac data source.
+2019-01-12 08:04:50.800 --- INFORM: Using default data source for SLOPECAT.
+2019-01-12 08:04:50.801 --- INFORM: Using 2deg interpolator sequence for CON.
+2019-01-12 08:04:50.801 --- INFORM: Using 2deg data source for CON.
+2019-01-12 08:04:50.801 --- INFORM: Using 2deg interpolator sequence for VAR.
+2019-01-12 08:04:50.801 --- INFORM: Using 2deg data source for VAR.
+2019-01-12 08:04:50.802 --- INFORM: Using 2deg interpolator sequence for OA1.
+2019-01-12 08:04:50.802 --- INFORM: Using 2deg data source for OA1.
+2019-01-12 08:04:50.802 --- INFORM: Using 2deg interpolator sequence for OA2.
+2019-01-12 08:04:50.802 --- INFORM: Using 2deg data source for OA2.
+2019-01-12 08:04:50.803 --- INFORM: Using 2deg interpolator sequence for OA3.
+2019-01-12 08:04:50.803 --- INFORM: Using 2deg data source for OA3.
+2019-01-12 08:04:50.803 --- INFORM: Using 2deg interpolator sequence for OA4.
+2019-01-12 08:04:50.803 --- INFORM: Using 2deg data source for OA4.
+2019-01-12 08:04:50.804 --- INFORM: Using 2deg interpolator sequence for OL1.
+2019-01-12 08:04:50.804 --- INFORM: Using 2deg data source for OL1.
+2019-01-12 08:04:50.804 --- INFORM: Using 2deg interpolator sequence for OL2.
+2019-01-12 08:04:50.804 --- INFORM: Using 2deg data source for OL2.
+2019-01-12 08:04:50.805 --- INFORM: Using 2deg interpolator sequence for OL3.
+2019-01-12 08:04:50.805 --- INFORM: Using 2deg data source for OL3.
+2019-01-12 08:04:50.805 --- INFORM: Using 2deg interpolator sequence for OL4.
+2019-01-12 08:04:50.805 --- INFORM: Using 2deg data source for OL4.
+2019-01-12 08:04:50.806 --- INFORM: For VAR_SSO, couldn't find interpolator sequence for resolution 2deg.
+2019-01-12 08:04:50.806 --- INFORM: For VAR_SSO, couldn't find interpolator sequence for resolution gtopo_10m.
+2019-01-12 08:04:50.806 --- INFORM: For VAR_SSO, couldn't find interpolator sequence for resolution usgs_10m.
+2019-01-12 08:04:50.806 --- INFORM: Using 10m interpolator sequence for VAR_SSO.
+2019-01-12 08:04:50.806 --- INFORM: For VAR_SSO, couldn't find 2deg data source.
+2019-01-12 08:04:50.806 --- INFORM: For VAR_SSO, couldn't find gtopo_10m data source.
+2019-01-12 08:04:50.806 --- INFORM: For VAR_SSO, couldn't find usgs_10m data source.
+2019-01-12 08:04:50.806 --- INFORM: Using 10m data source for VAR_SSO.
+2019-01-12 08:04:50.806 --- INFORM: For LAKE_DEPTH, couldn't find interpolator sequence for resolution 2deg.
+2019-01-12 08:04:50.806 --- INFORM: For LAKE_DEPTH, couldn't find interpolator sequence for resolution gtopo_10m.
+2019-01-12 08:04:50.806 --- INFORM: For LAKE_DEPTH, couldn't find interpolator sequence for resolution usgs_10m.
+2019-01-12 08:04:50.806 --- INFORM: For LAKE_DEPTH, couldn't find interpolator sequence for resolution 10m.
+2019-01-12 08:04:50.806 --- INFORM: For LAKE_DEPTH, couldn't find interpolator sequence for resolution nesdis_greenfrac.
+2019-01-12 08:04:50.806 --- INFORM: Using default interpolator sequence for LAKE_DEPTH.
+2019-01-12 08:04:50.806 --- INFORM: For LAKE_DEPTH, couldn't find 2deg data source.
+2019-01-12 08:04:50.806 --- INFORM: For LAKE_DEPTH, couldn't find gtopo_10m data source.
+2019-01-12 08:04:50.806 --- INFORM: For LAKE_DEPTH, couldn't find usgs_10m data source.
+2019-01-12 08:04:50.806 --- INFORM: For LAKE_DEPTH, couldn't find 10m data source.
+2019-01-12 08:04:50.806 --- INFORM: For LAKE_DEPTH, couldn't find nesdis_greenfrac data source.
+2019-01-12 08:04:50.806 --- INFORM: Using default data source for LAKE_DEPTH.
+2019-01-12 08:04:50.807 --- INFORM: For URB_PARAM, couldn't find interpolator sequence for resolution 2deg.
+2019-01-12 08:04:50.807 --- INFORM: For URB_PARAM, couldn't find interpolator sequence for resolution gtopo_10m.
+2019-01-12 08:04:50.807 --- INFORM: For URB_PARAM, couldn't find interpolator sequence for resolution usgs_10m.
+2019-01-12 08:04:50.807 --- INFORM: For URB_PARAM, couldn't find interpolator sequence for resolution 10m.
+2019-01-12 08:04:50.807 --- INFORM: For URB_PARAM, couldn't find interpolator sequence for resolution nesdis_greenfrac.
+2019-01-12 08:04:50.807 --- INFORM: Using default interpolator sequence for URB_PARAM.
+2019-01-12 08:04:50.807 --- INFORM: For URB_PARAM, couldn't find 2deg data source.
+2019-01-12 08:04:50.807 --- INFORM: For URB_PARAM, couldn't find gtopo_10m data source.
+2019-01-12 08:04:50.807 --- INFORM: For URB_PARAM, couldn't find usgs_10m data source.
+2019-01-12 08:04:50.807 --- INFORM: For URB_PARAM, couldn't find 10m data source.
+2019-01-12 08:04:50.807 --- INFORM: For URB_PARAM, couldn't find nesdis_greenfrac data source.
+2019-01-12 08:04:50.807 --- INFORM: Using default data source for URB_PARAM.
+2019-01-12 08:04:50.808 --- INFORM: For IMPERV, couldn't find interpolator sequence for resolution 2deg.
+2019-01-12 08:04:50.808 --- INFORM: For IMPERV, couldn't find interpolator sequence for resolution gtopo_10m.
+2019-01-12 08:04:50.808 --- INFORM: For IMPERV, couldn't find interpolator sequence for resolution usgs_10m.
+2019-01-12 08:04:50.808 --- INFORM: For IMPERV, couldn't find interpolator sequence for resolution 10m.
+2019-01-12 08:04:50.808 --- INFORM: For IMPERV, couldn't find interpolator sequence for resolution nesdis_greenfrac.
+2019-01-12 08:04:50.808 --- INFORM: Using default interpolator sequence for IMPERV.
+2019-01-12 08:04:50.808 --- INFORM: For IMPERV, couldn't find 2deg data source.
+2019-01-12 08:04:50.808 --- INFORM: For IMPERV, couldn't find gtopo_10m data source.
+2019-01-12 08:04:50.808 --- INFORM: For IMPERV, couldn't find usgs_10m data source.
+2019-01-12 08:04:50.808 --- INFORM: For IMPERV, couldn't find 10m data source.
+2019-01-12 08:04:50.808 --- INFORM: For IMPERV, couldn't find nesdis_greenfrac data source.
+2019-01-12 08:04:50.808 --- INFORM: Using default data source for IMPERV.
+2019-01-12 08:04:50.808 --- INFORM: For CANFRA, couldn't find interpolator sequence for resolution 2deg.
+2019-01-12 08:04:50.808 --- INFORM: For CANFRA, couldn't find interpolator sequence for resolution gtopo_10m.
+2019-01-12 08:04:50.808 --- INFORM: For CANFRA, couldn't find interpolator sequence for resolution usgs_10m.
+2019-01-12 08:04:50.808 --- INFORM: For CANFRA, couldn't find interpolator sequence for resolution 10m.
+2019-01-12 08:04:50.808 --- INFORM: For CANFRA, couldn't find interpolator sequence for resolution nesdis_greenfrac.
+2019-01-12 08:04:50.808 --- INFORM: Using default interpolator sequence for CANFRA.
+2019-01-12 08:04:50.808 --- INFORM: For CANFRA, couldn't find 2deg data source.
+2019-01-12 08:04:50.808 --- INFORM: For CANFRA, couldn't find gtopo_10m data source.
+2019-01-12 08:04:50.808 --- INFORM: For CANFRA, couldn't find usgs_10m data source.
+2019-01-12 08:04:50.809 --- INFORM: For CANFRA, couldn't find 10m data source.
+2019-01-12 08:04:50.809 --- INFORM: For CANFRA, couldn't find nesdis_greenfrac data source.
+2019-01-12 08:04:50.809 --- INFORM: Using default data source for CANFRA.
+2019-01-12 08:04:50.853 --- Processing field 1 of 28 (LANDUSEF)
+2019-01-12 08:04:50.916 --- Processing field 2 of 28 (LU_INDEX)
+2019-01-12 08:04:50.917 --- Processing field 3 of 28 (HGT_M)
+2019-01-12 08:04:50.922 --- Processing field 4 of 28 (SOILTEMP)
+2019-01-12 08:04:50.926 --- Processing field 5 of 28 (SOILCTOP)
+2019-01-12 08:04:50.966 --- Processing field 6 of 28 (SCT_DOM)
+2019-01-12 08:04:50.967 --- Processing field 7 of 28 (SOILCBOT)
+2019-01-12 08:04:51.031 --- Processing field 8 of 28 (SCB_DOM)
+2019-01-12 08:04:51.032 --- Processing field 9 of 28 (ALBEDO12M)
+2019-01-12 08:04:51.143 --- Processing field 10 of 28 (GREENFRAC)
+2019-01-12 08:04:51.247 --- Processing field 11 of 28 (LAI12M)
+2019-01-12 08:04:51.265 --- Processing field 12 of 28 (SNOALB)
+2019-01-12 08:04:51.268 --- Processing field 13 of 28 (SLOPECAT)
+2019-01-12 08:04:51.275 --- Processing field 14 of 28 (CON)
+2019-01-12 08:04:51.278 --- Processing field 15 of 28 (VAR)
+2019-01-12 08:04:51.282 --- Processing field 16 of 28 (OA1)
+2019-01-12 08:04:51.284 --- Processing field 17 of 28 (OA2)
+2019-01-12 08:04:51.287 --- Processing field 18 of 28 (OA3)
+2019-01-12 08:04:51.290 --- Processing field 19 of 28 (OA4)
+2019-01-12 08:04:51.293 --- Processing field 20 of 28 (OL1)
+2019-01-12 08:04:51.296 --- Processing field 21 of 28 (OL2)
+2019-01-12 08:04:51.299 --- Processing field 22 of 28 (OL3)
+2019-01-12 08:04:51.302 --- Processing field 23 of 28 (OL4)
+2019-01-12 08:04:51.305 --- Processing field 24 of 28 (VAR_SSO)
+2019-01-12 08:04:51.311 --- Processing field 25 of 28 (LAKE_DEPTH)
+2019-01-12 08:04:53.036 --- Processing field 26 of 28 (URB_PARAM)
+2019-01-12 08:05:03.551 --- Processing field 27 of 28 (IMPERV)
+2019-01-12 08:05:25.058 --- Processing field 28 of 28 (CANFRA)
+2019-01-12 08:05:46.631 ---  *** Successful completion of program geogrid.exe ***

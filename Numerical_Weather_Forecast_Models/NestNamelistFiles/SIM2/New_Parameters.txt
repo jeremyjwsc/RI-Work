@@ -1,0 +1,21 @@
+ 
+ &time_control
+ restart_interval                    = 720,
+
+ &physics
+ mp_physics                          = 4,     3,     3,
+ ra_lw_physics                       = 4,     1,     1,
+ ra_sw_physics                       = 4,     1,     1,
+ radt                                = 10,    10,    10,
+ cu_physics                          = 6,     6,     6,
+ cudt                                = 0,     0,     0,
+ co2tf			             = 1,
+ isftcflx                            = 1,
+ ifsnow                              = 0,
+
+
+ &dynamics
+ base_pres			     = 100000.,
+ base_temp                           = 290.,
+ base_lapse		             = 50.,
+ iso_temp		             = 0,

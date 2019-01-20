@@ -1,0 +1,2752 @@
+2019-01-12 08:10:43.989 ---  *** Starting program metgrid.exe ***
+2019-01-12 08:10:43.993 --- Using the following namelist variables:
+2019-01-12 08:10:43.993 --- &SHARE
+2019-01-12 08:10:43.993 ---   WRF_CORE         = ARW
+2019-01-12 08:10:43.993 ---   MAX_DOM          = 1
+2019-01-12 08:10:43.993 ---   START_YEAR       = 0
+2019-01-12 08:10:43.993 ---   START_MONTH      = 0
+2019-01-12 08:10:43.993 ---   START_DAY        = 0
+2019-01-12 08:10:43.993 ---   START_HOUR       = 0
+2019-01-12 08:10:43.994 ---   START_MINUTE     = 0
+2019-01-12 08:10:43.994 ---   START_SECOND     = 0
+2019-01-12 08:10:43.994 ---   END_YEAR         = 0
+2019-01-12 08:10:43.994 ---   END_MONTH        = 0
+2019-01-12 08:10:43.994 ---   END_DAY          = 0
+2019-01-12 08:10:43.994 ---   END_HOUR         = 0
+2019-01-12 08:10:43.994 ---   END_MINUTE       = 0
+2019-01-12 08:10:43.994 ---   END_SECOND       = 0
+2019-01-12 08:10:43.994 ---   START_DATE       = 2005-08-28_00:00:00
+2019-01-12 08:10:43.994 ---   END_DATE         = 2005-08-30_00:00:00
+2019-01-12 08:10:43.994 ---   INTERVAL_SECONDS = 21600
+2019-01-12 08:10:43.994 ---   IO_FORM_GEOGRID  = 2
+2019-01-12 08:10:43.994 ---   OPT_OUTPUT_FROM_GEOGRID_PATH = ./
+2019-01-12 08:10:43.994 ---   SUBGRID_RATIO_X  = 1
+2019-01-12 08:10:43.994 ---   SUBGRID_RATIO_Y  = 1
+2019-01-12 08:10:43.994 ---   DEBUG_LEVEL      = 0
+2019-01-12 08:10:43.994 ---   ACTIVE_GRID      = .TRUE.
+2019-01-12 08:10:43.994 ---   NOCOLONS         = .FALSE.
+2019-01-12 08:10:43.994 --- /
+2019-01-12 08:10:43.994 --- &METGRID
+2019-01-12 08:10:43.994 ---   FG_NAME               = FILE
+2019-01-12 08:10:43.994 ---   CONSTANTS_NAME        =
+2019-01-12 08:10:43.994 ---   IO_FORM_METGRID       = 2
+2019-01-12 08:10:43.994 ---   PROCESS_ONLY_BDY      = 0
+2019-01-12 08:10:43.994 ---   OPT_OUTPUT_FROM_METGRID_PATH = ./
+2019-01-12 08:10:43.994 ---   OPT_METGRID_TBL_PATH  = metgrid/
+2019-01-12 08:10:43.994 --- /
+2019-01-12 08:10:44.000 --- Processing domain 1 of 1
+2019-01-12 08:10:44.001 --- Initializing storage module
+2019-01-12 08:10:44.001 --- Opening static input file.
+2019-01-12 08:10:44.006 --- Reading static global attributes.
+2019-01-12 08:10:44.008 --- Read in static field XLAT_M.
+2019-01-12 08:10:44.008 --- Read in static field XLONG_M.
+2019-01-12 08:10:44.009 --- Read in static field XLAT_V.
+2019-01-12 08:10:44.009 --- Read in static field XLONG_V.
+2019-01-12 08:10:44.010 --- Read in static field XLAT_U.
+2019-01-12 08:10:44.010 --- Read in static field XLONG_U.
+2019-01-12 08:10:44.010 --- Read in static field CLAT.
+2019-01-12 08:10:44.010 --- Read in static field CLONG.
+2019-01-12 08:10:44.010 --- Read in static field MAPFAC_M.
+2019-01-12 08:10:44.011 --- Read in static field MAPFAC_V.
+2019-01-12 08:10:44.011 --- Read in static field MAPFAC_U.
+2019-01-12 08:10:44.011 --- Read in static field MAPFAC_MX.
+2019-01-12 08:10:44.011 --- Read in static field MAPFAC_VX.
+2019-01-12 08:10:44.011 --- Read in static field MAPFAC_UX.
+2019-01-12 08:10:44.012 --- Read in static field MAPFAC_MY.
+2019-01-12 08:10:44.012 --- Read in static field MAPFAC_VY.
+2019-01-12 08:10:44.012 --- Read in static field MAPFAC_UY.
+2019-01-12 08:10:44.012 --- Read in static field E.
+2019-01-12 08:10:44.012 --- Read in static field F.
+2019-01-12 08:10:44.012 --- Read in static field SINALPHA.
+2019-01-12 08:10:44.013 --- Read in static field COSALPHA.
+2019-01-12 08:10:44.013 --- Read in static field LANDMASK.
+2019-01-12 08:10:44.013 --- Read in static field XLAT_C.
+2019-01-12 08:10:44.013 --- Read in static field XLONG_C.
+2019-01-12 08:10:44.013 --- Read in static field SINALPHA_U.
+2019-01-12 08:10:44.013 --- Read in static field COSALPHA_U.
+2019-01-12 08:10:44.014 --- Read in static field SINALPHA_V.
+2019-01-12 08:10:44.014 --- Read in static field COSALPHA_V.
+2019-01-12 08:10:44.016 --- Read in static field LANDUSEF.
+2019-01-12 08:10:44.017 --- Read in static field LU_INDEX.
+2019-01-12 08:10:44.017 --- Read in static field HGT_M.
+2019-01-12 08:10:44.017 --- Read in static field SOILTEMP.
+2019-01-12 08:10:44.019 --- Read in static field SOILCTOP.
+2019-01-12 08:10:44.020 --- Read in static field SCT_DOM.
+2019-01-12 08:10:44.021 --- Read in static field SOILCBOT.
+2019-01-12 08:10:44.022 --- Read in static field SCB_DOM.
+2019-01-12 08:10:44.023 --- Read in static field ALBEDO12M.
+2019-01-12 08:10:44.025 --- Read in static field GREENFRAC.
+2019-01-12 08:10:44.027 --- Read in static field LAI12M.
+2019-01-12 08:10:44.029 --- Read in static field SNOALB.
+2019-01-12 08:10:44.029 --- Read in static field SLOPECAT.
+2019-01-12 08:10:44.029 --- Read in static field CON.
+2019-01-12 08:10:44.029 --- Read in static field VAR.
+2019-01-12 08:10:44.030 --- Read in static field OA1.
+2019-01-12 08:10:44.030 --- Read in static field OA2.
+2019-01-12 08:10:44.030 --- Read in static field OA3.
+2019-01-12 08:10:44.030 --- Read in static field OA4.
+2019-01-12 08:10:44.030 --- Read in static field OL1.
+2019-01-12 08:10:44.031 --- Read in static field OL2.
+2019-01-12 08:10:44.031 --- Read in static field OL3.
+2019-01-12 08:10:44.031 --- Read in static field OL4.
+2019-01-12 08:10:44.031 --- Read in static field VAR_SSO.
+2019-01-12 08:10:44.031 --- Read in static field LAKE_DEPTH.
+2019-01-12 08:10:44.046 --- Read in static field URB_PARAM.
+2019-01-12 08:10:44.053 --- Read in static field IMPERV.
+2019-01-12 08:10:44.053 --- Read in static field CANFRA.
+2019-01-12 08:10:44.054 --- Preparing to process output time 2005-08-28_00
+2019-01-12 08:10:44.054 --- Getting input fields from FILE
+2019-01-12 08:10:44.489 --- Processing PMSL at level 201300.000000.
+2019-01-12 08:10:44.493 --- Processing TT at level 200100.000000.
+2019-01-12 08:10:44.497 --- Processing UU at level 200100.000000.
+2019-01-12 08:10:44.504 --- Processing VV at level 200100.000000.
+2019-01-12 08:10:44.508 --- Processing RH at level 200100.000000.
+2019-01-12 08:10:44.512 --- Processing PSFC at level 200100.000000.
+2019-01-12 08:10:44.515 --- Processing SM000010 at level 200100.000000.
+2019-01-12 08:10:44.518 --- Processing SM010040 at level 200100.000000.
+2019-01-12 08:10:44.521 --- Processing SM040100 at level 200100.000000.
+2019-01-12 08:10:44.525 --- Processing SM100200 at level 200100.000000.
+2019-01-12 08:10:44.528 --- Processing ST000010 at level 200100.000000.
+2019-01-12 08:10:44.531 --- Processing ST010040 at level 200100.000000.
+2019-01-12 08:10:44.534 --- Processing ST040100 at level 200100.000000.
+2019-01-12 08:10:44.538 --- Processing ST100200 at level 200100.000000.
+2019-01-12 08:10:44.541 --- Processing SEAICE at level 200100.000000.
+2019-01-12 08:10:44.544 --- Processing LANDSEA at level 200100.000000.
+2019-01-12 08:10:44.547 --- Processing SOILHGT at level 200100.000000.
+2019-01-12 08:10:44.550 --- Processing SKINTEMP at level 200100.000000.
+2019-01-12 08:10:44.554 --- Processing SNOW at level 200100.000000.
+2019-01-12 08:10:44.557 --- Processing SNOWH at level 200100.000000.
+2019-01-12 08:10:44.560 --- Processing TT at level 100000.000000.
+2019-01-12 08:10:44.564 --- Processing UU at level 100000.000000.
+2019-01-12 08:10:44.568 --- Processing VV at level 100000.000000.
+2019-01-12 08:10:44.572 --- Processing RH at level 100000.000000.
+2019-01-12 08:10:44.575 --- Processing GHT at level 100000.000000.
+2019-01-12 08:10:44.579 --- Processing TT at level 97500.000000.
+2019-01-12 08:10:44.582 --- Processing UU at level 97500.000000.
+2019-01-12 08:10:44.586 --- Processing VV at level 97500.000000.
+2019-01-12 08:10:44.590 --- Processing RH at level 97500.000000.
+2019-01-12 08:10:44.594 --- Processing GHT at level 97500.000000.
+2019-01-12 08:10:44.597 --- Processing TT at level 95000.000000.
+2019-01-12 08:10:44.601 --- Processing UU at level 95000.000000.
+2019-01-12 08:10:44.604 --- Processing VV at level 95000.000000.
+2019-01-12 08:10:44.607 --- Processing RH at level 95000.000000.
+2019-01-12 08:10:44.611 --- Processing GHT at level 95000.000000.
+2019-01-12 08:10:44.615 --- Processing TT at level 92500.000000.
+2019-01-12 08:10:44.618 --- Processing UU at level 92500.000000.
+2019-01-12 08:10:44.622 --- Processing VV at level 92500.000000.
+2019-01-12 08:10:44.625 --- Processing RH at level 92500.000000.
+2019-01-12 08:10:44.629 --- Processing GHT at level 92500.000000.
+2019-01-12 08:10:44.633 --- Processing TT at level 90000.000000.
+2019-01-12 08:10:44.636 --- Processing UU at level 90000.000000.
+2019-01-12 08:10:44.640 --- Processing VV at level 90000.000000.
+2019-01-12 08:10:44.644 --- Processing RH at level 90000.000000.
+2019-01-12 08:10:44.648 --- Processing GHT at level 90000.000000.
+2019-01-12 08:10:44.652 --- Processing TT at level 85000.000000.
+2019-01-12 08:10:44.655 --- Processing UU at level 85000.000000.
+2019-01-12 08:10:44.659 --- Processing VV at level 85000.000000.
+2019-01-12 08:10:44.662 --- Processing RH at level 85000.000000.
+2019-01-12 08:10:44.666 --- Processing GHT at level 85000.000000.
+2019-01-12 08:10:44.669 --- Processing TT at level 80000.000000.
+2019-01-12 08:10:44.673 --- Processing UU at level 80000.000000.
+2019-01-12 08:10:44.676 --- Processing VV at level 80000.000000.
+2019-01-12 08:10:44.680 --- Processing RH at level 80000.000000.
+2019-01-12 08:10:44.683 --- Processing GHT at level 80000.000000.
+2019-01-12 08:10:44.687 --- Processing TT at level 75000.000000.
+2019-01-12 08:10:44.691 --- Processing UU at level 75000.000000.
+2019-01-12 08:10:44.694 --- Processing VV at level 75000.000000.
+2019-01-12 08:10:44.698 --- Processing RH at level 75000.000000.
+2019-01-12 08:10:44.701 --- Processing GHT at level 75000.000000.
+2019-01-12 08:10:44.705 --- Processing TT at level 70000.000000.
+2019-01-12 08:10:44.709 --- Processing UU at level 70000.000000.
+2019-01-12 08:10:44.712 --- Processing VV at level 70000.000000.
+2019-01-12 08:10:44.716 --- Processing RH at level 70000.000000.
+2019-01-12 08:10:44.719 --- Processing GHT at level 70000.000000.
+2019-01-12 08:10:44.723 --- Processing TT at level 65000.000000.
+2019-01-12 08:10:44.727 --- Processing UU at level 65000.000000.
+2019-01-12 08:10:44.730 --- Processing VV at level 65000.000000.
+2019-01-12 08:10:44.733 --- Processing RH at level 65000.000000.
+2019-01-12 08:10:44.737 --- Processing GHT at level 65000.000000.
+2019-01-12 08:10:44.740 --- Processing TT at level 60000.000000.
+2019-01-12 08:10:44.744 --- Processing UU at level 60000.000000.
+2019-01-12 08:10:44.748 --- Processing VV at level 60000.000000.
+2019-01-12 08:10:44.751 --- Processing RH at level 60000.000000.
+2019-01-12 08:10:44.755 --- Processing GHT at level 60000.000000.
+2019-01-12 08:10:44.758 --- Processing TT at level 55000.000000.
+2019-01-12 08:10:44.762 --- Processing UU at level 55000.000000.
+2019-01-12 08:10:44.766 --- Processing VV at level 55000.000000.
+2019-01-12 08:10:44.769 --- Processing RH at level 55000.000000.
+2019-01-12 08:10:44.773 --- Processing GHT at level 55000.000000.
+2019-01-12 08:10:44.776 --- Processing TT at level 50000.000000.
+2019-01-12 08:10:44.780 --- Processing UU at level 50000.000000.
+2019-01-12 08:10:44.783 --- Processing VV at level 50000.000000.
+2019-01-12 08:10:44.787 --- Processing RH at level 50000.000000.
+2019-01-12 08:10:44.790 --- Processing GHT at level 50000.000000.
+2019-01-12 08:10:44.794 --- Processing TT at level 45000.000000.
+2019-01-12 08:10:44.797 --- Processing UU at level 45000.000000.
+2019-01-12 08:10:44.801 --- Processing VV at level 45000.000000.
+2019-01-12 08:10:44.804 --- Processing RH at level 45000.000000.
+2019-01-12 08:10:44.808 --- Processing GHT at level 45000.000000.
+2019-01-12 08:10:44.812 --- Processing TT at level 40000.000000.
+2019-01-12 08:10:44.815 --- Processing UU at level 40000.000000.
+2019-01-12 08:10:44.819 --- Processing VV at level 40000.000000.
+2019-01-12 08:10:44.823 --- Processing RH at level 40000.000000.
+2019-01-12 08:10:44.827 --- Processing GHT at level 40000.000000.
+2019-01-12 08:10:44.831 --- Processing TT at level 35000.000000.
+2019-01-12 08:10:44.835 --- Processing UU at level 35000.000000.
+2019-01-12 08:10:44.839 --- Processing VV at level 35000.000000.
+2019-01-12 08:10:44.842 --- Processing RH at level 35000.000000.
+2019-01-12 08:10:44.846 --- Processing GHT at level 35000.000000.
+2019-01-12 08:10:44.849 --- Processing TT at level 30000.000000.
+2019-01-12 08:10:44.853 --- Processing UU at level 30000.000000.
+2019-01-12 08:10:44.857 --- Processing VV at level 30000.000000.
+2019-01-12 08:10:44.861 --- Processing RH at level 30000.000000.
+2019-01-12 08:10:44.867 --- Processing GHT at level 30000.000000.
+2019-01-12 08:10:44.870 --- Processing TT at level 25000.000000.
+2019-01-12 08:10:44.874 --- Processing UU at level 25000.000000.
+2019-01-12 08:10:44.878 --- Processing VV at level 25000.000000.
+2019-01-12 08:10:44.882 --- Processing RH at level 25000.000000.
+2019-01-12 08:10:44.885 --- Processing GHT at level 25000.000000.
+2019-01-12 08:10:44.888 --- Processing TT at level 20000.000000.
+2019-01-12 08:10:44.892 --- Processing UU at level 20000.000000.
+2019-01-12 08:10:44.896 --- Processing VV at level 20000.000000.
+2019-01-12 08:10:44.899 --- Processing RH at level 20000.000000.
+2019-01-12 08:10:44.903 --- Processing GHT at level 20000.000000.
+2019-01-12 08:10:44.906 --- Processing TT at level 15000.000000.
+2019-01-12 08:10:44.910 --- Processing UU at level 15000.000000.
+2019-01-12 08:10:44.913 --- Processing VV at level 15000.000000.
+2019-01-12 08:10:44.917 --- Processing RH at level 15000.000000.
+2019-01-12 08:10:44.921 --- Processing GHT at level 15000.000000.
+2019-01-12 08:10:44.924 --- Processing TT at level 10000.000000.
+2019-01-12 08:10:44.928 --- Processing UU at level 10000.000000.
+2019-01-12 08:10:44.931 --- Processing VV at level 10000.000000.
+2019-01-12 08:10:44.935 --- Processing RH at level 10000.000000.
+2019-01-12 08:10:44.938 --- Processing GHT at level 10000.000000.
+2019-01-12 08:10:44.942 --- Processing TT at level 7000.000000.
+2019-01-12 08:10:44.946 --- Processing UU at level 7000.000000.
+2019-01-12 08:10:44.949 --- Processing VV at level 7000.000000.
+2019-01-12 08:10:44.953 --- Processing RH at level 7000.000000.
+2019-01-12 08:10:44.959 --- Processing GHT at level 7000.000000.
+2019-01-12 08:10:44.963 --- Processing TT at level 5000.000000.
+2019-01-12 08:10:44.966 --- Processing UU at level 5000.000000.
+2019-01-12 08:10:44.970 --- Processing VV at level 5000.000000.
+2019-01-12 08:10:44.973 --- Processing RH at level 5000.000000.
+2019-01-12 08:10:44.980 --- Processing GHT at level 5000.000000.
+2019-01-12 08:10:44.983 --- Processing TT at level 3000.000000.
+2019-01-12 08:10:44.987 --- Processing UU at level 3000.000000.
+2019-01-12 08:10:44.990 --- Processing VV at level 3000.000000.
+2019-01-12 08:10:44.994 --- Processing RH at level 3000.000000.
+2019-01-12 08:10:45.000 --- Processing GHT at level 3000.000000.
+2019-01-12 08:10:45.004 --- Processing TT at level 2000.000000.
+2019-01-12 08:10:45.007 --- Processing UU at level 2000.000000.
+2019-01-12 08:10:45.011 --- Processing VV at level 2000.000000.
+2019-01-12 08:10:45.016 --- Processing RH at level 2000.000000.
+2019-01-12 08:10:45.022 --- Processing GHT at level 2000.000000.
+2019-01-12 08:10:45.028 --- Processing TT at level 1000.000000.
+2019-01-12 08:10:45.031 --- Processing UU at level 1000.000000.
+2019-01-12 08:10:45.036 --- Processing VV at level 1000.000000.
+2019-01-12 08:10:45.040 --- Processing RH at level 1000.000000.
+2019-01-12 08:10:45.046 --- Processing GHT at level 1000.000000.
+2019-01-12 08:10:45.048 --- Filling missing levels.
+2019-01-12 08:10:45.048 --- INFORM: GHT at level 200100.000000 already exists; leaving it alone.
+2019-01-12 08:10:45.048 --- INFORM: LANDSEA at level 200100.000000 already exists; leaving it alone.
+2019-01-12 08:10:45.048 --- INFORM: PSFC at level 200100.000000 already exists; leaving it alone.
+2019-01-12 08:10:45.048 --- INFORM: RH at level 200100.000000 already exists; leaving it alone.
+2019-01-12 08:10:45.048 --- INFORM: VV at level 200100.000000 already exists; leaving it alone.
+2019-01-12 08:10:45.048 --- INFORM: UU at level 200100.000000 already exists; leaving it alone.
+2019-01-12 08:10:45.048 --- INFORM: TT at level 200100.000000 already exists; leaving it alone.
+2019-01-12 08:10:45.054 --- Creating derived fields.
+2019-01-12 08:10:45.054 --- INFORM: Going to create the field ST
+2019-01-12 08:10:45.054 --- INFORM: ST at level 10.000000 already exists; leaving it alone.
+2019-01-12 08:10:45.054 --- INFORM: Couldn't find ST010035 at level 200100.000000 to fill level 35.000000 of ST.
+2019-01-12 08:10:45.054 --- INFORM: ST at level 100.000000 already exists; leaving it alone.
+2019-01-12 08:10:45.054 --- INFORM: Couldn't find ST100300 at level 200100.000000 to fill level 300.000000 of ST.
+2019-01-12 08:10:45.054 --- INFORM: ST at level 10.000000 already exists; leaving it alone.
+2019-01-12 08:10:45.054 --- INFORM: ST at level 200.000000 already exists; leaving it alone.
+2019-01-12 08:10:45.055 --- INFORM: Couldn't find ST000007 at level 200100.000000 to fill level 7.000000 of ST.
+2019-01-12 08:10:45.055 --- INFORM: Couldn't find ST007028 at level 200100.000000 to fill level 28.000000 of ST.
+2019-01-12 08:10:45.055 --- INFORM: ST at level 100.000000 already exists; leaving it alone.
+2019-01-12 08:10:45.055 --- INFORM: Couldn't find ST100289 at level 200100.000000 to fill level 289.000000 of ST.
+2019-01-12 08:10:45.055 --- INFORM: Going to create the field SM
+2019-01-12 08:10:45.055 --- INFORM: SM at level 10.000000 already exists; leaving it alone.
+2019-01-12 08:10:45.055 --- INFORM: Couldn't find SM010035 at level 200100.000000 to fill level 35.000000 of SM.
+2019-01-12 08:10:45.055 --- INFORM: SM at level 100.000000 already exists; leaving it alone.
+2019-01-12 08:10:45.055 --- INFORM: Couldn't find SM100300 at level 200100.000000 to fill level 300.000000 of SM.
+2019-01-12 08:10:45.055 --- INFORM: SM at level 10.000000 already exists; leaving it alone.
+2019-01-12 08:10:45.055 --- INFORM: SM at level 200.000000 already exists; leaving it alone.
+2019-01-12 08:10:45.055 --- INFORM: Couldn't find SM000007 at level 200100.000000 to fill level 7.000000 of SM.
+2019-01-12 08:10:45.055 --- INFORM: Couldn't find SM007028 at level 200100.000000 to fill level 28.000000 of SM.
+2019-01-12 08:10:45.055 --- INFORM: SM at level 100.000000 already exists; leaving it alone.
+2019-01-12 08:10:45.055 --- INFORM: Couldn't find SM100289 at level 200100.000000 to fill level 289.000000 of SM.
+2019-01-12 08:10:45.055 --- INFORM: Going to create the field SW
+2019-01-12 08:10:45.056 --- INFORM: Couldn't find SW000010 at level 200100.000000 to fill level 1.000000 of SW.
+2019-01-12 08:10:45.056 --- INFORM: Couldn't find SW010040 at level 200100.000000 to fill level 2.000000 of SW.
+2019-01-12 08:10:45.056 --- INFORM: Couldn't find SW040100 at level 200100.000000 to fill level 3.000000 of SW.
+2019-01-12 08:10:45.056 --- INFORM: Couldn't find SW100200 at level 200100.000000 to fill level 4.000000 of SW.
+2019-01-12 08:10:45.056 --- INFORM: Couldn't find SW000010 at level 200100.000000 to fill level 1.000000 of SW.
+2019-01-12 08:10:45.056 --- INFORM: Couldn't find SW010200 at level 200100.000000 to fill level 2.000000 of SW.
+2019-01-12 08:10:45.056 --- INFORM: Going to create the field SOIL_LAYERS
+2019-01-12 08:10:45.056 --- INFORM: Going to create the field SOILM
+2019-01-12 08:10:45.056 --- INFORM: Couldn't find SOILM000 at level 200100.000000 to fill level 0.000000 of SOILM.
+2019-01-12 08:10:45.056 --- INFORM: Couldn't find SOILM005 at level 200100.000000 to fill level 5.000000 of SOILM.
+2019-01-12 08:10:45.056 --- INFORM: Couldn't find SOILM020 at level 200100.000000 to fill level 20.000000 of SOILM.
+2019-01-12 08:10:45.056 --- INFORM: Couldn't find SOILM040 at level 200100.000000 to fill level 40.000000 of SOILM.
+2019-01-12 08:10:45.056 --- INFORM: Couldn't find SOILM160 at level 200100.000000 to fill level 160.000000 of SOILM.
+2019-01-12 08:10:45.056 --- INFORM: Couldn't find SOILM300 at level 200100.000000 to fill level 300.000000 of SOILM.
+2019-01-12 08:10:45.056 --- INFORM: Going to create the field SOILT
+2019-01-12 08:10:45.057 --- INFORM: Couldn't find SOILT000 at level 200100.000000 to fill level 0.000000 of SOILT.
+2019-01-12 08:10:45.057 --- INFORM: Couldn't find SOILT005 at level 200100.000000 to fill level 5.000000 of SOILT.
+2019-01-12 08:10:45.057 --- INFORM: Couldn't find SOILT020 at level 200100.000000 to fill level 20.000000 of SOILT.
+2019-01-12 08:10:45.057 --- INFORM: Couldn't find SOILT040 at level 200100.000000 to fill level 40.000000 of SOILT.
+2019-01-12 08:10:45.057 --- INFORM: Couldn't find SOILT160 at level 200100.000000 to fill level 160.000000 of SOILT.
+2019-01-12 08:10:45.057 --- INFORM: Couldn't find SOILT300 at level 200100.000000 to fill level 300.000000 of SOILT.
+2019-01-12 08:10:45.057 --- INFORM: Couldn't find SOILT050 at level 200100.000000 to fill level 49.000000 of SOILT.
+2019-01-12 08:10:45.057 --- INFORM: Couldn't find SOILT050 at level 200100.000000 to fill level 51.000000 of SOILT.
+2019-01-12 08:10:45.057 --- INFORM: Going to create the field SOIL_LEVELS
+2019-01-12 08:10:45.057 --- INFORM: Going to create the field PRES
+2019-01-12 08:10:45.058 --- INFORM: PRES at level 200100.000000 already exists; leaving it alone.
+2019-01-12 08:10:45.066 --- INFORM: Field LANDSEA.mask does not have a valid mask and will not be checked for missing values
+2019-01-12 08:10:45.078 --- Initializing output module.
+2019-01-12 08:10:45.088 --- Writing global attributes to output.
+2019-01-12 08:10:45.122 --- Writing field PRES to output.
+2019-01-12 08:10:45.136 --- Writing field SOIL_LAYERS to output.
+2019-01-12 08:10:45.136 --- Writing field SM to output.
+2019-01-12 08:10:45.137 --- Writing field ST to output.
+2019-01-12 08:10:45.137 --- Writing field GHT to output.
+2019-01-12 08:10:45.138 --- Writing field SNOWH to output.
+2019-01-12 08:10:45.138 --- Writing field SNOW to output.
+2019-01-12 08:10:45.138 --- Writing field SKINTEMP to output.
+2019-01-12 08:10:45.139 --- Writing field SOILHGT to output.
+2019-01-12 08:10:45.139 --- Writing field LANDSEA to output.
+2019-01-12 08:10:45.139 --- Writing field SEAICE to output.
+2019-01-12 08:10:45.139 --- Writing field ST100200 to output.
+2019-01-12 08:10:45.139 --- Writing field ST040100 to output.
+2019-01-12 08:10:45.139 --- Writing field ST010040 to output.
+2019-01-12 08:10:45.139 --- Writing field ST000010 to output.
+2019-01-12 08:10:45.139 --- Writing field SM100200 to output.
+2019-01-12 08:10:45.139 --- Writing field SM040100 to output.
+2019-01-12 08:10:45.139 --- Writing field SM010040 to output.
+2019-01-12 08:10:45.140 --- Writing field SM000010 to output.
+2019-01-12 08:10:45.140 --- Writing field PSFC to output.
+2019-01-12 08:10:45.140 --- Writing field RH to output.
+2019-01-12 08:10:45.141 --- Writing field VV to output.
+2019-01-12 08:10:45.143 --- Writing field UU to output.
+2019-01-12 08:10:45.144 --- Writing field TT to output.
+2019-01-12 08:10:45.145 --- Writing field PMSL to output.
+2019-01-12 08:10:45.145 --- Writing field CANFRA to output.
+2019-01-12 08:10:45.145 --- Writing field IMPERV to output.
+2019-01-12 08:10:45.147 --- Writing field URB_PARAM to output.
+2019-01-12 08:10:45.154 --- Writing field LAKE_DEPTH to output.
+2019-01-12 08:10:45.154 --- Writing field VAR_SSO to output.
+2019-01-12 08:10:45.154 --- Writing field OL4 to output.
+2019-01-12 08:10:45.154 --- Writing field OL3 to output.
+2019-01-12 08:10:45.155 --- Writing field OL2 to output.
+2019-01-12 08:10:45.155 --- Writing field OL1 to output.
+2019-01-12 08:10:45.155 --- Writing field OA4 to output.
+2019-01-12 08:10:45.155 --- Writing field OA3 to output.
+2019-01-12 08:10:45.155 --- Writing field OA2 to output.
+2019-01-12 08:10:45.155 --- Writing field OA1 to output.
+2019-01-12 08:10:45.155 --- Writing field VAR to output.
+2019-01-12 08:10:45.155 --- Writing field CON to output.
+2019-01-12 08:10:45.155 --- Writing field SLOPECAT to output.
+2019-01-12 08:10:45.155 --- Writing field SNOALB to output.
+2019-01-12 08:10:45.156 --- Writing field LAI12M to output.
+2019-01-12 08:10:45.156 --- Writing field GREENFRAC to output.
+2019-01-12 08:10:45.157 --- Writing field ALBEDO12M to output.
+2019-01-12 08:10:45.158 --- Writing field SCB_DOM to output.
+2019-01-12 08:10:45.158 --- Writing field SOILCBOT to output.
+2019-01-12 08:10:45.159 --- Writing field SCT_DOM to output.
+2019-01-12 08:10:45.159 --- Writing field SOILCTOP to output.
+2019-01-12 08:10:45.160 --- Writing field SOILTEMP to output.
+2019-01-12 08:10:45.160 --- Writing field HGT_M to output.
+2019-01-12 08:10:45.160 --- Writing field LU_INDEX to output.
+2019-01-12 08:10:45.160 --- Writing field LANDUSEF to output.
+2019-01-12 08:10:45.162 --- Writing field COSALPHA_V to output.
+2019-01-12 08:10:45.162 --- Writing field SINALPHA_V to output.
+2019-01-12 08:10:45.162 --- Writing field COSALPHA_U to output.
+2019-01-12 08:10:45.162 --- Writing field SINALPHA_U to output.
+2019-01-12 08:10:45.162 --- Writing field XLONG_C to output.
+2019-01-12 08:10:45.162 --- Writing field XLAT_C to output.
+2019-01-12 08:10:45.162 --- Writing field LANDMASK to output.
+2019-01-12 08:10:45.163 --- Writing field COSALPHA to output.
+2019-01-12 08:10:45.163 --- Writing field SINALPHA to output.
+2019-01-12 08:10:45.163 --- Writing field F to output.
+2019-01-12 08:10:45.163 --- Writing field E to output.
+2019-01-12 08:10:45.163 --- Writing field MAPFAC_UY to output.
+2019-01-12 08:10:45.163 --- Writing field MAPFAC_VY to output.
+2019-01-12 08:10:45.163 --- Writing field MAPFAC_MY to output.
+2019-01-12 08:10:45.163 --- Writing field MAPFAC_UX to output.
+2019-01-12 08:10:45.163 --- Writing field MAPFAC_VX to output.
+2019-01-12 08:10:45.164 --- Writing field MAPFAC_MX to output.
+2019-01-12 08:10:45.164 --- Writing field MAPFAC_U to output.
+2019-01-12 08:10:45.164 --- Writing field MAPFAC_V to output.
+2019-01-12 08:10:45.164 --- Writing field MAPFAC_M to output.
+2019-01-12 08:10:45.164 --- Writing field CLONG to output.
+2019-01-12 08:10:45.164 --- Writing field CLAT to output.
+2019-01-12 08:10:45.164 --- Writing field XLONG_U to output.
+2019-01-12 08:10:45.164 --- Writing field XLAT_U to output.
+2019-01-12 08:10:45.164 --- Writing field XLONG_V to output.
+2019-01-12 08:10:45.164 --- Writing field XLAT_V to output.
+2019-01-12 08:10:45.165 --- Writing field XLONG_M to output.
+2019-01-12 08:10:45.165 --- Writing field XLAT_M to output.
+2019-01-12 08:10:45.165 --- Closing output file.
+2019-01-12 08:10:45.165 --- Preparing to process output time 2005-08-28_06
+2019-01-12 08:10:45.165 --- Getting input fields from FILE
+2019-01-12 08:10:45.587 --- Processing PMSL at level 201300.000000.
+2019-01-12 08:10:45.591 --- Processing TT at level 200100.000000.
+2019-01-12 08:10:45.595 --- Processing UU at level 200100.000000.
+2019-01-12 08:10:45.598 --- Processing VV at level 200100.000000.
+2019-01-12 08:10:45.602 --- Processing RH at level 200100.000000.
+2019-01-12 08:10:45.605 --- Processing PSFC at level 200100.000000.
+2019-01-12 08:10:45.608 --- Processing SM000010 at level 200100.000000.
+2019-01-12 08:10:45.611 --- Processing SM010040 at level 200100.000000.
+2019-01-12 08:10:45.615 --- Processing SM040100 at level 200100.000000.
+2019-01-12 08:10:45.618 --- Processing SM100200 at level 200100.000000.
+2019-01-12 08:10:45.621 --- Processing ST000010 at level 200100.000000.
+2019-01-12 08:10:45.624 --- Processing ST010040 at level 200100.000000.
+2019-01-12 08:10:45.628 --- Processing ST040100 at level 200100.000000.
+2019-01-12 08:10:45.631 --- Processing ST100200 at level 200100.000000.
+2019-01-12 08:10:45.634 --- Processing SEAICE at level 200100.000000.
+2019-01-12 08:10:45.637 --- Processing LANDSEA at level 200100.000000.
+2019-01-12 08:10:45.640 --- Processing SOILHGT at level 200100.000000.
+2019-01-12 08:10:45.644 --- Processing SKINTEMP at level 200100.000000.
+2019-01-12 08:10:45.648 --- Processing SNOW at level 200100.000000.
+2019-01-12 08:10:45.651 --- Processing SNOWH at level 200100.000000.
+2019-01-12 08:10:45.654 --- Processing TT at level 100000.000000.
+2019-01-12 08:10:45.657 --- Processing UU at level 100000.000000.
+2019-01-12 08:10:45.661 --- Processing VV at level 100000.000000.
+2019-01-12 08:10:45.664 --- Processing RH at level 100000.000000.
+2019-01-12 08:10:45.668 --- Processing GHT at level 100000.000000.
+2019-01-12 08:10:45.671 --- Processing TT at level 97500.000000.
+2019-01-12 08:10:45.675 --- Processing UU at level 97500.000000.
+2019-01-12 08:10:45.678 --- Processing VV at level 97500.000000.
+2019-01-12 08:10:45.682 --- Processing RH at level 97500.000000.
+2019-01-12 08:10:45.686 --- Processing GHT at level 97500.000000.
+2019-01-12 08:10:45.689 --- Processing TT at level 95000.000000.
+2019-01-12 08:10:45.693 --- Processing UU at level 95000.000000.
+2019-01-12 08:10:45.696 --- Processing VV at level 95000.000000.
+2019-01-12 08:10:45.700 --- Processing RH at level 95000.000000.
+2019-01-12 08:10:45.703 --- Processing GHT at level 95000.000000.
+2019-01-12 08:10:45.707 --- Processing TT at level 92500.000000.
+2019-01-12 08:10:45.710 --- Processing UU at level 92500.000000.
+2019-01-12 08:10:45.714 --- Processing VV at level 92500.000000.
+2019-01-12 08:10:45.717 --- Processing RH at level 92500.000000.
+2019-01-12 08:10:45.722 --- Processing GHT at level 92500.000000.
+2019-01-12 08:10:45.727 --- Processing TT at level 90000.000000.
+2019-01-12 08:10:45.731 --- Processing UU at level 90000.000000.
+2019-01-12 08:10:45.734 --- Processing VV at level 90000.000000.
+2019-01-12 08:10:45.738 --- Processing RH at level 90000.000000.
+2019-01-12 08:10:45.741 --- Processing GHT at level 90000.000000.
+2019-01-12 08:10:45.745 --- Processing TT at level 85000.000000.
+2019-01-12 08:10:45.748 --- Processing UU at level 85000.000000.
+2019-01-12 08:10:45.752 --- Processing VV at level 85000.000000.
+2019-01-12 08:10:45.756 --- Processing RH at level 85000.000000.
+2019-01-12 08:10:45.759 --- Processing GHT at level 85000.000000.
+2019-01-12 08:10:45.763 --- Processing TT at level 80000.000000.
+2019-01-12 08:10:45.766 --- Processing UU at level 80000.000000.
+2019-01-12 08:10:45.770 --- Processing VV at level 80000.000000.
+2019-01-12 08:10:45.773 --- Processing RH at level 80000.000000.
+2019-01-12 08:10:45.777 --- Processing GHT at level 80000.000000.
+2019-01-12 08:10:45.781 --- Processing TT at level 75000.000000.
+2019-01-12 08:10:45.784 --- Processing UU at level 75000.000000.
+2019-01-12 08:10:45.788 --- Processing VV at level 75000.000000.
+2019-01-12 08:10:45.791 --- Processing RH at level 75000.000000.
+2019-01-12 08:10:45.795 --- Processing GHT at level 75000.000000.
+2019-01-12 08:10:45.798 --- Processing TT at level 70000.000000.
+2019-01-12 08:10:45.802 --- Processing UU at level 70000.000000.
+2019-01-12 08:10:45.805 --- Processing VV at level 70000.000000.
+2019-01-12 08:10:45.809 --- Processing RH at level 70000.000000.
+2019-01-12 08:10:45.813 --- Processing GHT at level 70000.000000.
+2019-01-12 08:10:45.816 --- Processing TT at level 65000.000000.
+2019-01-12 08:10:45.820 --- Processing UU at level 65000.000000.
+2019-01-12 08:10:45.824 --- Processing VV at level 65000.000000.
+2019-01-12 08:10:45.828 --- Processing RH at level 65000.000000.
+2019-01-12 08:10:45.831 --- Processing GHT at level 65000.000000.
+2019-01-12 08:10:45.834 --- Processing TT at level 60000.000000.
+2019-01-12 08:10:45.838 --- Processing UU at level 60000.000000.
+2019-01-12 08:10:45.842 --- Processing VV at level 60000.000000.
+2019-01-12 08:10:45.846 --- Processing RH at level 60000.000000.
+2019-01-12 08:10:45.849 --- Processing GHT at level 60000.000000.
+2019-01-12 08:10:45.853 --- Processing TT at level 55000.000000.
+2019-01-12 08:10:45.857 --- Processing UU at level 55000.000000.
+2019-01-12 08:10:45.860 --- Processing VV at level 55000.000000.
+2019-01-12 08:10:45.864 --- Processing RH at level 55000.000000.
+2019-01-12 08:10:45.867 --- Processing GHT at level 55000.000000.
+2019-01-12 08:10:45.871 --- Processing TT at level 50000.000000.
+2019-01-12 08:10:45.874 --- Processing UU at level 50000.000000.
+2019-01-12 08:10:45.878 --- Processing VV at level 50000.000000.
+2019-01-12 08:10:45.882 --- Processing RH at level 50000.000000.
+2019-01-12 08:10:45.885 --- Processing GHT at level 50000.000000.
+2019-01-12 08:10:45.889 --- Processing TT at level 45000.000000.
+2019-01-12 08:10:45.892 --- Processing UU at level 45000.000000.
+2019-01-12 08:10:45.896 --- Processing VV at level 45000.000000.
+2019-01-12 08:10:45.900 --- Processing RH at level 45000.000000.
+2019-01-12 08:10:45.904 --- Processing GHT at level 45000.000000.
+2019-01-12 08:10:45.907 --- Processing TT at level 40000.000000.
+2019-01-12 08:10:45.911 --- Processing UU at level 40000.000000.
+2019-01-12 08:10:45.914 --- Processing VV at level 40000.000000.
+2019-01-12 08:10:45.918 --- Processing RH at level 40000.000000.
+2019-01-12 08:10:45.922 --- Processing GHT at level 40000.000000.
+2019-01-12 08:10:45.925 --- Processing TT at level 35000.000000.
+2019-01-12 08:10:45.929 --- Processing UU at level 35000.000000.
+2019-01-12 08:10:45.932 --- Processing VV at level 35000.000000.
+2019-01-12 08:10:45.936 --- Processing RH at level 35000.000000.
+2019-01-12 08:10:45.940 --- Processing GHT at level 35000.000000.
+2019-01-12 08:10:45.943 --- Processing TT at level 30000.000000.
+2019-01-12 08:10:45.947 --- Processing UU at level 30000.000000.
+2019-01-12 08:10:45.950 --- Processing VV at level 30000.000000.
+2019-01-12 08:10:45.954 --- Processing RH at level 30000.000000.
+2019-01-12 08:10:45.957 --- Processing GHT at level 30000.000000.
+2019-01-12 08:10:45.962 --- Processing TT at level 25000.000000.
+2019-01-12 08:10:45.965 --- Processing UU at level 25000.000000.
+2019-01-12 08:10:45.969 --- Processing VV at level 25000.000000.
+2019-01-12 08:10:45.973 --- Processing RH at level 25000.000000.
+2019-01-12 08:10:45.976 --- Processing GHT at level 25000.000000.
+2019-01-12 08:10:45.980 --- Processing TT at level 20000.000000.
+2019-01-12 08:10:45.984 --- Processing UU at level 20000.000000.
+2019-01-12 08:10:45.988 --- Processing VV at level 20000.000000.
+2019-01-12 08:10:45.993 --- Processing RH at level 20000.000000.
+2019-01-12 08:10:45.996 --- Processing GHT at level 20000.000000.
+2019-01-12 08:10:46.000 --- Processing TT at level 15000.000000.
+2019-01-12 08:10:46.004 --- Processing UU at level 15000.000000.
+2019-01-12 08:10:46.008 --- Processing VV at level 15000.000000.
+2019-01-12 08:10:46.013 --- Processing RH at level 15000.000000.
+2019-01-12 08:10:46.017 --- Processing GHT at level 15000.000000.
+2019-01-12 08:10:46.020 --- Processing TT at level 10000.000000.
+2019-01-12 08:10:46.024 --- Processing UU at level 10000.000000.
+2019-01-12 08:10:46.029 --- Processing VV at level 10000.000000.
+2019-01-12 08:10:46.032 --- Processing RH at level 10000.000000.
+2019-01-12 08:10:46.036 --- Processing GHT at level 10000.000000.
+2019-01-12 08:10:46.042 --- Processing TT at level 7000.000000.
+2019-01-12 08:10:46.046 --- Processing UU at level 7000.000000.
+2019-01-12 08:10:46.049 --- Processing VV at level 7000.000000.
+2019-01-12 08:10:46.053 --- Processing RH at level 7000.000000.
+2019-01-12 08:10:46.060 --- Processing GHT at level 7000.000000.
+2019-01-12 08:10:46.064 --- Processing TT at level 5000.000000.
+2019-01-12 08:10:46.068 --- Processing UU at level 5000.000000.
+2019-01-12 08:10:46.072 --- Processing VV at level 5000.000000.
+2019-01-12 08:10:46.076 --- Processing RH at level 5000.000000.
+2019-01-12 08:10:46.082 --- Processing GHT at level 5000.000000.
+2019-01-12 08:10:46.085 --- Processing TT at level 3000.000000.
+2019-01-12 08:10:46.089 --- Processing UU at level 3000.000000.
+2019-01-12 08:10:46.093 --- Processing VV at level 3000.000000.
+2019-01-12 08:10:46.097 --- Processing RH at level 3000.000000.
+2019-01-12 08:10:46.103 --- Processing GHT at level 3000.000000.
+2019-01-12 08:10:46.107 --- Processing TT at level 2000.000000.
+2019-01-12 08:10:46.110 --- Processing UU at level 2000.000000.
+2019-01-12 08:10:46.114 --- Processing VV at level 2000.000000.
+2019-01-12 08:10:46.118 --- Processing RH at level 2000.000000.
+2019-01-12 08:10:46.124 --- Processing GHT at level 2000.000000.
+2019-01-12 08:10:46.129 --- Processing TT at level 1000.000000.
+2019-01-12 08:10:46.133 --- Processing UU at level 1000.000000.
+2019-01-12 08:10:46.136 --- Processing VV at level 1000.000000.
+2019-01-12 08:10:46.140 --- Processing RH at level 1000.000000.
+2019-01-12 08:10:46.146 --- Processing GHT at level 1000.000000.
+2019-01-12 08:10:46.148 --- Filling missing levels.
+2019-01-12 08:10:46.148 --- INFORM: GHT at level 200100.000000 already exists; leaving it alone.
+2019-01-12 08:10:46.148 --- INFORM: LANDSEA at level 200100.000000 already exists; leaving it alone.
+2019-01-12 08:10:46.148 --- INFORM: PSFC at level 200100.000000 already exists; leaving it alone.
+2019-01-12 08:10:46.148 --- INFORM: RH at level 200100.000000 already exists; leaving it alone.
+2019-01-12 08:10:46.148 --- INFORM: VV at level 200100.000000 already exists; leaving it alone.
+2019-01-12 08:10:46.148 --- INFORM: UU at level 200100.000000 already exists; leaving it alone.
+2019-01-12 08:10:46.148 --- INFORM: TT at level 200100.000000 already exists; leaving it alone.
+2019-01-12 08:10:46.154 --- Creating derived fields.
+2019-01-12 08:10:46.154 --- INFORM: Going to create the field ST
+2019-01-12 08:10:46.154 --- INFORM: ST at level 10.000000 already exists; leaving it alone.
+2019-01-12 08:10:46.154 --- INFORM: Couldn't find ST010035 at level 200100.000000 to fill level 35.000000 of ST.
+2019-01-12 08:10:46.154 --- INFORM: ST at level 100.000000 already exists; leaving it alone.
+2019-01-12 08:10:46.155 --- INFORM: Couldn't find ST100300 at level 200100.000000 to fill level 300.000000 of ST.
+2019-01-12 08:10:46.155 --- INFORM: ST at level 10.000000 already exists; leaving it alone.
+2019-01-12 08:10:46.155 --- INFORM: ST at level 200.000000 already exists; leaving it alone.
+2019-01-12 08:10:46.155 --- INFORM: Couldn't find ST000007 at level 200100.000000 to fill level 7.000000 of ST.
+2019-01-12 08:10:46.155 --- INFORM: Couldn't find ST007028 at level 200100.000000 to fill level 28.000000 of ST.
+2019-01-12 08:10:46.155 --- INFORM: ST at level 100.000000 already exists; leaving it alone.
+2019-01-12 08:10:46.155 --- INFORM: Couldn't find ST100289 at level 200100.000000 to fill level 289.000000 of ST.
+2019-01-12 08:10:46.155 --- INFORM: Going to create the field SM
+2019-01-12 08:10:46.155 --- INFORM: SM at level 10.000000 already exists; leaving it alone.
+2019-01-12 08:10:46.155 --- INFORM: Couldn't find SM010035 at level 200100.000000 to fill level 35.000000 of SM.
+2019-01-12 08:10:46.155 --- INFORM: SM at level 100.000000 already exists; leaving it alone.
+2019-01-12 08:10:46.155 --- INFORM: Couldn't find SM100300 at level 200100.000000 to fill level 300.000000 of SM.
+2019-01-12 08:10:46.155 --- INFORM: SM at level 10.000000 already exists; leaving it alone.
+2019-01-12 08:10:46.155 --- INFORM: SM at level 200.000000 already exists; leaving it alone.
+2019-01-12 08:10:46.155 --- INFORM: Couldn't find SM000007 at level 200100.000000 to fill level 7.000000 of SM.
+2019-01-12 08:10:46.155 --- INFORM: Couldn't find SM007028 at level 200100.000000 to fill level 28.000000 of SM.
+2019-01-12 08:10:46.156 --- INFORM: SM at level 100.000000 already exists; leaving it alone.
+2019-01-12 08:10:46.156 --- INFORM: Couldn't find SM100289 at level 200100.000000 to fill level 289.000000 of SM.
+2019-01-12 08:10:46.156 --- INFORM: Going to create the field SW
+2019-01-12 08:10:46.156 --- INFORM: Couldn't find SW000010 at level 200100.000000 to fill level 1.000000 of SW.
+2019-01-12 08:10:46.156 --- INFORM: Couldn't find SW010040 at level 200100.000000 to fill level 2.000000 of SW.
+2019-01-12 08:10:46.156 --- INFORM: Couldn't find SW040100 at level 200100.000000 to fill level 3.000000 of SW.
+2019-01-12 08:10:46.156 --- INFORM: Couldn't find SW100200 at level 200100.000000 to fill level 4.000000 of SW.
+2019-01-12 08:10:46.156 --- INFORM: Couldn't find SW000010 at level 200100.000000 to fill level 1.000000 of SW.
+2019-01-12 08:10:46.156 --- INFORM: Couldn't find SW010200 at level 200100.000000 to fill level 2.000000 of SW.
+2019-01-12 08:10:46.156 --- INFORM: Going to create the field SOIL_LAYERS
+2019-01-12 08:10:46.156 --- INFORM: Going to create the field SOILM
+2019-01-12 08:10:46.156 --- INFORM: Couldn't find SOILM000 at level 200100.000000 to fill level 0.000000 of SOILM.
+2019-01-12 08:10:46.156 --- INFORM: Couldn't find SOILM005 at level 200100.000000 to fill level 5.000000 of SOILM.
+2019-01-12 08:10:46.156 --- INFORM: Couldn't find SOILM020 at level 200100.000000 to fill level 20.000000 of SOILM.
+2019-01-12 08:10:46.156 --- INFORM: Couldn't find SOILM040 at level 200100.000000 to fill level 40.000000 of SOILM.
+2019-01-12 08:10:46.156 --- INFORM: Couldn't find SOILM160 at level 200100.000000 to fill level 160.000000 of SOILM.
+2019-01-12 08:10:46.156 --- INFORM: Couldn't find SOILM300 at level 200100.000000 to fill level 300.000000 of SOILM.
+2019-01-12 08:10:46.156 --- INFORM: Going to create the field SOILT
+2019-01-12 08:10:46.156 --- INFORM: Couldn't find SOILT000 at level 200100.000000 to fill level 0.000000 of SOILT.
+2019-01-12 08:10:46.156 --- INFORM: Couldn't find SOILT005 at level 200100.000000 to fill level 5.000000 of SOILT.
+2019-01-12 08:10:46.156 --- INFORM: Couldn't find SOILT020 at level 200100.000000 to fill level 20.000000 of SOILT.
+2019-01-12 08:10:46.157 --- INFORM: Couldn't find SOILT040 at level 200100.000000 to fill level 40.000000 of SOILT.
+2019-01-12 08:10:46.157 --- INFORM: Couldn't find SOILT160 at level 200100.000000 to fill level 160.000000 of SOILT.
+2019-01-12 08:10:46.157 --- INFORM: Couldn't find SOILT300 at level 200100.000000 to fill level 300.000000 of SOILT.
+2019-01-12 08:10:46.157 --- INFORM: Couldn't find SOILT050 at level 200100.000000 to fill level 49.000000 of SOILT.
+2019-01-12 08:10:46.157 --- INFORM: Couldn't find SOILT050 at level 200100.000000 to fill level 51.000000 of SOILT.
+2019-01-12 08:10:46.157 --- INFORM: Going to create the field SOIL_LEVELS
+2019-01-12 08:10:46.157 --- INFORM: Going to create the field PRES
+2019-01-12 08:10:46.158 --- INFORM: PRES at level 200100.000000 already exists; leaving it alone.
+2019-01-12 08:10:46.166 --- INFORM: Field LANDSEA.mask does not have a valid mask and will not be checked for missing values
+2019-01-12 08:10:46.178 --- Initializing output module.
+2019-01-12 08:10:46.187 --- Writing global attributes to output.
+2019-01-12 08:10:46.220 --- Writing field PRES to output.
+2019-01-12 08:10:46.232 --- Writing field SOIL_LAYERS to output.
+2019-01-12 08:10:46.232 --- Writing field SM to output.
+2019-01-12 08:10:46.232 --- Writing field ST to output.
+2019-01-12 08:10:46.233 --- Writing field GHT to output.
+2019-01-12 08:10:46.234 --- Writing field SNOWH to output.
+2019-01-12 08:10:46.234 --- Writing field SNOW to output.
+2019-01-12 08:10:46.234 --- Writing field SKINTEMP to output.
+2019-01-12 08:10:46.234 --- Writing field SOILHGT to output.
+2019-01-12 08:10:46.234 --- Writing field LANDSEA to output.
+2019-01-12 08:10:46.234 --- Writing field SEAICE to output.
+2019-01-12 08:10:46.234 --- Writing field ST100200 to output.
+2019-01-12 08:10:46.234 --- Writing field ST040100 to output.
+2019-01-12 08:10:46.235 --- Writing field ST010040 to output.
+2019-01-12 08:10:46.235 --- Writing field ST000010 to output.
+2019-01-12 08:10:46.235 --- Writing field SM100200 to output.
+2019-01-12 08:10:46.235 --- Writing field SM040100 to output.
+2019-01-12 08:10:46.235 --- Writing field SM010040 to output.
+2019-01-12 08:10:46.235 --- Writing field SM000010 to output.
+2019-01-12 08:10:46.235 --- Writing field PSFC to output.
+2019-01-12 08:10:46.235 --- Writing field RH to output.
+2019-01-12 08:10:46.237 --- Writing field VV to output.
+2019-01-12 08:10:46.238 --- Writing field UU to output.
+2019-01-12 08:10:46.240 --- Writing field TT to output.
+2019-01-12 08:10:46.241 --- Writing field PMSL to output.
+2019-01-12 08:10:46.241 --- Writing field CANFRA to output.
+2019-01-12 08:10:46.241 --- Writing field IMPERV to output.
+2019-01-12 08:10:46.243 --- Writing field URB_PARAM to output.
+2019-01-12 08:10:46.250 --- Writing field LAKE_DEPTH to output.
+2019-01-12 08:10:46.250 --- Writing field VAR_SSO to output.
+2019-01-12 08:10:46.251 --- Writing field OL4 to output.
+2019-01-12 08:10:46.251 --- Writing field OL3 to output.
+2019-01-12 08:10:46.251 --- Writing field OL2 to output.
+2019-01-12 08:10:46.251 --- Writing field OL1 to output.
+2019-01-12 08:10:46.251 --- Writing field OA4 to output.
+2019-01-12 08:10:46.251 --- Writing field OA3 to output.
+2019-01-12 08:10:46.251 --- Writing field OA2 to output.
+2019-01-12 08:10:46.251 --- Writing field OA1 to output.
+2019-01-12 08:10:46.251 --- Writing field VAR to output.
+2019-01-12 08:10:46.251 --- Writing field CON to output.
+2019-01-12 08:10:46.251 --- Writing field SLOPECAT to output.
+2019-01-12 08:10:46.252 --- Writing field SNOALB to output.
+2019-01-12 08:10:46.252 --- Writing field LAI12M to output.
+2019-01-12 08:10:46.252 --- Writing field GREENFRAC to output.
+2019-01-12 08:10:46.253 --- Writing field ALBEDO12M to output.
+2019-01-12 08:10:46.254 --- Writing field SCB_DOM to output.
+2019-01-12 08:10:46.254 --- Writing field SOILCBOT to output.
+2019-01-12 08:10:46.255 --- Writing field SCT_DOM to output.
+2019-01-12 08:10:46.255 --- Writing field SOILCTOP to output.
+2019-01-12 08:10:46.256 --- Writing field SOILTEMP to output.
+2019-01-12 08:10:46.256 --- Writing field HGT_M to output.
+2019-01-12 08:10:46.256 --- Writing field LU_INDEX to output.
+2019-01-12 08:10:46.256 --- Writing field LANDUSEF to output.
+2019-01-12 08:10:46.258 --- Writing field COSALPHA_V to output.
+2019-01-12 08:10:46.258 --- Writing field SINALPHA_V to output.
+2019-01-12 08:10:46.258 --- Writing field COSALPHA_U to output.
+2019-01-12 08:10:46.258 --- Writing field SINALPHA_U to output.
+2019-01-12 08:10:46.258 --- Writing field XLONG_C to output.
+2019-01-12 08:10:46.258 --- Writing field XLAT_C to output.
+2019-01-12 08:10:46.258 --- Writing field LANDMASK to output.
+2019-01-12 08:10:46.258 --- Writing field COSALPHA to output.
+2019-01-12 08:10:46.259 --- Writing field SINALPHA to output.
+2019-01-12 08:10:46.259 --- Writing field F to output.
+2019-01-12 08:10:46.259 --- Writing field E to output.
+2019-01-12 08:10:46.259 --- Writing field MAPFAC_UY to output.
+2019-01-12 08:10:46.259 --- Writing field MAPFAC_VY to output.
+2019-01-12 08:10:46.259 --- Writing field MAPFAC_MY to output.
+2019-01-12 08:10:46.259 --- Writing field MAPFAC_UX to output.
+2019-01-12 08:10:46.259 --- Writing field MAPFAC_VX to output.
+2019-01-12 08:10:46.260 --- Writing field MAPFAC_MX to output.
+2019-01-12 08:10:46.260 --- Writing field MAPFAC_U to output.
+2019-01-12 08:10:46.260 --- Writing field MAPFAC_V to output.
+2019-01-12 08:10:46.260 --- Writing field MAPFAC_M to output.
+2019-01-12 08:10:46.260 --- Writing field CLONG to output.
+2019-01-12 08:10:46.260 --- Writing field CLAT to output.
+2019-01-12 08:10:46.260 --- Writing field XLONG_U to output.
+2019-01-12 08:10:46.260 --- Writing field XLAT_U to output.
+2019-01-12 08:10:46.260 --- Writing field XLONG_V to output.
+2019-01-12 08:10:46.261 --- Writing field XLAT_V to output.
+2019-01-12 08:10:46.261 --- Writing field XLONG_M to output.
+2019-01-12 08:10:46.261 --- Writing field XLAT_M to output.
+2019-01-12 08:10:46.261 --- Closing output file.
+2019-01-12 08:10:46.261 --- Preparing to process output time 2005-08-28_12
+2019-01-12 08:10:46.261 --- Getting input fields from FILE
+2019-01-12 08:10:46.704 --- Processing PMSL at level 201300.000000.
+2019-01-12 08:10:46.707 --- Processing TT at level 200100.000000.
+2019-01-12 08:10:46.711 --- Processing UU at level 200100.000000.
+2019-01-12 08:10:46.714 --- Processing VV at level 200100.000000.
+2019-01-12 08:10:46.718 --- Processing RH at level 200100.000000.
+2019-01-12 08:10:46.721 --- Processing PSFC at level 200100.000000.
+2019-01-12 08:10:46.725 --- Processing SM000010 at level 200100.000000.
+2019-01-12 08:10:46.728 --- Processing SM010040 at level 200100.000000.
+2019-01-12 08:10:46.731 --- Processing SM040100 at level 200100.000000.
+2019-01-12 08:10:46.734 --- Processing SM100200 at level 200100.000000.
+2019-01-12 08:10:46.737 --- Processing ST000010 at level 200100.000000.
+2019-01-12 08:10:46.740 --- Processing ST010040 at level 200100.000000.
+2019-01-12 08:10:46.744 --- Processing ST040100 at level 200100.000000.
+2019-01-12 08:10:46.747 --- Processing ST100200 at level 200100.000000.
+2019-01-12 08:10:46.750 --- Processing SEAICE at level 200100.000000.
+2019-01-12 08:10:46.753 --- Processing LANDSEA at level 200100.000000.
+2019-01-12 08:10:46.756 --- Processing SOILHGT at level 200100.000000.
+2019-01-12 08:10:46.759 --- Processing SKINTEMP at level 200100.000000.
+2019-01-12 08:10:46.763 --- Processing SNOW at level 200100.000000.
+2019-01-12 08:10:46.766 --- Processing SNOWH at level 200100.000000.
+2019-01-12 08:10:46.769 --- Processing TT at level 100000.000000.
+2019-01-12 08:10:46.772 --- Processing UU at level 100000.000000.
+2019-01-12 08:10:46.776 --- Processing VV at level 100000.000000.
+2019-01-12 08:10:46.780 --- Processing RH at level 100000.000000.
+2019-01-12 08:10:46.783 --- Processing GHT at level 100000.000000.
+2019-01-12 08:10:46.787 --- Processing TT at level 97500.000000.
+2019-01-12 08:10:46.791 --- Processing UU at level 97500.000000.
+2019-01-12 08:10:46.795 --- Processing VV at level 97500.000000.
+2019-01-12 08:10:46.798 --- Processing RH at level 97500.000000.
+2019-01-12 08:10:46.802 --- Processing GHT at level 97500.000000.
+2019-01-12 08:10:46.805 --- Processing TT at level 95000.000000.
+2019-01-12 08:10:46.809 --- Processing UU at level 95000.000000.
+2019-01-12 08:10:46.812 --- Processing VV at level 95000.000000.
+2019-01-12 08:10:46.816 --- Processing RH at level 95000.000000.
+2019-01-12 08:10:46.820 --- Processing GHT at level 95000.000000.
+2019-01-12 08:10:46.824 --- Processing TT at level 92500.000000.
+2019-01-12 08:10:46.828 --- Processing UU at level 92500.000000.
+2019-01-12 08:10:46.832 --- Processing VV at level 92500.000000.
+2019-01-12 08:10:46.836 --- Processing RH at level 92500.000000.
+2019-01-12 08:10:46.839 --- Processing GHT at level 92500.000000.
+2019-01-12 08:10:46.843 --- Processing TT at level 90000.000000.
+2019-01-12 08:10:46.848 --- Processing UU at level 90000.000000.
+2019-01-12 08:10:46.852 --- Processing VV at level 90000.000000.
+2019-01-12 08:10:46.856 --- Processing RH at level 90000.000000.
+2019-01-12 08:10:46.860 --- Processing GHT at level 90000.000000.
+2019-01-12 08:10:46.864 --- Processing TT at level 85000.000000.
+2019-01-12 08:10:46.868 --- Processing UU at level 85000.000000.
+2019-01-12 08:10:46.872 --- Processing VV at level 85000.000000.
+2019-01-12 08:10:46.876 --- Processing RH at level 85000.000000.
+2019-01-12 08:10:46.881 --- Processing GHT at level 85000.000000.
+2019-01-12 08:10:46.886 --- Processing TT at level 80000.000000.
+2019-01-12 08:10:46.889 --- Processing UU at level 80000.000000.
+2019-01-12 08:10:46.893 --- Processing VV at level 80000.000000.
+2019-01-12 08:10:46.898 --- Processing RH at level 80000.000000.
+2019-01-12 08:10:46.901 --- Processing GHT at level 80000.000000.
+2019-01-12 08:10:46.905 --- Processing TT at level 75000.000000.
+2019-01-12 08:10:46.909 --- Processing UU at level 75000.000000.
+2019-01-12 08:10:46.912 --- Processing VV at level 75000.000000.
+2019-01-12 08:10:46.916 --- Processing RH at level 75000.000000.
+2019-01-12 08:10:46.920 --- Processing GHT at level 75000.000000.
+2019-01-12 08:10:46.923 --- Processing TT at level 70000.000000.
+2019-01-12 08:10:46.927 --- Processing UU at level 70000.000000.
+2019-01-12 08:10:46.931 --- Processing VV at level 70000.000000.
+2019-01-12 08:10:46.935 --- Processing RH at level 70000.000000.
+2019-01-12 08:10:46.940 --- Processing GHT at level 70000.000000.
+2019-01-12 08:10:46.945 --- Processing TT at level 65000.000000.
+2019-01-12 08:10:46.950 --- Processing UU at level 65000.000000.
+2019-01-12 08:10:46.956 --- Processing VV at level 65000.000000.
+2019-01-12 08:10:46.961 --- Processing RH at level 65000.000000.
+2019-01-12 08:10:46.966 --- Processing GHT at level 65000.000000.
+2019-01-12 08:10:46.969 --- Processing TT at level 60000.000000.
+2019-01-12 08:10:46.973 --- Processing UU at level 60000.000000.
+2019-01-12 08:10:46.977 --- Processing VV at level 60000.000000.
+2019-01-12 08:10:46.980 --- Processing RH at level 60000.000000.
+2019-01-12 08:10:46.984 --- Processing GHT at level 60000.000000.
+2019-01-12 08:10:46.987 --- Processing TT at level 55000.000000.
+2019-01-12 08:10:46.991 --- Processing UU at level 55000.000000.
+2019-01-12 08:10:46.995 --- Processing VV at level 55000.000000.
+2019-01-12 08:10:46.999 --- Processing RH at level 55000.000000.
+2019-01-12 08:10:47.003 --- Processing GHT at level 55000.000000.
+2019-01-12 08:10:47.006 --- Processing TT at level 50000.000000.
+2019-01-12 08:10:47.010 --- Processing UU at level 50000.000000.
+2019-01-12 08:10:47.013 --- Processing VV at level 50000.000000.
+2019-01-12 08:10:47.017 --- Processing RH at level 50000.000000.
+2019-01-12 08:10:47.020 --- Processing GHT at level 50000.000000.
+2019-01-12 08:10:47.024 --- Processing TT at level 45000.000000.
+2019-01-12 08:10:47.028 --- Processing UU at level 45000.000000.
+2019-01-12 08:10:47.031 --- Processing VV at level 45000.000000.
+2019-01-12 08:10:47.035 --- Processing RH at level 45000.000000.
+2019-01-12 08:10:47.038 --- Processing GHT at level 45000.000000.
+2019-01-12 08:10:47.042 --- Processing TT at level 40000.000000.
+2019-01-12 08:10:47.045 --- Processing UU at level 40000.000000.
+2019-01-12 08:10:47.049 --- Processing VV at level 40000.000000.
+2019-01-12 08:10:47.052 --- Processing RH at level 40000.000000.
+2019-01-12 08:10:47.056 --- Processing GHT at level 40000.000000.
+2019-01-12 08:10:47.060 --- Processing TT at level 35000.000000.
+2019-01-12 08:10:47.063 --- Processing UU at level 35000.000000.
+2019-01-12 08:10:47.067 --- Processing VV at level 35000.000000.
+2019-01-12 08:10:47.071 --- Processing RH at level 35000.000000.
+2019-01-12 08:10:47.074 --- Processing GHT at level 35000.000000.
+2019-01-12 08:10:47.078 --- Processing TT at level 30000.000000.
+2019-01-12 08:10:47.081 --- Processing UU at level 30000.000000.
+2019-01-12 08:10:47.085 --- Processing VV at level 30000.000000.
+2019-01-12 08:10:47.089 --- Processing RH at level 30000.000000.
+2019-01-12 08:10:47.093 --- Processing GHT at level 30000.000000.
+2019-01-12 08:10:47.096 --- Processing TT at level 25000.000000.
+2019-01-12 08:10:47.100 --- Processing UU at level 25000.000000.
+2019-01-12 08:10:47.103 --- Processing VV at level 25000.000000.
+2019-01-12 08:10:47.107 --- Processing RH at level 25000.000000.
+2019-01-12 08:10:47.111 --- Processing GHT at level 25000.000000.
+2019-01-12 08:10:47.114 --- Processing TT at level 20000.000000.
+2019-01-12 08:10:47.118 --- Processing UU at level 20000.000000.
+2019-01-12 08:10:47.121 --- Processing VV at level 20000.000000.
+2019-01-12 08:10:47.125 --- Processing RH at level 20000.000000.
+2019-01-12 08:10:47.129 --- Processing GHT at level 20000.000000.
+2019-01-12 08:10:47.133 --- Processing TT at level 15000.000000.
+2019-01-12 08:10:47.136 --- Processing UU at level 15000.000000.
+2019-01-12 08:10:47.140 --- Processing VV at level 15000.000000.
+2019-01-12 08:10:47.144 --- Processing RH at level 15000.000000.
+2019-01-12 08:10:47.147 --- Processing GHT at level 15000.000000.
+2019-01-12 08:10:47.151 --- Processing TT at level 10000.000000.
+2019-01-12 08:10:47.155 --- Processing UU at level 10000.000000.
+2019-01-12 08:10:47.159 --- Processing VV at level 10000.000000.
+2019-01-12 08:10:47.163 --- Processing RH at level 10000.000000.
+2019-01-12 08:10:47.166 --- Processing GHT at level 10000.000000.
+2019-01-12 08:10:47.170 --- Processing TT at level 7000.000000.
+2019-01-12 08:10:47.173 --- Processing UU at level 7000.000000.
+2019-01-12 08:10:47.177 --- Processing VV at level 7000.000000.
+2019-01-12 08:10:47.180 --- Processing RH at level 7000.000000.
+2019-01-12 08:10:47.186 --- Processing GHT at level 7000.000000.
+2019-01-12 08:10:47.190 --- Processing TT at level 5000.000000.
+2019-01-12 08:10:47.194 --- Processing UU at level 5000.000000.
+2019-01-12 08:10:47.197 --- Processing VV at level 5000.000000.
+2019-01-12 08:10:47.201 --- Processing RH at level 5000.000000.
+2019-01-12 08:10:47.207 --- Processing GHT at level 5000.000000.
+2019-01-12 08:10:47.210 --- Processing TT at level 3000.000000.
+2019-01-12 08:10:47.214 --- Processing UU at level 3000.000000.
+2019-01-12 08:10:47.218 --- Processing VV at level 3000.000000.
+2019-01-12 08:10:47.221 --- Processing RH at level 3000.000000.
+2019-01-12 08:10:47.228 --- Processing GHT at level 3000.000000.
+2019-01-12 08:10:47.231 --- Processing TT at level 2000.000000.
+2019-01-12 08:10:47.235 --- Processing UU at level 2000.000000.
+2019-01-12 08:10:47.239 --- Processing VV at level 2000.000000.
+2019-01-12 08:10:47.243 --- Processing RH at level 2000.000000.
+2019-01-12 08:10:47.249 --- Processing GHT at level 2000.000000.
+2019-01-12 08:10:47.252 --- Processing TT at level 1000.000000.
+2019-01-12 08:10:47.256 --- Processing UU at level 1000.000000.
+2019-01-12 08:10:47.260 --- Processing VV at level 1000.000000.
+2019-01-12 08:10:47.263 --- Processing RH at level 1000.000000.
+2019-01-12 08:10:47.270 --- Processing GHT at level 1000.000000.
+2019-01-12 08:10:47.271 --- Filling missing levels.
+2019-01-12 08:10:47.271 --- INFORM: GHT at level 200100.000000 already exists; leaving it alone.
+2019-01-12 08:10:47.271 --- INFORM: LANDSEA at level 200100.000000 already exists; leaving it alone.
+2019-01-12 08:10:47.271 --- INFORM: PSFC at level 200100.000000 already exists; leaving it alone.
+2019-01-12 08:10:47.271 --- INFORM: RH at level 200100.000000 already exists; leaving it alone.
+2019-01-12 08:10:47.271 --- INFORM: VV at level 200100.000000 already exists; leaving it alone.
+2019-01-12 08:10:47.271 --- INFORM: UU at level 200100.000000 already exists; leaving it alone.
+2019-01-12 08:10:47.271 --- INFORM: TT at level 200100.000000 already exists; leaving it alone.
+2019-01-12 08:10:47.277 --- Creating derived fields.
+2019-01-12 08:10:47.277 --- INFORM: Going to create the field ST
+2019-01-12 08:10:47.278 --- INFORM: ST at level 10.000000 already exists; leaving it alone.
+2019-01-12 08:10:47.278 --- INFORM: Couldn't find ST010035 at level 200100.000000 to fill level 35.000000 of ST.
+2019-01-12 08:10:47.278 --- INFORM: ST at level 100.000000 already exists; leaving it alone.
+2019-01-12 08:10:47.278 --- INFORM: Couldn't find ST100300 at level 200100.000000 to fill level 300.000000 of ST.
+2019-01-12 08:10:47.278 --- INFORM: ST at level 10.000000 already exists; leaving it alone.
+2019-01-12 08:10:47.278 --- INFORM: ST at level 200.000000 already exists; leaving it alone.
+2019-01-12 08:10:47.278 --- INFORM: Couldn't find ST000007 at level 200100.000000 to fill level 7.000000 of ST.
+2019-01-12 08:10:47.278 --- INFORM: Couldn't find ST007028 at level 200100.000000 to fill level 28.000000 of ST.
+2019-01-12 08:10:47.278 --- INFORM: ST at level 100.000000 already exists; leaving it alone.
+2019-01-12 08:10:47.278 --- INFORM: Couldn't find ST100289 at level 200100.000000 to fill level 289.000000 of ST.
+2019-01-12 08:10:47.278 --- INFORM: Going to create the field SM
+2019-01-12 08:10:47.279 --- INFORM: SM at level 10.000000 already exists; leaving it alone.
+2019-01-12 08:10:47.279 --- INFORM: Couldn't find SM010035 at level 200100.000000 to fill level 35.000000 of SM.
+2019-01-12 08:10:47.279 --- INFORM: SM at level 100.000000 already exists; leaving it alone.
+2019-01-12 08:10:47.279 --- INFORM: Couldn't find SM100300 at level 200100.000000 to fill level 300.000000 of SM.
+2019-01-12 08:10:47.279 --- INFORM: SM at level 10.000000 already exists; leaving it alone.
+2019-01-12 08:10:47.279 --- INFORM: SM at level 200.000000 already exists; leaving it alone.
+2019-01-12 08:10:47.279 --- INFORM: Couldn't find SM000007 at level 200100.000000 to fill level 7.000000 of SM.
+2019-01-12 08:10:47.279 --- INFORM: Couldn't find SM007028 at level 200100.000000 to fill level 28.000000 of SM.
+2019-01-12 08:10:47.279 --- INFORM: SM at level 100.000000 already exists; leaving it alone.
+2019-01-12 08:10:47.279 --- INFORM: Couldn't find SM100289 at level 200100.000000 to fill level 289.000000 of SM.
+2019-01-12 08:10:47.279 --- INFORM: Going to create the field SW
+2019-01-12 08:10:47.279 --- INFORM: Couldn't find SW000010 at level 200100.000000 to fill level 1.000000 of SW.
+2019-01-12 08:10:47.279 --- INFORM: Couldn't find SW010040 at level 200100.000000 to fill level 2.000000 of SW.
+2019-01-12 08:10:47.279 --- INFORM: Couldn't find SW040100 at level 200100.000000 to fill level 3.000000 of SW.
+2019-01-12 08:10:47.279 --- INFORM: Couldn't find SW100200 at level 200100.000000 to fill level 4.000000 of SW.
+2019-01-12 08:10:47.279 --- INFORM: Couldn't find SW000010 at level 200100.000000 to fill level 1.000000 of SW.
+2019-01-12 08:10:47.279 --- INFORM: Couldn't find SW010200 at level 200100.000000 to fill level 2.000000 of SW.
+2019-01-12 08:10:47.279 --- INFORM: Going to create the field SOIL_LAYERS
+2019-01-12 08:10:47.279 --- INFORM: Going to create the field SOILM
+2019-01-12 08:10:47.279 --- INFORM: Couldn't find SOILM000 at level 200100.000000 to fill level 0.000000 of SOILM.
+2019-01-12 08:10:47.279 --- INFORM: Couldn't find SOILM005 at level 200100.000000 to fill level 5.000000 of SOILM.
+2019-01-12 08:10:47.280 --- INFORM: Couldn't find SOILM020 at level 200100.000000 to fill level 20.000000 of SOILM.
+2019-01-12 08:10:47.280 --- INFORM: Couldn't find SOILM040 at level 200100.000000 to fill level 40.000000 of SOILM.
+2019-01-12 08:10:47.280 --- INFORM: Couldn't find SOILM160 at level 200100.000000 to fill level 160.000000 of SOILM.
+2019-01-12 08:10:47.280 --- INFORM: Couldn't find SOILM300 at level 200100.000000 to fill level 300.000000 of SOILM.
+2019-01-12 08:10:47.280 --- INFORM: Going to create the field SOILT
+2019-01-12 08:10:47.280 --- INFORM: Couldn't find SOILT000 at level 200100.000000 to fill level 0.000000 of SOILT.
+2019-01-12 08:10:47.280 --- INFORM: Couldn't find SOILT005 at level 200100.000000 to fill level 5.000000 of SOILT.
+2019-01-12 08:10:47.280 --- INFORM: Couldn't find SOILT020 at level 200100.000000 to fill level 20.000000 of SOILT.
+2019-01-12 08:10:47.280 --- INFORM: Couldn't find SOILT040 at level 200100.000000 to fill level 40.000000 of SOILT.
+2019-01-12 08:10:47.280 --- INFORM: Couldn't find SOILT160 at level 200100.000000 to fill level 160.000000 of SOILT.
+2019-01-12 08:10:47.280 --- INFORM: Couldn't find SOILT300 at level 200100.000000 to fill level 300.000000 of SOILT.
+2019-01-12 08:10:47.280 --- INFORM: Couldn't find SOILT050 at level 200100.000000 to fill level 49.000000 of SOILT.
+2019-01-12 08:10:47.280 --- INFORM: Couldn't find SOILT050 at level 200100.000000 to fill level 51.000000 of SOILT.
+2019-01-12 08:10:47.280 --- INFORM: Going to create the field SOIL_LEVELS
+2019-01-12 08:10:47.280 --- INFORM: Going to create the field PRES
+2019-01-12 08:10:47.282 --- INFORM: PRES at level 200100.000000 already exists; leaving it alone.
+2019-01-12 08:10:47.290 --- INFORM: Field LANDSEA.mask does not have a valid mask and will not be checked for missing values
+2019-01-12 08:10:47.301 --- Initializing output module.
+2019-01-12 08:10:47.310 --- Writing global attributes to output.
+2019-01-12 08:10:47.343 --- Writing field PRES to output.
+2019-01-12 08:10:47.355 --- Writing field SOIL_LAYERS to output.
+2019-01-12 08:10:47.355 --- Writing field SM to output.
+2019-01-12 08:10:47.356 --- Writing field ST to output.
+2019-01-12 08:10:47.356 --- Writing field GHT to output.
+2019-01-12 08:10:47.358 --- Writing field SNOWH to output.
+2019-01-12 08:10:47.358 --- Writing field SNOW to output.
+2019-01-12 08:10:47.358 --- Writing field SKINTEMP to output.
+2019-01-12 08:10:47.358 --- Writing field SOILHGT to output.
+2019-01-12 08:10:47.358 --- Writing field LANDSEA to output.
+2019-01-12 08:10:47.358 --- Writing field SEAICE to output.
+2019-01-12 08:10:47.358 --- Writing field ST100200 to output.
+2019-01-12 08:10:47.358 --- Writing field ST040100 to output.
+2019-01-12 08:10:47.358 --- Writing field ST010040 to output.
+2019-01-12 08:10:47.358 --- Writing field ST000010 to output.
+2019-01-12 08:10:47.359 --- Writing field SM100200 to output.
+2019-01-12 08:10:47.359 --- Writing field SM040100 to output.
+2019-01-12 08:10:47.359 --- Writing field SM010040 to output.
+2019-01-12 08:10:47.359 --- Writing field SM000010 to output.
+2019-01-12 08:10:47.359 --- Writing field PSFC to output.
+2019-01-12 08:10:47.359 --- Writing field RH to output.
+2019-01-12 08:10:47.361 --- Writing field VV to output.
+2019-01-12 08:10:47.362 --- Writing field UU to output.
+2019-01-12 08:10:47.363 --- Writing field TT to output.
+2019-01-12 08:10:47.365 --- Writing field PMSL to output.
+2019-01-12 08:10:47.365 --- Writing field CANFRA to output.
+2019-01-12 08:10:47.365 --- Writing field IMPERV to output.
+2019-01-12 08:10:47.366 --- Writing field URB_PARAM to output.
+2019-01-12 08:10:47.373 --- Writing field LAKE_DEPTH to output.
+2019-01-12 08:10:47.373 --- Writing field VAR_SSO to output.
+2019-01-12 08:10:47.373 --- Writing field OL4 to output.
+2019-01-12 08:10:47.373 --- Writing field OL3 to output.
+2019-01-12 08:10:47.374 --- Writing field OL2 to output.
+2019-01-12 08:10:47.374 --- Writing field OL1 to output.
+2019-01-12 08:10:47.374 --- Writing field OA4 to output.
+2019-01-12 08:10:47.374 --- Writing field OA3 to output.
+2019-01-12 08:10:47.374 --- Writing field OA2 to output.
+2019-01-12 08:10:47.374 --- Writing field OA1 to output.
+2019-01-12 08:10:47.374 --- Writing field VAR to output.
+2019-01-12 08:10:47.374 --- Writing field CON to output.
+2019-01-12 08:10:47.375 --- Writing field SLOPECAT to output.
+2019-01-12 08:10:47.375 --- Writing field SNOALB to output.
+2019-01-12 08:10:47.375 --- Writing field LAI12M to output.
+2019-01-12 08:10:47.376 --- Writing field GREENFRAC to output.
+2019-01-12 08:10:47.377 --- Writing field ALBEDO12M to output.
+2019-01-12 08:10:47.377 --- Writing field SCB_DOM to output.
+2019-01-12 08:10:47.377 --- Writing field SOILCBOT to output.
+2019-01-12 08:10:47.378 --- Writing field SCT_DOM to output.
+2019-01-12 08:10:47.378 --- Writing field SOILCTOP to output.
+2019-01-12 08:10:47.379 --- Writing field SOILTEMP to output.
+2019-01-12 08:10:47.379 --- Writing field HGT_M to output.
+2019-01-12 08:10:47.379 --- Writing field LU_INDEX to output.
+2019-01-12 08:10:47.380 --- Writing field LANDUSEF to output.
+2019-01-12 08:10:47.381 --- Writing field COSALPHA_V to output.
+2019-01-12 08:10:47.381 --- Writing field SINALPHA_V to output.
+2019-01-12 08:10:47.381 --- Writing field COSALPHA_U to output.
+2019-01-12 08:10:47.381 --- Writing field SINALPHA_U to output.
+2019-01-12 08:10:47.381 --- Writing field XLONG_C to output.
+2019-01-12 08:10:47.381 --- Writing field XLAT_C to output.
+2019-01-12 08:10:47.381 --- Writing field LANDMASK to output.
+2019-01-12 08:10:47.382 --- Writing field COSALPHA to output.
+2019-01-12 08:10:47.382 --- Writing field SINALPHA to output.
+2019-01-12 08:10:47.382 --- Writing field F to output.
+2019-01-12 08:10:47.382 --- Writing field E to output.
+2019-01-12 08:10:47.382 --- Writing field MAPFAC_UY to output.
+2019-01-12 08:10:47.382 --- Writing field MAPFAC_VY to output.
+2019-01-12 08:10:47.382 --- Writing field MAPFAC_MY to output.
+2019-01-12 08:10:47.382 --- Writing field MAPFAC_UX to output.
+2019-01-12 08:10:47.382 --- Writing field MAPFAC_VX to output.
+2019-01-12 08:10:47.383 --- Writing field MAPFAC_MX to output.
+2019-01-12 08:10:47.383 --- Writing field MAPFAC_U to output.
+2019-01-12 08:10:47.383 --- Writing field MAPFAC_V to output.
+2019-01-12 08:10:47.383 --- Writing field MAPFAC_M to output.
+2019-01-12 08:10:47.383 --- Writing field CLONG to output.
+2019-01-12 08:10:47.383 --- Writing field CLAT to output.
+2019-01-12 08:10:47.383 --- Writing field XLONG_U to output.
+2019-01-12 08:10:47.383 --- Writing field XLAT_U to output.
+2019-01-12 08:10:47.383 --- Writing field XLONG_V to output.
+2019-01-12 08:10:47.384 --- Writing field XLAT_V to output.
+2019-01-12 08:10:47.384 --- Writing field XLONG_M to output.
+2019-01-12 08:10:47.384 --- Writing field XLAT_M to output.
+2019-01-12 08:10:47.384 --- Closing output file.
+2019-01-12 08:10:47.384 --- Preparing to process output time 2005-08-28_18
+2019-01-12 08:10:47.384 --- Getting input fields from FILE
+2019-01-12 08:10:47.815 --- Processing PMSL at level 201300.000000.
+2019-01-12 08:10:47.819 --- Processing TT at level 200100.000000.
+2019-01-12 08:10:47.823 --- Processing UU at level 200100.000000.
+2019-01-12 08:10:47.826 --- Processing VV at level 200100.000000.
+2019-01-12 08:10:47.830 --- Processing RH at level 200100.000000.
+2019-01-12 08:10:47.833 --- Processing PSFC at level 200100.000000.
+2019-01-12 08:10:47.836 --- Processing SM000010 at level 200100.000000.
+2019-01-12 08:10:47.840 --- Processing SM010040 at level 200100.000000.
+2019-01-12 08:10:47.844 --- Processing SM040100 at level 200100.000000.
+2019-01-12 08:10:47.847 --- Processing SM100200 at level 200100.000000.
+2019-01-12 08:10:47.850 --- Processing ST000010 at level 200100.000000.
+2019-01-12 08:10:47.854 --- Processing ST010040 at level 200100.000000.
+2019-01-12 08:10:47.858 --- Processing ST040100 at level 200100.000000.
+2019-01-12 08:10:47.861 --- Processing ST100200 at level 200100.000000.
+2019-01-12 08:10:47.865 --- Processing SEAICE at level 200100.000000.
+2019-01-12 08:10:47.868 --- Processing LANDSEA at level 200100.000000.
+2019-01-12 08:10:47.872 --- Processing SOILHGT at level 200100.000000.
+2019-01-12 08:10:47.875 --- Processing SKINTEMP at level 200100.000000.
+2019-01-12 08:10:47.879 --- Processing SNOW at level 200100.000000.
+2019-01-12 08:10:47.882 --- Processing SNOWH at level 200100.000000.
+2019-01-12 08:10:47.885 --- Processing TT at level 100000.000000.
+2019-01-12 08:10:47.889 --- Processing UU at level 100000.000000.
+2019-01-12 08:10:47.893 --- Processing VV at level 100000.000000.
+2019-01-12 08:10:47.897 --- Processing RH at level 100000.000000.
+2019-01-12 08:10:47.901 --- Processing GHT at level 100000.000000.
+2019-01-12 08:10:47.904 --- Processing TT at level 97500.000000.
+2019-01-12 08:10:47.909 --- Processing UU at level 97500.000000.
+2019-01-12 08:10:47.913 --- Processing VV at level 97500.000000.
+2019-01-12 08:10:47.917 --- Processing RH at level 97500.000000.
+2019-01-12 08:10:47.921 --- Processing GHT at level 97500.000000.
+2019-01-12 08:10:47.925 --- Processing TT at level 95000.000000.
+2019-01-12 08:10:47.929 --- Processing UU at level 95000.000000.
+2019-01-12 08:10:47.933 --- Processing VV at level 95000.000000.
+2019-01-12 08:10:47.937 --- Processing RH at level 95000.000000.
+2019-01-12 08:10:47.941 --- Processing GHT at level 95000.000000.
+2019-01-12 08:10:47.945 --- Processing TT at level 92500.000000.
+2019-01-12 08:10:47.948 --- Processing UU at level 92500.000000.
+2019-01-12 08:10:47.952 --- Processing VV at level 92500.000000.
+2019-01-12 08:10:47.956 --- Processing RH at level 92500.000000.
+2019-01-12 08:10:47.960 --- Processing GHT at level 92500.000000.
+2019-01-12 08:10:47.964 --- Processing TT at level 90000.000000.
+2019-01-12 08:10:47.968 --- Processing UU at level 90000.000000.
+2019-01-12 08:10:47.972 --- Processing VV at level 90000.000000.
+2019-01-12 08:10:47.976 --- Processing RH at level 90000.000000.
+2019-01-12 08:10:47.980 --- Processing GHT at level 90000.000000.
+2019-01-12 08:10:47.984 --- Processing TT at level 85000.000000.
+2019-01-12 08:10:47.988 --- Processing UU at level 85000.000000.
+2019-01-12 08:10:47.992 --- Processing VV at level 85000.000000.
+2019-01-12 08:10:47.996 --- Processing RH at level 85000.000000.
+2019-01-12 08:10:48.000 --- Processing GHT at level 85000.000000.
+2019-01-12 08:10:48.004 --- Processing TT at level 80000.000000.
+2019-01-12 08:10:48.009 --- Processing UU at level 80000.000000.
+2019-01-12 08:10:48.013 --- Processing VV at level 80000.000000.
+2019-01-12 08:10:48.016 --- Processing RH at level 80000.000000.
+2019-01-12 08:10:48.020 --- Processing GHT at level 80000.000000.
+2019-01-12 08:10:48.024 --- Processing TT at level 75000.000000.
+2019-01-12 08:10:48.028 --- Processing UU at level 75000.000000.
+2019-01-12 08:10:48.032 --- Processing VV at level 75000.000000.
+2019-01-12 08:10:48.036 --- Processing RH at level 75000.000000.
+2019-01-12 08:10:48.040 --- Processing GHT at level 75000.000000.
+2019-01-12 08:10:48.043 --- Processing TT at level 70000.000000.
+2019-01-12 08:10:48.047 --- Processing UU at level 70000.000000.
+2019-01-12 08:10:48.051 --- Processing VV at level 70000.000000.
+2019-01-12 08:10:48.055 --- Processing RH at level 70000.000000.
+2019-01-12 08:10:48.059 --- Processing GHT at level 70000.000000.
+2019-01-12 08:10:48.063 --- Processing TT at level 65000.000000.
+2019-01-12 08:10:48.067 --- Processing UU at level 65000.000000.
+2019-01-12 08:10:48.071 --- Processing VV at level 65000.000000.
+2019-01-12 08:10:48.075 --- Processing RH at level 65000.000000.
+2019-01-12 08:10:48.078 --- Processing GHT at level 65000.000000.
+2019-01-12 08:10:48.082 --- Processing TT at level 60000.000000.
+2019-01-12 08:10:48.086 --- Processing UU at level 60000.000000.
+2019-01-12 08:10:48.090 --- Processing VV at level 60000.000000.
+2019-01-12 08:10:48.094 --- Processing RH at level 60000.000000.
+2019-01-12 08:10:48.098 --- Processing GHT at level 60000.000000.
+2019-01-12 08:10:48.102 --- Processing TT at level 55000.000000.
+2019-01-12 08:10:48.106 --- Processing UU at level 55000.000000.
+2019-01-12 08:10:48.110 --- Processing VV at level 55000.000000.
+2019-01-12 08:10:48.114 --- Processing RH at level 55000.000000.
+2019-01-12 08:10:48.117 --- Processing GHT at level 55000.000000.
+2019-01-12 08:10:48.121 --- Processing TT at level 50000.000000.
+2019-01-12 08:10:48.125 --- Processing UU at level 50000.000000.
+2019-01-12 08:10:48.129 --- Processing VV at level 50000.000000.
+2019-01-12 08:10:48.133 --- Processing RH at level 50000.000000.
+2019-01-12 08:10:48.140 --- Processing GHT at level 50000.000000.
+2019-01-12 08:10:48.144 --- Processing TT at level 45000.000000.
+2019-01-12 08:10:48.148 --- Processing UU at level 45000.000000.
+2019-01-12 08:10:48.153 --- Processing VV at level 45000.000000.
+2019-01-12 08:10:48.158 --- Processing RH at level 45000.000000.
+2019-01-12 08:10:48.163 --- Processing GHT at level 45000.000000.
+2019-01-12 08:10:48.168 --- Processing TT at level 40000.000000.
+2019-01-12 08:10:48.172 --- Processing UU at level 40000.000000.
+2019-01-12 08:10:48.176 --- Processing VV at level 40000.000000.
+2019-01-12 08:10:48.180 --- Processing RH at level 40000.000000.
+2019-01-12 08:10:48.184 --- Processing GHT at level 40000.000000.
+2019-01-12 08:10:48.188 --- Processing TT at level 35000.000000.
+2019-01-12 08:10:48.192 --- Processing UU at level 35000.000000.
+2019-01-12 08:10:48.195 --- Processing VV at level 35000.000000.
+2019-01-12 08:10:48.201 --- Processing RH at level 35000.000000.
+2019-01-12 08:10:48.204 --- Processing GHT at level 35000.000000.
+2019-01-12 08:10:48.208 --- Processing TT at level 30000.000000.
+2019-01-12 08:10:48.211 --- Processing UU at level 30000.000000.
+2019-01-12 08:10:48.215 --- Processing VV at level 30000.000000.
+2019-01-12 08:10:48.219 --- Processing RH at level 30000.000000.
+2019-01-12 08:10:48.222 --- Processing GHT at level 30000.000000.
+2019-01-12 08:10:48.225 --- Processing TT at level 25000.000000.
+2019-01-12 08:10:48.229 --- Processing UU at level 25000.000000.
+2019-01-12 08:10:48.233 --- Processing VV at level 25000.000000.
+2019-01-12 08:10:48.236 --- Processing RH at level 25000.000000.
+2019-01-12 08:10:48.240 --- Processing GHT at level 25000.000000.
+2019-01-12 08:10:48.244 --- Processing TT at level 20000.000000.
+2019-01-12 08:10:48.248 --- Processing UU at level 20000.000000.
+2019-01-12 08:10:48.252 --- Processing VV at level 20000.000000.
+2019-01-12 08:10:48.256 --- Processing RH at level 20000.000000.
+2019-01-12 08:10:48.259 --- Processing GHT at level 20000.000000.
+2019-01-12 08:10:48.263 --- Processing TT at level 15000.000000.
+2019-01-12 08:10:48.266 --- Processing UU at level 15000.000000.
+2019-01-12 08:10:48.270 --- Processing VV at level 15000.000000.
+2019-01-12 08:10:48.273 --- Processing RH at level 15000.000000.
+2019-01-12 08:10:48.277 --- Processing GHT at level 15000.000000.
+2019-01-12 08:10:48.280 --- Processing TT at level 10000.000000.
+2019-01-12 08:10:48.284 --- Processing UU at level 10000.000000.
+2019-01-12 08:10:48.288 --- Processing VV at level 10000.000000.
+2019-01-12 08:10:48.292 --- Processing RH at level 10000.000000.
+2019-01-12 08:10:48.296 --- Processing GHT at level 10000.000000.
+2019-01-12 08:10:48.299 --- Processing TT at level 7000.000000.
+2019-01-12 08:10:48.303 --- Processing UU at level 7000.000000.
+2019-01-12 08:10:48.307 --- Processing VV at level 7000.000000.
+2019-01-12 08:10:48.310 --- Processing RH at level 7000.000000.
+2019-01-12 08:10:48.316 --- Processing GHT at level 7000.000000.
+2019-01-12 08:10:48.320 --- Processing TT at level 5000.000000.
+2019-01-12 08:10:48.326 --- Processing UU at level 5000.000000.
+2019-01-12 08:10:48.329 --- Processing VV at level 5000.000000.
+2019-01-12 08:10:48.333 --- Processing RH at level 5000.000000.
+2019-01-12 08:10:48.339 --- Processing GHT at level 5000.000000.
+2019-01-12 08:10:48.342 --- Processing TT at level 3000.000000.
+2019-01-12 08:10:48.346 --- Processing UU at level 3000.000000.
+2019-01-12 08:10:48.349 --- Processing VV at level 3000.000000.
+2019-01-12 08:10:48.353 --- Processing RH at level 3000.000000.
+2019-01-12 08:10:48.359 --- Processing GHT at level 3000.000000.
+2019-01-12 08:10:48.363 --- Processing TT at level 2000.000000.
+2019-01-12 08:10:48.367 --- Processing UU at level 2000.000000.
+2019-01-12 08:10:48.370 --- Processing VV at level 2000.000000.
+2019-01-12 08:10:48.374 --- Processing RH at level 2000.000000.
+2019-01-12 08:10:48.380 --- Processing GHT at level 2000.000000.
+2019-01-12 08:10:48.384 --- Processing TT at level 1000.000000.
+2019-01-12 08:10:48.387 --- Processing UU at level 1000.000000.
+2019-01-12 08:10:48.391 --- Processing VV at level 1000.000000.
+2019-01-12 08:10:48.394 --- Processing RH at level 1000.000000.
+2019-01-12 08:10:48.400 --- Processing GHT at level 1000.000000.
+2019-01-12 08:10:48.402 --- Filling missing levels.
+2019-01-12 08:10:48.408 --- INFORM: GHT at level 200100.000000 already exists; leaving it alone.
+2019-01-12 08:10:48.408 --- INFORM: LANDSEA at level 200100.000000 already exists; leaving it alone.
+2019-01-12 08:10:48.408 --- INFORM: PSFC at level 200100.000000 already exists; leaving it alone.
+2019-01-12 08:10:48.408 --- INFORM: RH at level 200100.000000 already exists; leaving it alone.
+2019-01-12 08:10:48.408 --- INFORM: VV at level 200100.000000 already exists; leaving it alone.
+2019-01-12 08:10:48.408 --- INFORM: UU at level 200100.000000 already exists; leaving it alone.
+2019-01-12 08:10:48.408 --- INFORM: TT at level 200100.000000 already exists; leaving it alone.
+2019-01-12 08:10:48.413 --- Creating derived fields.
+2019-01-12 08:10:48.414 --- INFORM: Going to create the field ST
+2019-01-12 08:10:48.414 --- INFORM: ST at level 10.000000 already exists; leaving it alone.
+2019-01-12 08:10:48.414 --- INFORM: Couldn't find ST010035 at level 200100.000000 to fill level 35.000000 of ST.
+2019-01-12 08:10:48.414 --- INFORM: ST at level 100.000000 already exists; leaving it alone.
+2019-01-12 08:10:48.414 --- INFORM: Couldn't find ST100300 at level 200100.000000 to fill level 300.000000 of ST.
+2019-01-12 08:10:48.414 --- INFORM: ST at level 10.000000 already exists; leaving it alone.
+2019-01-12 08:10:48.414 --- INFORM: ST at level 200.000000 already exists; leaving it alone.
+2019-01-12 08:10:48.414 --- INFORM: Couldn't find ST000007 at level 200100.000000 to fill level 7.000000 of ST.
+2019-01-12 08:10:48.414 --- INFORM: Couldn't find ST007028 at level 200100.000000 to fill level 28.000000 of ST.
+2019-01-12 08:10:48.414 --- INFORM: ST at level 100.000000 already exists; leaving it alone.
+2019-01-12 08:10:48.414 --- INFORM: Couldn't find ST100289 at level 200100.000000 to fill level 289.000000 of ST.
+2019-01-12 08:10:48.414 --- INFORM: Going to create the field SM
+2019-01-12 08:10:48.415 --- INFORM: SM at level 10.000000 already exists; leaving it alone.
+2019-01-12 08:10:48.415 --- INFORM: Couldn't find SM010035 at level 200100.000000 to fill level 35.000000 of SM.
+2019-01-12 08:10:48.415 --- INFORM: SM at level 100.000000 already exists; leaving it alone.
+2019-01-12 08:10:48.415 --- INFORM: Couldn't find SM100300 at level 200100.000000 to fill level 300.000000 of SM.
+2019-01-12 08:10:48.415 --- INFORM: SM at level 10.000000 already exists; leaving it alone.
+2019-01-12 08:10:48.415 --- INFORM: SM at level 200.000000 already exists; leaving it alone.
+2019-01-12 08:10:48.415 --- INFORM: Couldn't find SM000007 at level 200100.000000 to fill level 7.000000 of SM.
+2019-01-12 08:10:48.415 --- INFORM: Couldn't find SM007028 at level 200100.000000 to fill level 28.000000 of SM.
+2019-01-12 08:10:48.415 --- INFORM: SM at level 100.000000 already exists; leaving it alone.
+2019-01-12 08:10:48.415 --- INFORM: Couldn't find SM100289 at level 200100.000000 to fill level 289.000000 of SM.
+2019-01-12 08:10:48.415 --- INFORM: Going to create the field SW
+2019-01-12 08:10:48.415 --- INFORM: Couldn't find SW000010 at level 200100.000000 to fill level 1.000000 of SW.
+2019-01-12 08:10:48.415 --- INFORM: Couldn't find SW010040 at level 200100.000000 to fill level 2.000000 of SW.
+2019-01-12 08:10:48.415 --- INFORM: Couldn't find SW040100 at level 200100.000000 to fill level 3.000000 of SW.
+2019-01-12 08:10:48.415 --- INFORM: Couldn't find SW100200 at level 200100.000000 to fill level 4.000000 of SW.
+2019-01-12 08:10:48.415 --- INFORM: Couldn't find SW000010 at level 200100.000000 to fill level 1.000000 of SW.
+2019-01-12 08:10:48.415 --- INFORM: Couldn't find SW010200 at level 200100.000000 to fill level 2.000000 of SW.
+2019-01-12 08:10:48.415 --- INFORM: Going to create the field SOIL_LAYERS
+2019-01-12 08:10:48.415 --- INFORM: Going to create the field SOILM
+2019-01-12 08:10:48.416 --- INFORM: Couldn't find SOILM000 at level 200100.000000 to fill level 0.000000 of SOILM.
+2019-01-12 08:10:48.416 --- INFORM: Couldn't find SOILM005 at level 200100.000000 to fill level 5.000000 of SOILM.
+2019-01-12 08:10:48.416 --- INFORM: Couldn't find SOILM020 at level 200100.000000 to fill level 20.000000 of SOILM.
+2019-01-12 08:10:48.416 --- INFORM: Couldn't find SOILM040 at level 200100.000000 to fill level 40.000000 of SOILM.
+2019-01-12 08:10:48.416 --- INFORM: Couldn't find SOILM160 at level 200100.000000 to fill level 160.000000 of SOILM.
+2019-01-12 08:10:48.416 --- INFORM: Couldn't find SOILM300 at level 200100.000000 to fill level 300.000000 of SOILM.
+2019-01-12 08:10:48.416 --- INFORM: Going to create the field SOILT
+2019-01-12 08:10:48.416 --- INFORM: Couldn't find SOILT000 at level 200100.000000 to fill level 0.000000 of SOILT.
+2019-01-12 08:10:48.416 --- INFORM: Couldn't find SOILT005 at level 200100.000000 to fill level 5.000000 of SOILT.
+2019-01-12 08:10:48.416 --- INFORM: Couldn't find SOILT020 at level 200100.000000 to fill level 20.000000 of SOILT.
+2019-01-12 08:10:48.416 --- INFORM: Couldn't find SOILT040 at level 200100.000000 to fill level 40.000000 of SOILT.
+2019-01-12 08:10:48.416 --- INFORM: Couldn't find SOILT160 at level 200100.000000 to fill level 160.000000 of SOILT.
+2019-01-12 08:10:48.416 --- INFORM: Couldn't find SOILT300 at level 200100.000000 to fill level 300.000000 of SOILT.
+2019-01-12 08:10:48.416 --- INFORM: Couldn't find SOILT050 at level 200100.000000 to fill level 49.000000 of SOILT.
+2019-01-12 08:10:48.416 --- INFORM: Couldn't find SOILT050 at level 200100.000000 to fill level 51.000000 of SOILT.
+2019-01-12 08:10:48.416 --- INFORM: Going to create the field SOIL_LEVELS
+2019-01-12 08:10:48.416 --- INFORM: Going to create the field PRES
+2019-01-12 08:10:48.417 --- INFORM: PRES at level 200100.000000 already exists; leaving it alone.
+2019-01-12 08:10:48.426 --- INFORM: Field LANDSEA.mask does not have a valid mask and will not be checked for missing values
+2019-01-12 08:10:48.438 --- Initializing output module.
+2019-01-12 08:10:48.449 --- Writing global attributes to output.
+2019-01-12 08:10:48.482 --- Writing field PRES to output.
+2019-01-12 08:10:48.494 --- Writing field SOIL_LAYERS to output.
+2019-01-12 08:10:48.495 --- Writing field SM to output.
+2019-01-12 08:10:48.495 --- Writing field ST to output.
+2019-01-12 08:10:48.495 --- Writing field GHT to output.
+2019-01-12 08:10:48.497 --- Writing field SNOWH to output.
+2019-01-12 08:10:48.497 --- Writing field SNOW to output.
+2019-01-12 08:10:48.497 --- Writing field SKINTEMP to output.
+2019-01-12 08:10:48.497 --- Writing field SOILHGT to output.
+2019-01-12 08:10:48.497 --- Writing field LANDSEA to output.
+2019-01-12 08:10:48.497 --- Writing field SEAICE to output.
+2019-01-12 08:10:48.497 --- Writing field ST100200 to output.
+2019-01-12 08:10:48.497 --- Writing field ST040100 to output.
+2019-01-12 08:10:48.497 --- Writing field ST010040 to output.
+2019-01-12 08:10:48.497 --- Writing field ST000010 to output.
+2019-01-12 08:10:48.497 --- Writing field SM100200 to output.
+2019-01-12 08:10:48.498 --- Writing field SM040100 to output.
+2019-01-12 08:10:48.498 --- Writing field SM010040 to output.
+2019-01-12 08:10:48.498 --- Writing field SM000010 to output.
+2019-01-12 08:10:48.498 --- Writing field PSFC to output.
+2019-01-12 08:10:48.498 --- Writing field RH to output.
+2019-01-12 08:10:48.500 --- Writing field VV to output.
+2019-01-12 08:10:48.501 --- Writing field UU to output.
+2019-01-12 08:10:48.503 --- Writing field TT to output.
+2019-01-12 08:10:48.504 --- Writing field PMSL to output.
+2019-01-12 08:10:48.504 --- Writing field CANFRA to output.
+2019-01-12 08:10:48.504 --- Writing field IMPERV to output.
+2019-01-12 08:10:48.506 --- Writing field URB_PARAM to output.
+2019-01-12 08:10:48.513 --- Writing field LAKE_DEPTH to output.
+2019-01-12 08:10:48.514 --- Writing field VAR_SSO to output.
+2019-01-12 08:10:48.514 --- Writing field OL4 to output.
+2019-01-12 08:10:48.514 --- Writing field OL3 to output.
+2019-01-12 08:10:48.514 --- Writing field OL2 to output.
+2019-01-12 08:10:48.514 --- Writing field OL1 to output.
+2019-01-12 08:10:48.514 --- Writing field OA4 to output.
+2019-01-12 08:10:48.514 --- Writing field OA3 to output.
+2019-01-12 08:10:48.514 --- Writing field OA2 to output.
+2019-01-12 08:10:48.514 --- Writing field OA1 to output.
+2019-01-12 08:10:48.514 --- Writing field VAR to output.
+2019-01-12 08:10:48.515 --- Writing field CON to output.
+2019-01-12 08:10:48.515 --- Writing field SLOPECAT to output.
+2019-01-12 08:10:48.515 --- Writing field SNOALB to output.
+2019-01-12 08:10:48.515 --- Writing field LAI12M to output.
+2019-01-12 08:10:48.516 --- Writing field GREENFRAC to output.
+2019-01-12 08:10:48.516 --- Writing field ALBEDO12M to output.
+2019-01-12 08:10:48.517 --- Writing field SCB_DOM to output.
+2019-01-12 08:10:48.517 --- Writing field SOILCBOT to output.
+2019-01-12 08:10:48.518 --- Writing field SCT_DOM to output.
+2019-01-12 08:10:48.518 --- Writing field SOILCTOP to output.
+2019-01-12 08:10:48.519 --- Writing field SOILTEMP to output.
+2019-01-12 08:10:48.519 --- Writing field HGT_M to output.
+2019-01-12 08:10:48.519 --- Writing field LU_INDEX to output.
+2019-01-12 08:10:48.519 --- Writing field LANDUSEF to output.
+2019-01-12 08:10:48.521 --- Writing field COSALPHA_V to output.
+2019-01-12 08:10:48.521 --- Writing field SINALPHA_V to output.
+2019-01-12 08:10:48.521 --- Writing field COSALPHA_U to output.
+2019-01-12 08:10:48.521 --- Writing field SINALPHA_U to output.
+2019-01-12 08:10:48.521 --- Writing field XLONG_C to output.
+2019-01-12 08:10:48.521 --- Writing field XLAT_C to output.
+2019-01-12 08:10:48.521 --- Writing field LANDMASK to output.
+2019-01-12 08:10:48.522 --- Writing field COSALPHA to output.
+2019-01-12 08:10:48.522 --- Writing field SINALPHA to output.
+2019-01-12 08:10:48.522 --- Writing field F to output.
+2019-01-12 08:10:48.522 --- Writing field E to output.
+2019-01-12 08:10:48.522 --- Writing field MAPFAC_UY to output.
+2019-01-12 08:10:48.522 --- Writing field MAPFAC_VY to output.
+2019-01-12 08:10:48.522 --- Writing field MAPFAC_MY to output.
+2019-01-12 08:10:48.522 --- Writing field MAPFAC_UX to output.
+2019-01-12 08:10:48.522 --- Writing field MAPFAC_VX to output.
+2019-01-12 08:10:48.523 --- Writing field MAPFAC_MX to output.
+2019-01-12 08:10:48.523 --- Writing field MAPFAC_U to output.
+2019-01-12 08:10:48.523 --- Writing field MAPFAC_V to output.
+2019-01-12 08:10:48.523 --- Writing field MAPFAC_M to output.
+2019-01-12 08:10:48.523 --- Writing field CLONG to output.
+2019-01-12 08:10:48.523 --- Writing field CLAT to output.
+2019-01-12 08:10:48.523 --- Writing field XLONG_U to output.
+2019-01-12 08:10:48.523 --- Writing field XLAT_U to output.
+2019-01-12 08:10:48.523 --- Writing field XLONG_V to output.
+2019-01-12 08:10:48.524 --- Writing field XLAT_V to output.
+2019-01-12 08:10:48.524 --- Writing field XLONG_M to output.
+2019-01-12 08:10:48.524 --- Writing field XLAT_M to output.
+2019-01-12 08:10:48.524 --- Closing output file.
+2019-01-12 08:10:48.525 --- Preparing to process output time 2005-08-29_00
+2019-01-12 08:10:48.525 --- Getting input fields from FILE
+2019-01-12 08:10:48.954 --- Processing PMSL at level 201300.000000.
+2019-01-12 08:10:48.958 --- Processing TT at level 200100.000000.
+2019-01-12 08:10:48.962 --- Processing UU at level 200100.000000.
+2019-01-12 08:10:48.965 --- Processing VV at level 200100.000000.
+2019-01-12 08:10:48.969 --- Processing RH at level 200100.000000.
+2019-01-12 08:10:48.973 --- Processing PSFC at level 200100.000000.
+2019-01-12 08:10:48.976 --- Processing SM000010 at level 200100.000000.
+2019-01-12 08:10:48.979 --- Processing SM010040 at level 200100.000000.
+2019-01-12 08:10:48.982 --- Processing SM040100 at level 200100.000000.
+2019-01-12 08:10:48.985 --- Processing SM100200 at level 200100.000000.
+2019-01-12 08:10:48.988 --- Processing ST000010 at level 200100.000000.
+2019-01-12 08:10:48.992 --- Processing ST010040 at level 200100.000000.
+2019-01-12 08:10:48.995 --- Processing ST040100 at level 200100.000000.
+2019-01-12 08:10:48.999 --- Processing ST100200 at level 200100.000000.
+2019-01-12 08:10:49.002 --- Processing SEAICE at level 200100.000000.
+2019-01-12 08:10:49.005 --- Processing LANDSEA at level 200100.000000.
+2019-01-12 08:10:49.009 --- Processing SOILHGT at level 200100.000000.
+2019-01-12 08:10:49.012 --- Processing SKINTEMP at level 200100.000000.
+2019-01-12 08:10:49.016 --- Processing SNOW at level 200100.000000.
+2019-01-12 08:10:49.018 --- Processing SNOWH at level 200100.000000.
+2019-01-12 08:10:49.021 --- Processing TT at level 100000.000000.
+2019-01-12 08:10:49.025 --- Processing UU at level 100000.000000.
+2019-01-12 08:10:49.029 --- Processing VV at level 100000.000000.
+2019-01-12 08:10:49.032 --- Processing RH at level 100000.000000.
+2019-01-12 08:10:49.036 --- Processing GHT at level 100000.000000.
+2019-01-12 08:10:49.040 --- Processing TT at level 97500.000000.
+2019-01-12 08:10:49.044 --- Processing UU at level 97500.000000.
+2019-01-12 08:10:49.047 --- Processing VV at level 97500.000000.
+2019-01-12 08:10:49.051 --- Processing RH at level 97500.000000.
+2019-01-12 08:10:49.054 --- Processing GHT at level 97500.000000.
+2019-01-12 08:10:49.058 --- Processing TT at level 95000.000000.
+2019-01-12 08:10:49.061 --- Processing UU at level 95000.000000.
+2019-01-12 08:10:49.065 --- Processing VV at level 95000.000000.
+2019-01-12 08:10:49.069 --- Processing RH at level 95000.000000.
+2019-01-12 08:10:49.072 --- Processing GHT at level 95000.000000.
+2019-01-12 08:10:49.076 --- Processing TT at level 92500.000000.
+2019-01-12 08:10:49.079 --- Processing UU at level 92500.000000.
+2019-01-12 08:10:49.083 --- Processing VV at level 92500.000000.
+2019-01-12 08:10:49.086 --- Processing RH at level 92500.000000.
+2019-01-12 08:10:49.090 --- Processing GHT at level 92500.000000.
+2019-01-12 08:10:49.094 --- Processing TT at level 90000.000000.
+2019-01-12 08:10:49.097 --- Processing UU at level 90000.000000.
+2019-01-12 08:10:49.101 --- Processing VV at level 90000.000000.
+2019-01-12 08:10:49.104 --- Processing RH at level 90000.000000.
+2019-01-12 08:10:49.108 --- Processing GHT at level 90000.000000.
+2019-01-12 08:10:49.112 --- Processing TT at level 85000.000000.
+2019-01-12 08:10:49.115 --- Processing UU at level 85000.000000.
+2019-01-12 08:10:49.119 --- Processing VV at level 85000.000000.
+2019-01-12 08:10:49.128 --- Processing RH at level 85000.000000.
+2019-01-12 08:10:49.135 --- Processing GHT at level 85000.000000.
+2019-01-12 08:10:49.139 --- Processing TT at level 80000.000000.
+2019-01-12 08:10:49.143 --- Processing UU at level 80000.000000.
+2019-01-12 08:10:49.146 --- Processing VV at level 80000.000000.
+2019-01-12 08:10:49.150 --- Processing RH at level 80000.000000.
+2019-01-12 08:10:49.154 --- Processing GHT at level 80000.000000.
+2019-01-12 08:10:49.158 --- Processing TT at level 75000.000000.
+2019-01-12 08:10:49.162 --- Processing UU at level 75000.000000.
+2019-01-12 08:10:49.165 --- Processing VV at level 75000.000000.
+2019-01-12 08:10:49.169 --- Processing RH at level 75000.000000.
+2019-01-12 08:10:49.172 --- Processing GHT at level 75000.000000.
+2019-01-12 08:10:49.176 --- Processing TT at level 70000.000000.
+2019-01-12 08:10:49.180 --- Processing UU at level 70000.000000.
+2019-01-12 08:10:49.183 --- Processing VV at level 70000.000000.
+2019-01-12 08:10:49.187 --- Processing RH at level 70000.000000.
+2019-01-12 08:10:49.191 --- Processing GHT at level 70000.000000.
+2019-01-12 08:10:49.195 --- Processing TT at level 65000.000000.
+2019-01-12 08:10:49.199 --- Processing UU at level 65000.000000.
+2019-01-12 08:10:49.202 --- Processing VV at level 65000.000000.
+2019-01-12 08:10:49.206 --- Processing RH at level 65000.000000.
+2019-01-12 08:10:49.209 --- Processing GHT at level 65000.000000.
+2019-01-12 08:10:49.213 --- Processing TT at level 60000.000000.
+2019-01-12 08:10:49.217 --- Processing UU at level 60000.000000.
+2019-01-12 08:10:49.220 --- Processing VV at level 60000.000000.
+2019-01-12 08:10:49.224 --- Processing RH at level 60000.000000.
+2019-01-12 08:10:49.227 --- Processing GHT at level 60000.000000.
+2019-01-12 08:10:49.231 --- Processing TT at level 55000.000000.
+2019-01-12 08:10:49.234 --- Processing UU at level 55000.000000.
+2019-01-12 08:10:49.238 --- Processing VV at level 55000.000000.
+2019-01-12 08:10:49.242 --- Processing RH at level 55000.000000.
+2019-01-12 08:10:49.245 --- Processing GHT at level 55000.000000.
+2019-01-12 08:10:49.249 --- Processing TT at level 50000.000000.
+2019-01-12 08:10:49.252 --- Processing UU at level 50000.000000.
+2019-01-12 08:10:49.256 --- Processing VV at level 50000.000000.
+2019-01-12 08:10:49.260 --- Processing RH at level 50000.000000.
+2019-01-12 08:10:49.263 --- Processing GHT at level 50000.000000.
+2019-01-12 08:10:49.267 --- Processing TT at level 45000.000000.
+2019-01-12 08:10:49.270 --- Processing UU at level 45000.000000.
+2019-01-12 08:10:49.274 --- Processing VV at level 45000.000000.
+2019-01-12 08:10:49.277 --- Processing RH at level 45000.000000.
+2019-01-12 08:10:49.281 --- Processing GHT at level 45000.000000.
+2019-01-12 08:10:49.285 --- Processing TT at level 40000.000000.
+2019-01-12 08:10:49.289 --- Processing UU at level 40000.000000.
+2019-01-12 08:10:49.293 --- Processing VV at level 40000.000000.
+2019-01-12 08:10:49.296 --- Processing RH at level 40000.000000.
+2019-01-12 08:10:49.300 --- Processing GHT at level 40000.000000.
+2019-01-12 08:10:49.303 --- Processing TT at level 35000.000000.
+2019-01-12 08:10:49.307 --- Processing UU at level 35000.000000.
+2019-01-12 08:10:49.311 --- Processing VV at level 35000.000000.
+2019-01-12 08:10:49.314 --- Processing RH at level 35000.000000.
+2019-01-12 08:10:49.318 --- Processing GHT at level 35000.000000.
+2019-01-12 08:10:49.321 --- Processing TT at level 30000.000000.
+2019-01-12 08:10:49.325 --- Processing UU at level 30000.000000.
+2019-01-12 08:10:49.328 --- Processing VV at level 30000.000000.
+2019-01-12 08:10:49.332 --- Processing RH at level 30000.000000.
+2019-01-12 08:10:49.336 --- Processing GHT at level 30000.000000.
+2019-01-12 08:10:49.340 --- Processing TT at level 25000.000000.
+2019-01-12 08:10:49.343 --- Processing UU at level 25000.000000.
+2019-01-12 08:10:49.347 --- Processing VV at level 25000.000000.
+2019-01-12 08:10:49.351 --- Processing RH at level 25000.000000.
+2019-01-12 08:10:49.356 --- Processing GHT at level 25000.000000.
+2019-01-12 08:10:49.360 --- Processing TT at level 20000.000000.
+2019-01-12 08:10:49.364 --- Processing UU at level 20000.000000.
+2019-01-12 08:10:49.367 --- Processing VV at level 20000.000000.
+2019-01-12 08:10:49.371 --- Processing RH at level 20000.000000.
+2019-01-12 08:10:49.375 --- Processing GHT at level 20000.000000.
+2019-01-12 08:10:49.379 --- Processing TT at level 15000.000000.
+2019-01-12 08:10:49.382 --- Processing UU at level 15000.000000.
+2019-01-12 08:10:49.386 --- Processing VV at level 15000.000000.
+2019-01-12 08:10:49.389 --- Processing RH at level 15000.000000.
+2019-01-12 08:10:49.393 --- Processing GHT at level 15000.000000.
+2019-01-12 08:10:49.396 --- Processing TT at level 10000.000000.
+2019-01-12 08:10:49.400 --- Processing UU at level 10000.000000.
+2019-01-12 08:10:49.403 --- Processing VV at level 10000.000000.
+2019-01-12 08:10:49.407 --- Processing RH at level 10000.000000.
+2019-01-12 08:10:49.411 --- Processing GHT at level 10000.000000.
+2019-01-12 08:10:49.415 --- Processing TT at level 7000.000000.
+2019-01-12 08:10:49.418 --- Processing UU at level 7000.000000.
+2019-01-12 08:10:49.422 --- Processing VV at level 7000.000000.
+2019-01-12 08:10:49.425 --- Processing RH at level 7000.000000.
+2019-01-12 08:10:49.431 --- Processing GHT at level 7000.000000.
+2019-01-12 08:10:49.435 --- Processing TT at level 5000.000000.
+2019-01-12 08:10:49.438 --- Processing UU at level 5000.000000.
+2019-01-12 08:10:49.442 --- Processing VV at level 5000.000000.
+2019-01-12 08:10:49.446 --- Processing RH at level 5000.000000.
+2019-01-12 08:10:49.452 --- Processing GHT at level 5000.000000.
+2019-01-12 08:10:49.456 --- Processing TT at level 3000.000000.
+2019-01-12 08:10:49.459 --- Processing UU at level 3000.000000.
+2019-01-12 08:10:49.463 --- Processing VV at level 3000.000000.
+2019-01-12 08:10:49.466 --- Processing RH at level 3000.000000.
+2019-01-12 08:10:49.473 --- Processing GHT at level 3000.000000.
+2019-01-12 08:10:49.476 --- Processing TT at level 2000.000000.
+2019-01-12 08:10:49.480 --- Processing UU at level 2000.000000.
+2019-01-12 08:10:49.483 --- Processing VV at level 2000.000000.
+2019-01-12 08:10:49.487 --- Processing RH at level 2000.000000.
+2019-01-12 08:10:49.493 --- Processing GHT at level 2000.000000.
+2019-01-12 08:10:49.497 --- Processing TT at level 1000.000000.
+2019-01-12 08:10:49.501 --- Processing UU at level 1000.000000.
+2019-01-12 08:10:49.504 --- Processing VV at level 1000.000000.
+2019-01-12 08:10:49.508 --- Processing RH at level 1000.000000.
+2019-01-12 08:10:49.514 --- Processing GHT at level 1000.000000.
+2019-01-12 08:10:49.515 --- Filling missing levels.
+2019-01-12 08:10:49.516 --- INFORM: GHT at level 200100.000000 already exists; leaving it alone.
+2019-01-12 08:10:49.516 --- INFORM: LANDSEA at level 200100.000000 already exists; leaving it alone.
+2019-01-12 08:10:49.516 --- INFORM: PSFC at level 200100.000000 already exists; leaving it alone.
+2019-01-12 08:10:49.516 --- INFORM: RH at level 200100.000000 already exists; leaving it alone.
+2019-01-12 08:10:49.516 --- INFORM: VV at level 200100.000000 already exists; leaving it alone.
+2019-01-12 08:10:49.516 --- INFORM: UU at level 200100.000000 already exists; leaving it alone.
+2019-01-12 08:10:49.516 --- INFORM: TT at level 200100.000000 already exists; leaving it alone.
+2019-01-12 08:10:49.521 --- Creating derived fields.
+2019-01-12 08:10:49.521 --- INFORM: Going to create the field ST
+2019-01-12 08:10:49.522 --- INFORM: ST at level 10.000000 already exists; leaving it alone.
+2019-01-12 08:10:49.522 --- INFORM: Couldn't find ST010035 at level 200100.000000 to fill level 35.000000 of ST.
+2019-01-12 08:10:49.522 --- INFORM: ST at level 100.000000 already exists; leaving it alone.
+2019-01-12 08:10:49.522 --- INFORM: Couldn't find ST100300 at level 200100.000000 to fill level 300.000000 of ST.
+2019-01-12 08:10:49.522 --- INFORM: ST at level 10.000000 already exists; leaving it alone.
+2019-01-12 08:10:49.522 --- INFORM: ST at level 200.000000 already exists; leaving it alone.
+2019-01-12 08:10:49.522 --- INFORM: Couldn't find ST000007 at level 200100.000000 to fill level 7.000000 of ST.
+2019-01-12 08:10:49.522 --- INFORM: Couldn't find ST007028 at level 200100.000000 to fill level 28.000000 of ST.
+2019-01-12 08:10:49.522 --- INFORM: ST at level 100.000000 already exists; leaving it alone.
+2019-01-12 08:10:49.522 --- INFORM: Couldn't find ST100289 at level 200100.000000 to fill level 289.000000 of ST.
+2019-01-12 08:10:49.522 --- INFORM: Going to create the field SM
+2019-01-12 08:10:49.523 --- INFORM: SM at level 10.000000 already exists; leaving it alone.
+2019-01-12 08:10:49.523 --- INFORM: Couldn't find SM010035 at level 200100.000000 to fill level 35.000000 of SM.
+2019-01-12 08:10:49.523 --- INFORM: SM at level 100.000000 already exists; leaving it alone.
+2019-01-12 08:10:49.523 --- INFORM: Couldn't find SM100300 at level 200100.000000 to fill level 300.000000 of SM.
+2019-01-12 08:10:49.523 --- INFORM: SM at level 10.000000 already exists; leaving it alone.
+2019-01-12 08:10:49.523 --- INFORM: SM at level 200.000000 already exists; leaving it alone.
+2019-01-12 08:10:49.523 --- INFORM: Couldn't find SM000007 at level 200100.000000 to fill level 7.000000 of SM.
+2019-01-12 08:10:49.523 --- INFORM: Couldn't find SM007028 at level 200100.000000 to fill level 28.000000 of SM.
+2019-01-12 08:10:49.523 --- INFORM: SM at level 100.000000 already exists; leaving it alone.
+2019-01-12 08:10:49.523 --- INFORM: Couldn't find SM100289 at level 200100.000000 to fill level 289.000000 of SM.
+2019-01-12 08:10:49.523 --- INFORM: Going to create the field SW
+2019-01-12 08:10:49.523 --- INFORM: Couldn't find SW000010 at level 200100.000000 to fill level 1.000000 of SW.
+2019-01-12 08:10:49.523 --- INFORM: Couldn't find SW010040 at level 200100.000000 to fill level 2.000000 of SW.
+2019-01-12 08:10:49.523 --- INFORM: Couldn't find SW040100 at level 200100.000000 to fill level 3.000000 of SW.
+2019-01-12 08:10:49.523 --- INFORM: Couldn't find SW100200 at level 200100.000000 to fill level 4.000000 of SW.
+2019-01-12 08:10:49.523 --- INFORM: Couldn't find SW000010 at level 200100.000000 to fill level 1.000000 of SW.
+2019-01-12 08:10:49.523 --- INFORM: Couldn't find SW010200 at level 200100.000000 to fill level 2.000000 of SW.
+2019-01-12 08:10:49.523 --- INFORM: Going to create the field SOIL_LAYERS
+2019-01-12 08:10:49.524 --- INFORM: Going to create the field SOILM
+2019-01-12 08:10:49.524 --- INFORM: Couldn't find SOILM000 at level 200100.000000 to fill level 0.000000 of SOILM.
+2019-01-12 08:10:49.524 --- INFORM: Couldn't find SOILM005 at level 200100.000000 to fill level 5.000000 of SOILM.
+2019-01-12 08:10:49.524 --- INFORM: Couldn't find SOILM020 at level 200100.000000 to fill level 20.000000 of SOILM.
+2019-01-12 08:10:49.524 --- INFORM: Couldn't find SOILM040 at level 200100.000000 to fill level 40.000000 of SOILM.
+2019-01-12 08:10:49.524 --- INFORM: Couldn't find SOILM160 at level 200100.000000 to fill level 160.000000 of SOILM.
+2019-01-12 08:10:49.524 --- INFORM: Couldn't find SOILM300 at level 200100.000000 to fill level 300.000000 of SOILM.
+2019-01-12 08:10:49.524 --- INFORM: Going to create the field SOILT
+2019-01-12 08:10:49.524 --- INFORM: Couldn't find SOILT000 at level 200100.000000 to fill level 0.000000 of SOILT.
+2019-01-12 08:10:49.524 --- INFORM: Couldn't find SOILT005 at level 200100.000000 to fill level 5.000000 of SOILT.
+2019-01-12 08:10:49.524 --- INFORM: Couldn't find SOILT020 at level 200100.000000 to fill level 20.000000 of SOILT.
+2019-01-12 08:10:49.524 --- INFORM: Couldn't find SOILT040 at level 200100.000000 to fill level 40.000000 of SOILT.
+2019-01-12 08:10:49.524 --- INFORM: Couldn't find SOILT160 at level 200100.000000 to fill level 160.000000 of SOILT.
+2019-01-12 08:10:49.524 --- INFORM: Couldn't find SOILT300 at level 200100.000000 to fill level 300.000000 of SOILT.
+2019-01-12 08:10:49.524 --- INFORM: Couldn't find SOILT050 at level 200100.000000 to fill level 49.000000 of SOILT.
+2019-01-12 08:10:49.524 --- INFORM: Couldn't find SOILT050 at level 200100.000000 to fill level 51.000000 of SOILT.
+2019-01-12 08:10:49.524 --- INFORM: Going to create the field SOIL_LEVELS
+2019-01-12 08:10:49.524 --- INFORM: Going to create the field PRES
+2019-01-12 08:10:49.526 --- INFORM: PRES at level 200100.000000 already exists; leaving it alone.
+2019-01-12 08:10:49.533 --- INFORM: Field LANDSEA.mask does not have a valid mask and will not be checked for missing values
+2019-01-12 08:10:49.545 --- Initializing output module.
+2019-01-12 08:10:49.554 --- Writing global attributes to output.
+2019-01-12 08:10:49.587 --- Writing field PRES to output.
+2019-01-12 08:10:49.599 --- Writing field SOIL_LAYERS to output.
+2019-01-12 08:10:49.600 --- Writing field SM to output.
+2019-01-12 08:10:49.600 --- Writing field ST to output.
+2019-01-12 08:10:49.600 --- Writing field GHT to output.
+2019-01-12 08:10:49.602 --- Writing field SNOWH to output.
+2019-01-12 08:10:49.602 --- Writing field SNOW to output.
+2019-01-12 08:10:49.602 --- Writing field SKINTEMP to output.
+2019-01-12 08:10:49.602 --- Writing field SOILHGT to output.
+2019-01-12 08:10:49.602 --- Writing field LANDSEA to output.
+2019-01-12 08:10:49.602 --- Writing field SEAICE to output.
+2019-01-12 08:10:49.602 --- Writing field ST100200 to output.
+2019-01-12 08:10:49.602 --- Writing field ST040100 to output.
+2019-01-12 08:10:49.602 --- Writing field ST010040 to output.
+2019-01-12 08:10:49.602 --- Writing field ST000010 to output.
+2019-01-12 08:10:49.602 --- Writing field SM100200 to output.
+2019-01-12 08:10:49.602 --- Writing field SM040100 to output.
+2019-01-12 08:10:49.602 --- Writing field SM010040 to output.
+2019-01-12 08:10:49.603 --- Writing field SM000010 to output.
+2019-01-12 08:10:49.603 --- Writing field PSFC to output.
+2019-01-12 08:10:49.603 --- Writing field RH to output.
+2019-01-12 08:10:49.604 --- Writing field VV to output.
+2019-01-12 08:10:49.606 --- Writing field UU to output.
+2019-01-12 08:10:49.607 --- Writing field TT to output.
+2019-01-12 08:10:49.609 --- Writing field PMSL to output.
+2019-01-12 08:10:49.609 --- Writing field CANFRA to output.
+2019-01-12 08:10:49.609 --- Writing field IMPERV to output.
+2019-01-12 08:10:49.610 --- Writing field URB_PARAM to output.
+2019-01-12 08:10:49.617 --- Writing field LAKE_DEPTH to output.
+2019-01-12 08:10:49.617 --- Writing field VAR_SSO to output.
+2019-01-12 08:10:49.618 --- Writing field OL4 to output.
+2019-01-12 08:10:49.618 --- Writing field OL3 to output.
+2019-01-12 08:10:49.618 --- Writing field OL2 to output.
+2019-01-12 08:10:49.618 --- Writing field OL1 to output.
+2019-01-12 08:10:49.618 --- Writing field OA4 to output.
+2019-01-12 08:10:49.618 --- Writing field OA3 to output.
+2019-01-12 08:10:49.618 --- Writing field OA2 to output.
+2019-01-12 08:10:49.618 --- Writing field OA1 to output.
+2019-01-12 08:10:49.618 --- Writing field VAR to output.
+2019-01-12 08:10:49.618 --- Writing field CON to output.
+2019-01-12 08:10:49.619 --- Writing field SLOPECAT to output.
+2019-01-12 08:10:49.619 --- Writing field SNOALB to output.
+2019-01-12 08:10:49.619 --- Writing field LAI12M to output.
+2019-01-12 08:10:49.620 --- Writing field GREENFRAC to output.
+2019-01-12 08:10:49.620 --- Writing field ALBEDO12M to output.
+2019-01-12 08:10:49.621 --- Writing field SCB_DOM to output.
+2019-01-12 08:10:49.621 --- Writing field SOILCBOT to output.
+2019-01-12 08:10:49.622 --- Writing field SCT_DOM to output.
+2019-01-12 08:10:49.622 --- Writing field SOILCTOP to output.
+2019-01-12 08:10:49.623 --- Writing field SOILTEMP to output.
+2019-01-12 08:10:49.623 --- Writing field HGT_M to output.
+2019-01-12 08:10:49.623 --- Writing field LU_INDEX to output.
+2019-01-12 08:10:49.624 --- Writing field LANDUSEF to output.
+2019-01-12 08:10:49.625 --- Writing field COSALPHA_V to output.
+2019-01-12 08:10:49.625 --- Writing field SINALPHA_V to output.
+2019-01-12 08:10:49.625 --- Writing field COSALPHA_U to output.
+2019-01-12 08:10:49.625 --- Writing field SINALPHA_U to output.
+2019-01-12 08:10:49.625 --- Writing field XLONG_C to output.
+2019-01-12 08:10:49.625 --- Writing field XLAT_C to output.
+2019-01-12 08:10:49.625 --- Writing field LANDMASK to output.
+2019-01-12 08:10:49.626 --- Writing field COSALPHA to output.
+2019-01-12 08:10:49.626 --- Writing field SINALPHA to output.
+2019-01-12 08:10:49.626 --- Writing field F to output.
+2019-01-12 08:10:49.626 --- Writing field E to output.
+2019-01-12 08:10:49.626 --- Writing field MAPFAC_UY to output.
+2019-01-12 08:10:49.626 --- Writing field MAPFAC_VY to output.
+2019-01-12 08:10:49.626 --- Writing field MAPFAC_MY to output.
+2019-01-12 08:10:49.626 --- Writing field MAPFAC_UX to output.
+2019-01-12 08:10:49.626 --- Writing field MAPFAC_VX to output.
+2019-01-12 08:10:49.626 --- Writing field MAPFAC_MX to output.
+2019-01-12 08:10:49.627 --- Writing field MAPFAC_U to output.
+2019-01-12 08:10:49.627 --- Writing field MAPFAC_V to output.
+2019-01-12 08:10:49.627 --- Writing field MAPFAC_M to output.
+2019-01-12 08:10:49.627 --- Writing field CLONG to output.
+2019-01-12 08:10:49.627 --- Writing field CLAT to output.
+2019-01-12 08:10:49.627 --- Writing field XLONG_U to output.
+2019-01-12 08:10:49.627 --- Writing field XLAT_U to output.
+2019-01-12 08:10:49.627 --- Writing field XLONG_V to output.
+2019-01-12 08:10:49.627 --- Writing field XLAT_V to output.
+2019-01-12 08:10:49.628 --- Writing field XLONG_M to output.
+2019-01-12 08:10:49.628 --- Writing field XLAT_M to output.
+2019-01-12 08:10:49.628 --- Closing output file.
+2019-01-12 08:10:49.628 --- Preparing to process output time 2005-08-29_06
+2019-01-12 08:10:49.628 --- Getting input fields from FILE
+2019-01-12 08:10:50.065 --- Processing PMSL at level 201300.000000.
+2019-01-12 08:10:50.069 --- Processing TT at level 200100.000000.
+2019-01-12 08:10:50.072 --- Processing UU at level 200100.000000.
+2019-01-12 08:10:50.076 --- Processing VV at level 200100.000000.
+2019-01-12 08:10:50.080 --- Processing RH at level 200100.000000.
+2019-01-12 08:10:50.083 --- Processing PSFC at level 200100.000000.
+2019-01-12 08:10:50.086 --- Processing SM000010 at level 200100.000000.
+2019-01-12 08:10:50.089 --- Processing SM010040 at level 200100.000000.
+2019-01-12 08:10:50.093 --- Processing SM040100 at level 200100.000000.
+2019-01-12 08:10:50.096 --- Processing SM100200 at level 200100.000000.
+2019-01-12 08:10:50.099 --- Processing ST000010 at level 200100.000000.
+2019-01-12 08:10:50.102 --- Processing ST010040 at level 200100.000000.
+2019-01-12 08:10:50.106 --- Processing ST040100 at level 200100.000000.
+2019-01-12 08:10:50.109 --- Processing ST100200 at level 200100.000000.
+2019-01-12 08:10:50.112 --- Processing SEAICE at level 200100.000000.
+2019-01-12 08:10:50.115 --- Processing LANDSEA at level 200100.000000.
+2019-01-12 08:10:50.118 --- Processing SOILHGT at level 200100.000000.
+2019-01-12 08:10:50.121 --- Processing SKINTEMP at level 200100.000000.
+2019-01-12 08:10:50.126 --- Processing SNOW at level 200100.000000.
+2019-01-12 08:10:50.129 --- Processing SNOWH at level 200100.000000.
+2019-01-12 08:10:50.132 --- Processing TT at level 100000.000000.
+2019-01-12 08:10:50.135 --- Processing UU at level 100000.000000.
+2019-01-12 08:10:50.139 --- Processing VV at level 100000.000000.
+2019-01-12 08:10:50.144 --- Processing RH at level 100000.000000.
+2019-01-12 08:10:50.148 --- Processing GHT at level 100000.000000.
+2019-01-12 08:10:50.154 --- Processing TT at level 97500.000000.
+2019-01-12 08:10:50.159 --- Processing UU at level 97500.000000.
+2019-01-12 08:10:50.164 --- Processing VV at level 97500.000000.
+2019-01-12 08:10:50.169 --- Processing RH at level 97500.000000.
+2019-01-12 08:10:50.174 --- Processing GHT at level 97500.000000.
+2019-01-12 08:10:50.179 --- Processing TT at level 95000.000000.
+2019-01-12 08:10:50.182 --- Processing UU at level 95000.000000.
+2019-01-12 08:10:50.186 --- Processing VV at level 95000.000000.
+2019-01-12 08:10:50.189 --- Processing RH at level 95000.000000.
+2019-01-12 08:10:50.195 --- Processing GHT at level 95000.000000.
+2019-01-12 08:10:50.198 --- Processing TT at level 92500.000000.
+2019-01-12 08:10:50.202 --- Processing UU at level 92500.000000.
+2019-01-12 08:10:50.205 --- Processing VV at level 92500.000000.
+2019-01-12 08:10:50.209 --- Processing RH at level 92500.000000.
+2019-01-12 08:10:50.213 --- Processing GHT at level 92500.000000.
+2019-01-12 08:10:50.216 --- Processing TT at level 90000.000000.
+2019-01-12 08:10:50.219 --- Processing UU at level 90000.000000.
+2019-01-12 08:10:50.223 --- Processing VV at level 90000.000000.
+2019-01-12 08:10:50.227 --- Processing RH at level 90000.000000.
+2019-01-12 08:10:50.231 --- Processing GHT at level 90000.000000.
+2019-01-12 08:10:50.236 --- Processing TT at level 85000.000000.
+2019-01-12 08:10:50.240 --- Processing UU at level 85000.000000.
+2019-01-12 08:10:50.244 --- Processing VV at level 85000.000000.
+2019-01-12 08:10:50.247 --- Processing RH at level 85000.000000.
+2019-01-12 08:10:50.251 --- Processing GHT at level 85000.000000.
+2019-01-12 08:10:50.254 --- Processing TT at level 80000.000000.
+2019-01-12 08:10:50.258 --- Processing UU at level 80000.000000.
+2019-01-12 08:10:50.261 --- Processing VV at level 80000.000000.
+2019-01-12 08:10:50.265 --- Processing RH at level 80000.000000.
+2019-01-12 08:10:50.269 --- Processing GHT at level 80000.000000.
+2019-01-12 08:10:50.272 --- Processing TT at level 75000.000000.
+2019-01-12 08:10:50.276 --- Processing UU at level 75000.000000.
+2019-01-12 08:10:50.280 --- Processing VV at level 75000.000000.
+2019-01-12 08:10:50.283 --- Processing RH at level 75000.000000.
+2019-01-12 08:10:50.287 --- Processing GHT at level 75000.000000.
+2019-01-12 08:10:50.290 --- Processing TT at level 70000.000000.
+2019-01-12 08:10:50.294 --- Processing UU at level 70000.000000.
+2019-01-12 08:10:50.297 --- Processing VV at level 70000.000000.
+2019-01-12 08:10:50.301 --- Processing RH at level 70000.000000.
+2019-01-12 08:10:50.304 --- Processing GHT at level 70000.000000.
+2019-01-12 08:10:50.308 --- Processing TT at level 65000.000000.
+2019-01-12 08:10:50.312 --- Processing UU at level 65000.000000.
+2019-01-12 08:10:50.315 --- Processing VV at level 65000.000000.
+2019-01-12 08:10:50.319 --- Processing RH at level 65000.000000.
+2019-01-12 08:10:50.322 --- Processing GHT at level 65000.000000.
+2019-01-12 08:10:50.326 --- Processing TT at level 60000.000000.
+2019-01-12 08:10:50.330 --- Processing UU at level 60000.000000.
+2019-01-12 08:10:50.333 --- Processing VV at level 60000.000000.
+2019-01-12 08:10:50.337 --- Processing RH at level 60000.000000.
+2019-01-12 08:10:50.340 --- Processing GHT at level 60000.000000.
+2019-01-12 08:10:50.344 --- Processing TT at level 55000.000000.
+2019-01-12 08:10:50.347 --- Processing UU at level 55000.000000.
+2019-01-12 08:10:50.351 --- Processing VV at level 55000.000000.
+2019-01-12 08:10:50.355 --- Processing RH at level 55000.000000.
+2019-01-12 08:10:50.359 --- Processing GHT at level 55000.000000.
+2019-01-12 08:10:50.362 --- Processing TT at level 50000.000000.
+2019-01-12 08:10:50.366 --- Processing UU at level 50000.000000.
+2019-01-12 08:10:50.369 --- Processing VV at level 50000.000000.
+2019-01-12 08:10:50.373 --- Processing RH at level 50000.000000.
+2019-01-12 08:10:50.377 --- Processing GHT at level 50000.000000.
+2019-01-12 08:10:50.380 --- Processing TT at level 45000.000000.
+2019-01-12 08:10:50.384 --- Processing UU at level 45000.000000.
+2019-01-12 08:10:50.388 --- Processing VV at level 45000.000000.
+2019-01-12 08:10:50.392 --- Processing RH at level 45000.000000.
+2019-01-12 08:10:50.395 --- Processing GHT at level 45000.000000.
+2019-01-12 08:10:50.399 --- Processing TT at level 40000.000000.
+2019-01-12 08:10:50.402 --- Processing UU at level 40000.000000.
+2019-01-12 08:10:50.406 --- Processing VV at level 40000.000000.
+2019-01-12 08:10:50.410 --- Processing RH at level 40000.000000.
+2019-01-12 08:10:50.414 --- Processing GHT at level 40000.000000.
+2019-01-12 08:10:50.417 --- Processing TT at level 35000.000000.
+2019-01-12 08:10:50.421 --- Processing UU at level 35000.000000.
+2019-01-12 08:10:50.424 --- Processing VV at level 35000.000000.
+2019-01-12 08:10:50.428 --- Processing RH at level 35000.000000.
+2019-01-12 08:10:50.431 --- Processing GHT at level 35000.000000.
+2019-01-12 08:10:50.435 --- Processing TT at level 30000.000000.
+2019-01-12 08:10:50.439 --- Processing UU at level 30000.000000.
+2019-01-12 08:10:50.442 --- Processing VV at level 30000.000000.
+2019-01-12 08:10:50.446 --- Processing RH at level 30000.000000.
+2019-01-12 08:10:50.449 --- Processing GHT at level 30000.000000.
+2019-01-12 08:10:50.453 --- Processing TT at level 25000.000000.
+2019-01-12 08:10:50.456 --- Processing UU at level 25000.000000.
+2019-01-12 08:10:50.460 --- Processing VV at level 25000.000000.
+2019-01-12 08:10:50.463 --- Processing RH at level 25000.000000.
+2019-01-12 08:10:50.467 --- Processing GHT at level 25000.000000.
+2019-01-12 08:10:50.471 --- Processing TT at level 20000.000000.
+2019-01-12 08:10:50.474 --- Processing UU at level 20000.000000.
+2019-01-12 08:10:50.478 --- Processing VV at level 20000.000000.
+2019-01-12 08:10:50.482 --- Processing RH at level 20000.000000.
+2019-01-12 08:10:50.485 --- Processing GHT at level 20000.000000.
+2019-01-12 08:10:50.489 --- Processing TT at level 15000.000000.
+2019-01-12 08:10:50.492 --- Processing UU at level 15000.000000.
+2019-01-12 08:10:50.496 --- Processing VV at level 15000.000000.
+2019-01-12 08:10:50.500 --- Processing RH at level 15000.000000.
+2019-01-12 08:10:50.503 --- Processing GHT at level 15000.000000.
+2019-01-12 08:10:50.507 --- Processing TT at level 10000.000000.
+2019-01-12 08:10:50.511 --- Processing UU at level 10000.000000.
+2019-01-12 08:10:50.514 --- Processing VV at level 10000.000000.
+2019-01-12 08:10:50.518 --- Processing RH at level 10000.000000.
+2019-01-12 08:10:50.521 --- Processing GHT at level 10000.000000.
+2019-01-12 08:10:50.525 --- Processing TT at level 7000.000000.
+2019-01-12 08:10:50.529 --- Processing UU at level 7000.000000.
+2019-01-12 08:10:50.532 --- Processing VV at level 7000.000000.
+2019-01-12 08:10:50.536 --- Processing RH at level 7000.000000.
+2019-01-12 08:10:50.542 --- Processing GHT at level 7000.000000.
+2019-01-12 08:10:50.546 --- Processing TT at level 5000.000000.
+2019-01-12 08:10:50.550 --- Processing UU at level 5000.000000.
+2019-01-12 08:10:50.554 --- Processing VV at level 5000.000000.
+2019-01-12 08:10:50.558 --- Processing RH at level 5000.000000.
+2019-01-12 08:10:50.564 --- Processing GHT at level 5000.000000.
+2019-01-12 08:10:50.568 --- Processing TT at level 3000.000000.
+2019-01-12 08:10:50.571 --- Processing UU at level 3000.000000.
+2019-01-12 08:10:50.575 --- Processing VV at level 3000.000000.
+2019-01-12 08:10:50.579 --- Processing RH at level 3000.000000.
+2019-01-12 08:10:50.585 --- Processing GHT at level 3000.000000.
+2019-01-12 08:10:50.589 --- Processing TT at level 2000.000000.
+2019-01-12 08:10:50.592 --- Processing UU at level 2000.000000.
+2019-01-12 08:10:50.596 --- Processing VV at level 2000.000000.
+2019-01-12 08:10:50.600 --- Processing RH at level 2000.000000.
+2019-01-12 08:10:50.606 --- Processing GHT at level 2000.000000.
+2019-01-12 08:10:50.610 --- Processing TT at level 1000.000000.
+2019-01-12 08:10:50.614 --- Processing UU at level 1000.000000.
+2019-01-12 08:10:50.617 --- Processing VV at level 1000.000000.
+2019-01-12 08:10:50.621 --- Processing RH at level 1000.000000.
+2019-01-12 08:10:50.627 --- Processing GHT at level 1000.000000.
+2019-01-12 08:10:50.628 --- Filling missing levels.
+2019-01-12 08:10:50.628 --- INFORM: GHT at level 200100.000000 already exists; leaving it alone.
+2019-01-12 08:10:50.629 --- INFORM: LANDSEA at level 200100.000000 already exists; leaving it alone.
+2019-01-12 08:10:50.629 --- INFORM: PSFC at level 200100.000000 already exists; leaving it alone.
+2019-01-12 08:10:50.629 --- INFORM: RH at level 200100.000000 already exists; leaving it alone.
+2019-01-12 08:10:50.629 --- INFORM: VV at level 200100.000000 already exists; leaving it alone.
+2019-01-12 08:10:50.629 --- INFORM: UU at level 200100.000000 already exists; leaving it alone.
+2019-01-12 08:10:50.629 --- INFORM: TT at level 200100.000000 already exists; leaving it alone.
+2019-01-12 08:10:50.634 --- Creating derived fields.
+2019-01-12 08:10:50.634 --- INFORM: Going to create the field ST
+2019-01-12 08:10:50.635 --- INFORM: ST at level 10.000000 already exists; leaving it alone.
+2019-01-12 08:10:50.635 --- INFORM: Couldn't find ST010035 at level 200100.000000 to fill level 35.000000 of ST.
+2019-01-12 08:10:50.635 --- INFORM: ST at level 100.000000 already exists; leaving it alone.
+2019-01-12 08:10:50.635 --- INFORM: Couldn't find ST100300 at level 200100.000000 to fill level 300.000000 of ST.
+2019-01-12 08:10:50.635 --- INFORM: ST at level 10.000000 already exists; leaving it alone.
+2019-01-12 08:10:50.635 --- INFORM: ST at level 200.000000 already exists; leaving it alone.
+2019-01-12 08:10:50.635 --- INFORM: Couldn't find ST000007 at level 200100.000000 to fill level 7.000000 of ST.
+2019-01-12 08:10:50.635 --- INFORM: Couldn't find ST007028 at level 200100.000000 to fill level 28.000000 of ST.
+2019-01-12 08:10:50.635 --- INFORM: ST at level 100.000000 already exists; leaving it alone.
+2019-01-12 08:10:50.635 --- INFORM: Couldn't find ST100289 at level 200100.000000 to fill level 289.000000 of ST.
+2019-01-12 08:10:50.635 --- INFORM: Going to create the field SM
+2019-01-12 08:10:50.636 --- INFORM: SM at level 10.000000 already exists; leaving it alone.
+2019-01-12 08:10:50.636 --- INFORM: Couldn't find SM010035 at level 200100.000000 to fill level 35.000000 of SM.
+2019-01-12 08:10:50.636 --- INFORM: SM at level 100.000000 already exists; leaving it alone.
+2019-01-12 08:10:50.636 --- INFORM: Couldn't find SM100300 at level 200100.000000 to fill level 300.000000 of SM.
+2019-01-12 08:10:50.636 --- INFORM: SM at level 10.000000 already exists; leaving it alone.
+2019-01-12 08:10:50.636 --- INFORM: SM at level 200.000000 already exists; leaving it alone.
+2019-01-12 08:10:50.636 --- INFORM: Couldn't find SM000007 at level 200100.000000 to fill level 7.000000 of SM.
+2019-01-12 08:10:50.636 --- INFORM: Couldn't find SM007028 at level 200100.000000 to fill level 28.000000 of SM.
+2019-01-12 08:10:50.636 --- INFORM: SM at level 100.000000 already exists; leaving it alone.
+2019-01-12 08:10:50.636 --- INFORM: Couldn't find SM100289 at level 200100.000000 to fill level 289.000000 of SM.
+2019-01-12 08:10:50.636 --- INFORM: Going to create the field SW
+2019-01-12 08:10:50.636 --- INFORM: Couldn't find SW000010 at level 200100.000000 to fill level 1.000000 of SW.
+2019-01-12 08:10:50.636 --- INFORM: Couldn't find SW010040 at level 200100.000000 to fill level 2.000000 of SW.
+2019-01-12 08:10:50.636 --- INFORM: Couldn't find SW040100 at level 200100.000000 to fill level 3.000000 of SW.
+2019-01-12 08:10:50.636 --- INFORM: Couldn't find SW100200 at level 200100.000000 to fill level 4.000000 of SW.
+2019-01-12 08:10:50.636 --- INFORM: Couldn't find SW000010 at level 200100.000000 to fill level 1.000000 of SW.
+2019-01-12 08:10:50.636 --- INFORM: Couldn't find SW010200 at level 200100.000000 to fill level 2.000000 of SW.
+2019-01-12 08:10:50.636 --- INFORM: Going to create the field SOIL_LAYERS
+2019-01-12 08:10:50.636 --- INFORM: Going to create the field SOILM
+2019-01-12 08:10:50.637 --- INFORM: Couldn't find SOILM000 at level 200100.000000 to fill level 0.000000 of SOILM.
+2019-01-12 08:10:50.637 --- INFORM: Couldn't find SOILM005 at level 200100.000000 to fill level 5.000000 of SOILM.
+2019-01-12 08:10:50.637 --- INFORM: Couldn't find SOILM020 at level 200100.000000 to fill level 20.000000 of SOILM.
+2019-01-12 08:10:50.637 --- INFORM: Couldn't find SOILM040 at level 200100.000000 to fill level 40.000000 of SOILM.
+2019-01-12 08:10:50.637 --- INFORM: Couldn't find SOILM160 at level 200100.000000 to fill level 160.000000 of SOILM.
+2019-01-12 08:10:50.637 --- INFORM: Couldn't find SOILM300 at level 200100.000000 to fill level 300.000000 of SOILM.
+2019-01-12 08:10:50.637 --- INFORM: Going to create the field SOILT
+2019-01-12 08:10:50.637 --- INFORM: Couldn't find SOILT000 at level 200100.000000 to fill level 0.000000 of SOILT.
+2019-01-12 08:10:50.637 --- INFORM: Couldn't find SOILT005 at level 200100.000000 to fill level 5.000000 of SOILT.
+2019-01-12 08:10:50.637 --- INFORM: Couldn't find SOILT020 at level 200100.000000 to fill level 20.000000 of SOILT.
+2019-01-12 08:10:50.637 --- INFORM: Couldn't find SOILT040 at level 200100.000000 to fill level 40.000000 of SOILT.
+2019-01-12 08:10:50.637 --- INFORM: Couldn't find SOILT160 at level 200100.000000 to fill level 160.000000 of SOILT.
+2019-01-12 08:10:50.637 --- INFORM: Couldn't find SOILT300 at level 200100.000000 to fill level 300.000000 of SOILT.
+2019-01-12 08:10:50.637 --- INFORM: Couldn't find SOILT050 at level 200100.000000 to fill level 49.000000 of SOILT.
+2019-01-12 08:10:50.637 --- INFORM: Couldn't find SOILT050 at level 200100.000000 to fill level 51.000000 of SOILT.
+2019-01-12 08:10:50.637 --- INFORM: Going to create the field SOIL_LEVELS
+2019-01-12 08:10:50.637 --- INFORM: Going to create the field PRES
+2019-01-12 08:10:50.638 --- INFORM: PRES at level 200100.000000 already exists; leaving it alone.
+2019-01-12 08:10:50.647 --- INFORM: Field LANDSEA.mask does not have a valid mask and will not be checked for missing values
+2019-01-12 08:10:50.659 --- Initializing output module.
+2019-01-12 08:10:50.668 --- Writing global attributes to output.
+2019-01-12 08:10:50.700 --- Writing field PRES to output.
+2019-01-12 08:10:50.713 --- Writing field SOIL_LAYERS to output.
+2019-01-12 08:10:50.713 --- Writing field SM to output.
+2019-01-12 08:10:50.713 --- Writing field ST to output.
+2019-01-12 08:10:50.714 --- Writing field GHT to output.
+2019-01-12 08:10:50.715 --- Writing field SNOWH to output.
+2019-01-12 08:10:50.715 --- Writing field SNOW to output.
+2019-01-12 08:10:50.715 --- Writing field SKINTEMP to output.
+2019-01-12 08:10:50.715 --- Writing field SOILHGT to output.
+2019-01-12 08:10:50.716 --- Writing field LANDSEA to output.
+2019-01-12 08:10:50.716 --- Writing field SEAICE to output.
+2019-01-12 08:10:50.716 --- Writing field ST100200 to output.
+2019-01-12 08:10:50.716 --- Writing field ST040100 to output.
+2019-01-12 08:10:50.716 --- Writing field ST010040 to output.
+2019-01-12 08:10:50.716 --- Writing field ST000010 to output.
+2019-01-12 08:10:50.716 --- Writing field SM100200 to output.
+2019-01-12 08:10:50.716 --- Writing field SM040100 to output.
+2019-01-12 08:10:50.716 --- Writing field SM010040 to output.
+2019-01-12 08:10:50.716 --- Writing field SM000010 to output.
+2019-01-12 08:10:50.716 --- Writing field PSFC to output.
+2019-01-12 08:10:50.717 --- Writing field RH to output.
+2019-01-12 08:10:50.718 --- Writing field VV to output.
+2019-01-12 08:10:50.719 --- Writing field UU to output.
+2019-01-12 08:10:50.721 --- Writing field TT to output.
+2019-01-12 08:10:50.722 --- Writing field PMSL to output.
+2019-01-12 08:10:50.722 --- Writing field CANFRA to output.
+2019-01-12 08:10:50.722 --- Writing field IMPERV to output.
+2019-01-12 08:10:50.724 --- Writing field URB_PARAM to output.
+2019-01-12 08:10:50.731 --- Writing field LAKE_DEPTH to output.
+2019-01-12 08:10:50.731 --- Writing field VAR_SSO to output.
+2019-01-12 08:10:50.731 --- Writing field OL4 to output.
+2019-01-12 08:10:50.731 --- Writing field OL3 to output.
+2019-01-12 08:10:50.731 --- Writing field OL2 to output.
+2019-01-12 08:10:50.731 --- Writing field OL1 to output.
+2019-01-12 08:10:50.731 --- Writing field OA4 to output.
+2019-01-12 08:10:50.732 --- Writing field OA3 to output.
+2019-01-12 08:10:50.732 --- Writing field OA2 to output.
+2019-01-12 08:10:50.732 --- Writing field OA1 to output.
+2019-01-12 08:10:50.732 --- Writing field VAR to output.
+2019-01-12 08:10:50.732 --- Writing field CON to output.
+2019-01-12 08:10:50.732 --- Writing field SLOPECAT to output.
+2019-01-12 08:10:50.732 --- Writing field SNOALB to output.
+2019-01-12 08:10:50.732 --- Writing field LAI12M to output.
+2019-01-12 08:10:50.733 --- Writing field GREENFRAC to output.
+2019-01-12 08:10:50.734 --- Writing field ALBEDO12M to output.
+2019-01-12 08:10:50.734 --- Writing field SCB_DOM to output.
+2019-01-12 08:10:50.735 --- Writing field SOILCBOT to output.
+2019-01-12 08:10:50.736 --- Writing field SCT_DOM to output.
+2019-01-12 08:10:50.736 --- Writing field SOILCTOP to output.
+2019-01-12 08:10:50.737 --- Writing field SOILTEMP to output.
+2019-01-12 08:10:50.737 --- Writing field HGT_M to output.
+2019-01-12 08:10:50.737 --- Writing field LU_INDEX to output.
+2019-01-12 08:10:50.737 --- Writing field LANDUSEF to output.
+2019-01-12 08:10:50.738 --- Writing field COSALPHA_V to output.
+2019-01-12 08:10:50.738 --- Writing field SINALPHA_V to output.
+2019-01-12 08:10:50.739 --- Writing field COSALPHA_U to output.
+2019-01-12 08:10:50.739 --- Writing field SINALPHA_U to output.
+2019-01-12 08:10:50.739 --- Writing field XLONG_C to output.
+2019-01-12 08:10:50.739 --- Writing field XLAT_C to output.
+2019-01-12 08:10:50.739 --- Writing field LANDMASK to output.
+2019-01-12 08:10:50.739 --- Writing field COSALPHA to output.
+2019-01-12 08:10:50.739 --- Writing field SINALPHA to output.
+2019-01-12 08:10:50.739 --- Writing field F to output.
+2019-01-12 08:10:50.739 --- Writing field E to output.
+2019-01-12 08:10:50.740 --- Writing field MAPFAC_UY to output.
+2019-01-12 08:10:50.740 --- Writing field MAPFAC_VY to output.
+2019-01-12 08:10:50.740 --- Writing field MAPFAC_MY to output.
+2019-01-12 08:10:50.740 --- Writing field MAPFAC_UX to output.
+2019-01-12 08:10:50.740 --- Writing field MAPFAC_VX to output.
+2019-01-12 08:10:50.740 --- Writing field MAPFAC_MX to output.
+2019-01-12 08:10:50.740 --- Writing field MAPFAC_U to output.
+2019-01-12 08:10:50.741 --- Writing field MAPFAC_V to output.
+2019-01-12 08:10:50.741 --- Writing field MAPFAC_M to output.
+2019-01-12 08:10:50.741 --- Writing field CLONG to output.
+2019-01-12 08:10:50.741 --- Writing field CLAT to output.
+2019-01-12 08:10:50.741 --- Writing field XLONG_U to output.
+2019-01-12 08:10:50.741 --- Writing field XLAT_U to output.
+2019-01-12 08:10:50.741 --- Writing field XLONG_V to output.
+2019-01-12 08:10:50.741 --- Writing field XLAT_V to output.
+2019-01-12 08:10:50.742 --- Writing field XLONG_M to output.
+2019-01-12 08:10:50.742 --- Writing field XLAT_M to output.
+2019-01-12 08:10:50.742 --- Closing output file.
+2019-01-12 08:10:50.742 --- Preparing to process output time 2005-08-29_12
+2019-01-12 08:10:50.742 --- Getting input fields from FILE
+2019-01-12 08:10:51.253 --- Processing PMSL at level 201300.000000.
+2019-01-12 08:10:51.257 --- Processing TT at level 200100.000000.
+2019-01-12 08:10:51.261 --- Processing UU at level 200100.000000.
+2019-01-12 08:10:51.265 --- Processing VV at level 200100.000000.
+2019-01-12 08:10:51.269 --- Processing RH at level 200100.000000.
+2019-01-12 08:10:51.327 --- Processing PSFC at level 200100.000000.
+2019-01-12 08:10:51.331 --- Processing SM000010 at level 200100.000000.
+2019-01-12 08:10:51.335 --- Processing SM010040 at level 200100.000000.
+2019-01-12 08:10:51.338 --- Processing SM040100 at level 200100.000000.
+2019-01-12 08:10:51.342 --- Processing SM100200 at level 200100.000000.
+2019-01-12 08:10:51.346 --- Processing ST000010 at level 200100.000000.
+2019-01-12 08:10:51.349 --- Processing ST010040 at level 200100.000000.
+2019-01-12 08:10:51.353 --- Processing ST040100 at level 200100.000000.
+2019-01-12 08:10:51.357 --- Processing ST100200 at level 200100.000000.
+2019-01-12 08:10:51.361 --- Processing SEAICE at level 200100.000000.
+2019-01-12 08:10:51.364 --- Processing LANDSEA at level 200100.000000.
+2019-01-12 08:10:51.368 --- Processing SOILHGT at level 200100.000000.
+2019-01-12 08:10:51.371 --- Processing SKINTEMP at level 200100.000000.
+2019-01-12 08:10:51.377 --- Processing SNOW at level 200100.000000.
+2019-01-12 08:10:51.380 --- Processing SNOWH at level 200100.000000.
+2019-01-12 08:10:51.384 --- Processing TT at level 100000.000000.
+2019-01-12 08:10:51.387 --- Processing UU at level 100000.000000.
+2019-01-12 08:10:51.392 --- Processing VV at level 100000.000000.
+2019-01-12 08:10:51.396 --- Processing RH at level 100000.000000.
+2019-01-12 08:10:51.400 --- Processing GHT at level 100000.000000.
+2019-01-12 08:10:51.406 --- Processing TT at level 97500.000000.
+2019-01-12 08:10:51.436 --- Processing UU at level 97500.000000.
+2019-01-12 08:10:51.440 --- Processing VV at level 97500.000000.
+2019-01-12 08:10:51.444 --- Processing RH at level 97500.000000.
+2019-01-12 08:10:51.448 --- Processing GHT at level 97500.000000.
+2019-01-12 08:10:51.451 --- Processing TT at level 95000.000000.
+2019-01-12 08:10:51.455 --- Processing UU at level 95000.000000.
+2019-01-12 08:10:51.459 --- Processing VV at level 95000.000000.
+2019-01-12 08:10:51.463 --- Processing RH at level 95000.000000.
+2019-01-12 08:10:51.467 --- Processing GHT at level 95000.000000.
+2019-01-12 08:10:51.471 --- Processing TT at level 92500.000000.
+2019-01-12 08:10:51.474 --- Processing UU at level 92500.000000.
+2019-01-12 08:10:51.478 --- Processing VV at level 92500.000000.
+2019-01-12 08:10:51.482 --- Processing RH at level 92500.000000.
+2019-01-12 08:10:51.486 --- Processing GHT at level 92500.000000.
+2019-01-12 08:10:51.490 --- Processing TT at level 90000.000000.
+2019-01-12 08:10:51.494 --- Processing UU at level 90000.000000.
+2019-01-12 08:10:51.498 --- Processing VV at level 90000.000000.
+2019-01-12 08:10:51.502 --- Processing RH at level 90000.000000.
+2019-01-12 08:10:51.506 --- Processing GHT at level 90000.000000.
+2019-01-12 08:10:51.510 --- Processing TT at level 85000.000000.
+2019-01-12 08:10:51.515 --- Processing UU at level 85000.000000.
+2019-01-12 08:10:51.519 --- Processing VV at level 85000.000000.
+2019-01-12 08:10:51.522 --- Processing RH at level 85000.000000.
+2019-01-12 08:10:51.526 --- Processing GHT at level 85000.000000.
+2019-01-12 08:10:51.530 --- Processing TT at level 80000.000000.
+2019-01-12 08:10:51.535 --- Processing UU at level 80000.000000.
+2019-01-12 08:10:51.578 --- Processing VV at level 80000.000000.
+2019-01-12 08:10:51.582 --- Processing RH at level 80000.000000.
+2019-01-12 08:10:51.586 --- Processing GHT at level 80000.000000.
+2019-01-12 08:10:51.590 --- Processing TT at level 75000.000000.
+2019-01-12 08:10:51.594 --- Processing UU at level 75000.000000.
+2019-01-12 08:10:51.598 --- Processing VV at level 75000.000000.
+2019-01-12 08:10:51.602 --- Processing RH at level 75000.000000.
+2019-01-12 08:10:51.606 --- Processing GHT at level 75000.000000.
+2019-01-12 08:10:51.610 --- Processing TT at level 70000.000000.
+2019-01-12 08:10:51.614 --- Processing UU at level 70000.000000.
+2019-01-12 08:10:51.618 --- Processing VV at level 70000.000000.
+2019-01-12 08:10:51.622 --- Processing RH at level 70000.000000.
+2019-01-12 08:10:51.626 --- Processing GHT at level 70000.000000.
+2019-01-12 08:10:51.629 --- Processing TT at level 65000.000000.
+2019-01-12 08:10:51.633 --- Processing UU at level 65000.000000.
+2019-01-12 08:10:51.637 --- Processing VV at level 65000.000000.
+2019-01-12 08:10:51.641 --- Processing RH at level 65000.000000.
+2019-01-12 08:10:51.645 --- Processing GHT at level 65000.000000.
+2019-01-12 08:10:51.649 --- Processing TT at level 60000.000000.
+2019-01-12 08:10:51.653 --- Processing UU at level 60000.000000.
+2019-01-12 08:10:51.657 --- Processing VV at level 60000.000000.
+2019-01-12 08:10:51.661 --- Processing RH at level 60000.000000.
+2019-01-12 08:10:51.665 --- Processing GHT at level 60000.000000.
+2019-01-12 08:10:51.669 --- Processing TT at level 55000.000000.
+2019-01-12 08:10:51.672 --- Processing UU at level 55000.000000.
+2019-01-12 08:10:51.676 --- Processing VV at level 55000.000000.
+2019-01-12 08:10:51.692 --- Processing RH at level 55000.000000.
+2019-01-12 08:10:51.701 --- Processing GHT at level 55000.000000.
+2019-01-12 08:10:51.718 --- Processing TT at level 50000.000000.
+2019-01-12 08:10:51.727 --- Processing UU at level 50000.000000.
+2019-01-12 08:10:51.733 --- Processing VV at level 50000.000000.
+2019-01-12 08:10:51.738 --- Processing RH at level 50000.000000.
+2019-01-12 08:10:51.743 --- Processing GHT at level 50000.000000.
+2019-01-12 08:10:51.747 --- Processing TT at level 45000.000000.
+2019-01-12 08:10:51.751 --- Processing UU at level 45000.000000.
+2019-01-12 08:10:51.755 --- Processing VV at level 45000.000000.
+2019-01-12 08:10:51.759 --- Processing RH at level 45000.000000.
+2019-01-12 08:10:51.763 --- Processing GHT at level 45000.000000.
+2019-01-12 08:10:51.767 --- Processing TT at level 40000.000000.
+2019-01-12 08:10:51.771 --- Processing UU at level 40000.000000.
+2019-01-12 08:10:51.775 --- Processing VV at level 40000.000000.
+2019-01-12 08:10:51.779 --- Processing RH at level 40000.000000.
+2019-01-12 08:10:51.783 --- Processing GHT at level 40000.000000.
+2019-01-12 08:10:51.787 --- Processing TT at level 35000.000000.
+2019-01-12 08:10:51.791 --- Processing UU at level 35000.000000.
+2019-01-12 08:10:51.794 --- Processing VV at level 35000.000000.
+2019-01-12 08:10:51.798 --- Processing RH at level 35000.000000.
+2019-01-12 08:10:51.801 --- Processing GHT at level 35000.000000.
+2019-01-12 08:10:51.805 --- Processing TT at level 30000.000000.
+2019-01-12 08:10:51.809 --- Processing UU at level 30000.000000.
+2019-01-12 08:10:51.813 --- Processing VV at level 30000.000000.
+2019-01-12 08:10:51.817 --- Processing RH at level 30000.000000.
+2019-01-12 08:10:51.820 --- Processing GHT at level 30000.000000.
+2019-01-12 08:10:51.824 --- Processing TT at level 25000.000000.
+2019-01-12 08:10:51.828 --- Processing UU at level 25000.000000.
+2019-01-12 08:10:51.832 --- Processing VV at level 25000.000000.
+2019-01-12 08:10:51.835 --- Processing RH at level 25000.000000.
+2019-01-12 08:10:51.839 --- Processing GHT at level 25000.000000.
+2019-01-12 08:10:51.843 --- Processing TT at level 20000.000000.
+2019-01-12 08:10:51.846 --- Processing UU at level 20000.000000.
+2019-01-12 08:10:51.850 --- Processing VV at level 20000.000000.
+2019-01-12 08:10:51.854 --- Processing RH at level 20000.000000.
+2019-01-12 08:10:51.857 --- Processing GHT at level 20000.000000.
+2019-01-12 08:10:51.861 --- Processing TT at level 15000.000000.
+2019-01-12 08:10:51.865 --- Processing UU at level 15000.000000.
+2019-01-12 08:10:51.868 --- Processing VV at level 15000.000000.
+2019-01-12 08:10:51.872 --- Processing RH at level 15000.000000.
+2019-01-12 08:10:51.875 --- Processing GHT at level 15000.000000.
+2019-01-12 08:10:51.879 --- Processing TT at level 10000.000000.
+2019-01-12 08:10:51.884 --- Processing UU at level 10000.000000.
+2019-01-12 08:10:51.888 --- Processing VV at level 10000.000000.
+2019-01-12 08:10:51.892 --- Processing RH at level 10000.000000.
+2019-01-12 08:10:51.896 --- Processing GHT at level 10000.000000.
+2019-01-12 08:10:51.900 --- Processing TT at level 7000.000000.
+2019-01-12 08:10:51.904 --- Processing UU at level 7000.000000.
+2019-01-12 08:10:51.908 --- Processing VV at level 7000.000000.
+2019-01-12 08:10:51.911 --- Processing RH at level 7000.000000.
+2019-01-12 08:10:51.918 --- Processing GHT at level 7000.000000.
+2019-01-12 08:10:51.922 --- Processing TT at level 5000.000000.
+2019-01-12 08:10:51.926 --- Processing UU at level 5000.000000.
+2019-01-12 08:10:51.929 --- Processing VV at level 5000.000000.
+2019-01-12 08:10:51.933 --- Processing RH at level 5000.000000.
+2019-01-12 08:10:51.939 --- Processing GHT at level 5000.000000.
+2019-01-12 08:10:51.943 --- Processing TT at level 3000.000000.
+2019-01-12 08:10:51.946 --- Processing UU at level 3000.000000.
+2019-01-12 08:10:51.950 --- Processing VV at level 3000.000000.
+2019-01-12 08:10:51.953 --- Processing RH at level 3000.000000.
+2019-01-12 08:10:51.960 --- Processing GHT at level 3000.000000.
+2019-01-12 08:10:51.963 --- Processing TT at level 2000.000000.
+2019-01-12 08:10:51.967 --- Processing UU at level 2000.000000.
+2019-01-12 08:10:51.971 --- Processing VV at level 2000.000000.
+2019-01-12 08:10:51.975 --- Processing RH at level 2000.000000.
+2019-01-12 08:10:51.981 --- Processing GHT at level 2000.000000.
+2019-01-12 08:10:51.985 --- Processing TT at level 1000.000000.
+2019-01-12 08:10:51.988 --- Processing UU at level 1000.000000.
+2019-01-12 08:10:51.992 --- Processing VV at level 1000.000000.
+2019-01-12 08:10:51.995 --- Processing RH at level 1000.000000.
+2019-01-12 08:10:52.001 --- Processing GHT at level 1000.000000.
+2019-01-12 08:10:52.003 --- Filling missing levels.
+2019-01-12 08:10:52.003 --- INFORM: GHT at level 200100.000000 already exists; leaving it alone.
+2019-01-12 08:10:52.003 --- INFORM: LANDSEA at level 200100.000000 already exists; leaving it alone.
+2019-01-12 08:10:52.003 --- INFORM: PSFC at level 200100.000000 already exists; leaving it alone.
+2019-01-12 08:10:52.003 --- INFORM: RH at level 200100.000000 already exists; leaving it alone.
+2019-01-12 08:10:52.003 --- INFORM: VV at level 200100.000000 already exists; leaving it alone.
+2019-01-12 08:10:52.003 --- INFORM: UU at level 200100.000000 already exists; leaving it alone.
+2019-01-12 08:10:52.003 --- INFORM: TT at level 200100.000000 already exists; leaving it alone.
+2019-01-12 08:10:52.010 --- Creating derived fields.
+2019-01-12 08:10:52.010 --- INFORM: Going to create the field ST
+2019-01-12 08:10:52.011 --- INFORM: ST at level 10.000000 already exists; leaving it alone.
+2019-01-12 08:10:52.011 --- INFORM: Couldn't find ST010035 at level 200100.000000 to fill level 35.000000 of ST.
+2019-01-12 08:10:52.011 --- INFORM: ST at level 100.000000 already exists; leaving it alone.
+2019-01-12 08:10:52.011 --- INFORM: Couldn't find ST100300 at level 200100.000000 to fill level 300.000000 of ST.
+2019-01-12 08:10:52.011 --- INFORM: ST at level 10.000000 already exists; leaving it alone.
+2019-01-12 08:10:52.011 --- INFORM: ST at level 200.000000 already exists; leaving it alone.
+2019-01-12 08:10:52.011 --- INFORM: Couldn't find ST000007 at level 200100.000000 to fill level 7.000000 of ST.
+2019-01-12 08:10:52.011 --- INFORM: Couldn't find ST007028 at level 200100.000000 to fill level 28.000000 of ST.
+2019-01-12 08:10:52.011 --- INFORM: ST at level 100.000000 already exists; leaving it alone.
+2019-01-12 08:10:52.011 --- INFORM: Couldn't find ST100289 at level 200100.000000 to fill level 289.000000 of ST.
+2019-01-12 08:10:52.011 --- INFORM: Going to create the field SM
+2019-01-12 08:10:52.011 --- INFORM: SM at level 10.000000 already exists; leaving it alone.
+2019-01-12 08:10:52.011 --- INFORM: Couldn't find SM010035 at level 200100.000000 to fill level 35.000000 of SM.
+2019-01-12 08:10:52.012 --- INFORM: SM at level 100.000000 already exists; leaving it alone.
+2019-01-12 08:10:52.012 --- INFORM: Couldn't find SM100300 at level 200100.000000 to fill level 300.000000 of SM.
+2019-01-12 08:10:52.012 --- INFORM: SM at level 10.000000 already exists; leaving it alone.
+2019-01-12 08:10:52.012 --- INFORM: SM at level 200.000000 already exists; leaving it alone.
+2019-01-12 08:10:52.012 --- INFORM: Couldn't find SM000007 at level 200100.000000 to fill level 7.000000 of SM.
+2019-01-12 08:10:52.012 --- INFORM: Couldn't find SM007028 at level 200100.000000 to fill level 28.000000 of SM.
+2019-01-12 08:10:52.012 --- INFORM: SM at level 100.000000 already exists; leaving it alone.
+2019-01-12 08:10:52.012 --- INFORM: Couldn't find SM100289 at level 200100.000000 to fill level 289.000000 of SM.
+2019-01-12 08:10:52.012 --- INFORM: Going to create the field SW
+2019-01-12 08:10:52.012 --- INFORM: Couldn't find SW000010 at level 200100.000000 to fill level 1.000000 of SW.
+2019-01-12 08:10:52.012 --- INFORM: Couldn't find SW010040 at level 200100.000000 to fill level 2.000000 of SW.
+2019-01-12 08:10:52.012 --- INFORM: Couldn't find SW040100 at level 200100.000000 to fill level 3.000000 of SW.
+2019-01-12 08:10:52.012 --- INFORM: Couldn't find SW100200 at level 200100.000000 to fill level 4.000000 of SW.
+2019-01-12 08:10:52.013 --- INFORM: Couldn't find SW000010 at level 200100.000000 to fill level 1.000000 of SW.
+2019-01-12 08:10:52.013 --- INFORM: Couldn't find SW010200 at level 200100.000000 to fill level 2.000000 of SW.
+2019-01-12 08:10:52.013 --- INFORM: Going to create the field SOIL_LAYERS
+2019-01-12 08:10:52.013 --- INFORM: Going to create the field SOILM
+2019-01-12 08:10:52.013 --- INFORM: Couldn't find SOILM000 at level 200100.000000 to fill level 0.000000 of SOILM.
+2019-01-12 08:10:52.013 --- INFORM: Couldn't find SOILM005 at level 200100.000000 to fill level 5.000000 of SOILM.
+2019-01-12 08:10:52.013 --- INFORM: Couldn't find SOILM020 at level 200100.000000 to fill level 20.000000 of SOILM.
+2019-01-12 08:10:52.013 --- INFORM: Couldn't find SOILM040 at level 200100.000000 to fill level 40.000000 of SOILM.
+2019-01-12 08:10:52.013 --- INFORM: Couldn't find SOILM160 at level 200100.000000 to fill level 160.000000 of SOILM.
+2019-01-12 08:10:52.013 --- INFORM: Couldn't find SOILM300 at level 200100.000000 to fill level 300.000000 of SOILM.
+2019-01-12 08:10:52.013 --- INFORM: Going to create the field SOILT
+2019-01-12 08:10:52.013 --- INFORM: Couldn't find SOILT000 at level 200100.000000 to fill level 0.000000 of SOILT.
+2019-01-12 08:10:52.013 --- INFORM: Couldn't find SOILT005 at level 200100.000000 to fill level 5.000000 of SOILT.
+2019-01-12 08:10:52.013 --- INFORM: Couldn't find SOILT020 at level 200100.000000 to fill level 20.000000 of SOILT.
+2019-01-12 08:10:52.013 --- INFORM: Couldn't find SOILT040 at level 200100.000000 to fill level 40.000000 of SOILT.
+2019-01-12 08:10:52.013 --- INFORM: Couldn't find SOILT160 at level 200100.000000 to fill level 160.000000 of SOILT.
+2019-01-12 08:10:52.014 --- INFORM: Couldn't find SOILT300 at level 200100.000000 to fill level 300.000000 of SOILT.
+2019-01-12 08:10:52.014 --- INFORM: Couldn't find SOILT050 at level 200100.000000 to fill level 49.000000 of SOILT.
+2019-01-12 08:10:52.014 --- INFORM: Couldn't find SOILT050 at level 200100.000000 to fill level 51.000000 of SOILT.
+2019-01-12 08:10:52.014 --- INFORM: Going to create the field SOIL_LEVELS
+2019-01-12 08:10:52.014 --- INFORM: Going to create the field PRES
+2019-01-12 08:10:52.015 --- INFORM: PRES at level 200100.000000 already exists; leaving it alone.
+2019-01-12 08:10:52.024 --- INFORM: Field LANDSEA.mask does not have a valid mask and will not be checked for missing values
+2019-01-12 08:10:52.036 --- Initializing output module.
+2019-01-12 08:10:52.045 --- Writing global attributes to output.
+2019-01-12 08:10:52.078 --- Writing field PRES to output.
+2019-01-12 08:10:52.090 --- Writing field SOIL_LAYERS to output.
+2019-01-12 08:10:52.091 --- Writing field SM to output.
+2019-01-12 08:10:52.091 --- Writing field ST to output.
+2019-01-12 08:10:52.091 --- Writing field GHT to output.
+2019-01-12 08:10:52.093 --- Writing field SNOWH to output.
+2019-01-12 08:10:52.093 --- Writing field SNOW to output.
+2019-01-12 08:10:52.093 --- Writing field SKINTEMP to output.
+2019-01-12 08:10:52.093 --- Writing field SOILHGT to output.
+2019-01-12 08:10:52.093 --- Writing field LANDSEA to output.
+2019-01-12 08:10:52.093 --- Writing field SEAICE to output.
+2019-01-12 08:10:52.093 --- Writing field ST100200 to output.
+2019-01-12 08:10:52.093 --- Writing field ST040100 to output.
+2019-01-12 08:10:52.093 --- Writing field ST010040 to output.
+2019-01-12 08:10:52.093 --- Writing field ST000010 to output.
+2019-01-12 08:10:52.094 --- Writing field SM100200 to output.
+2019-01-12 08:10:52.094 --- Writing field SM040100 to output.
+2019-01-12 08:10:52.094 --- Writing field SM010040 to output.
+2019-01-12 08:10:52.094 --- Writing field SM000010 to output.
+2019-01-12 08:10:52.094 --- Writing field PSFC to output.
+2019-01-12 08:10:52.094 --- Writing field RH to output.
+2019-01-12 08:10:52.095 --- Writing field VV to output.
+2019-01-12 08:10:52.097 --- Writing field UU to output.
+2019-01-12 08:10:52.098 --- Writing field TT to output.
+2019-01-12 08:10:52.099 --- Writing field PMSL to output.
+2019-01-12 08:10:52.100 --- Writing field CANFRA to output.
+2019-01-12 08:10:52.100 --- Writing field IMPERV to output.
+2019-01-12 08:10:52.101 --- Writing field URB_PARAM to output.
+2019-01-12 08:10:52.108 --- Writing field LAKE_DEPTH to output.
+2019-01-12 08:10:52.108 --- Writing field VAR_SSO to output.
+2019-01-12 08:10:52.108 --- Writing field OL4 to output.
+2019-01-12 08:10:52.108 --- Writing field OL3 to output.
+2019-01-12 08:10:52.109 --- Writing field OL2 to output.
+2019-01-12 08:10:52.109 --- Writing field OL1 to output.
+2019-01-12 08:10:52.109 --- Writing field OA4 to output.
+2019-01-12 08:10:52.109 --- Writing field OA3 to output.
+2019-01-12 08:10:52.109 --- Writing field OA2 to output.
+2019-01-12 08:10:52.109 --- Writing field OA1 to output.
+2019-01-12 08:10:52.109 --- Writing field VAR to output.
+2019-01-12 08:10:52.109 --- Writing field CON to output.
+2019-01-12 08:10:52.109 --- Writing field SLOPECAT to output.
+2019-01-12 08:10:52.109 --- Writing field SNOALB to output.
+2019-01-12 08:10:52.110 --- Writing field LAI12M to output.
+2019-01-12 08:10:52.110 --- Writing field GREENFRAC to output.
+2019-01-12 08:10:52.111 --- Writing field ALBEDO12M to output.
+2019-01-12 08:10:52.112 --- Writing field SCB_DOM to output.
+2019-01-12 08:10:52.112 --- Writing field SOILCBOT to output.
+2019-01-12 08:10:52.113 --- Writing field SCT_DOM to output.
+2019-01-12 08:10:52.113 --- Writing field SOILCTOP to output.
+2019-01-12 08:10:52.113 --- Writing field SOILTEMP to output.
+2019-01-12 08:10:52.114 --- Writing field HGT_M to output.
+2019-01-12 08:10:52.114 --- Writing field LU_INDEX to output.
+2019-01-12 08:10:52.114 --- Writing field LANDUSEF to output.
+2019-01-12 08:10:52.115 --- Writing field COSALPHA_V to output.
+2019-01-12 08:10:52.115 --- Writing field SINALPHA_V to output.
+2019-01-12 08:10:52.115 --- Writing field COSALPHA_U to output.
+2019-01-12 08:10:52.115 --- Writing field SINALPHA_U to output.
+2019-01-12 08:10:52.116 --- Writing field XLONG_C to output.
+2019-01-12 08:10:52.116 --- Writing field XLAT_C to output.
+2019-01-12 08:10:52.116 --- Writing field LANDMASK to output.
+2019-01-12 08:10:52.116 --- Writing field COSALPHA to output.
+2019-01-12 08:10:52.116 --- Writing field SINALPHA to output.
+2019-01-12 08:10:52.116 --- Writing field F to output.
+2019-01-12 08:10:52.116 --- Writing field E to output.
+2019-01-12 08:10:52.116 --- Writing field MAPFAC_UY to output.
+2019-01-12 08:10:52.116 --- Writing field MAPFAC_VY to output.
+2019-01-12 08:10:52.117 --- Writing field MAPFAC_MY to output.
+2019-01-12 08:10:52.117 --- Writing field MAPFAC_UX to output.
+2019-01-12 08:10:52.117 --- Writing field MAPFAC_VX to output.
+2019-01-12 08:10:52.117 --- Writing field MAPFAC_MX to output.
+2019-01-12 08:10:52.117 --- Writing field MAPFAC_U to output.
+2019-01-12 08:10:52.117 --- Writing field MAPFAC_V to output.
+2019-01-12 08:10:52.117 --- Writing field MAPFAC_M to output.
+2019-01-12 08:10:52.117 --- Writing field CLONG to output.
+2019-01-12 08:10:52.117 --- Writing field CLAT to output.
+2019-01-12 08:10:52.118 --- Writing field XLONG_U to output.
+2019-01-12 08:10:52.118 --- Writing field XLAT_U to output.
+2019-01-12 08:10:52.118 --- Writing field XLONG_V to output.
+2019-01-12 08:10:52.118 --- Writing field XLAT_V to output.
+2019-01-12 08:10:52.118 --- Writing field XLONG_M to output.
+2019-01-12 08:10:52.118 --- Writing field XLAT_M to output.
+2019-01-12 08:10:52.118 --- Closing output file.
+2019-01-12 08:10:52.119 --- Preparing to process output time 2005-08-29_18
+2019-01-12 08:10:52.119 --- Getting input fields from FILE
+2019-01-12 08:10:52.557 --- Processing PMSL at level 201300.000000.
+2019-01-12 08:10:52.561 --- Processing TT at level 200100.000000.
+2019-01-12 08:10:52.564 --- Processing UU at level 200100.000000.
+2019-01-12 08:10:52.568 --- Processing VV at level 200100.000000.
+2019-01-12 08:10:52.571 --- Processing RH at level 200100.000000.
+2019-01-12 08:10:52.575 --- Processing PSFC at level 200100.000000.
+2019-01-12 08:10:52.578 --- Processing SM000010 at level 200100.000000.
+2019-01-12 08:10:52.581 --- Processing SM010040 at level 200100.000000.
+2019-01-12 08:10:52.584 --- Processing SM040100 at level 200100.000000.
+2019-01-12 08:10:52.588 --- Processing SM100200 at level 200100.000000.
+2019-01-12 08:10:52.591 --- Processing ST000010 at level 200100.000000.
+2019-01-12 08:10:52.594 --- Processing ST010040 at level 200100.000000.
+2019-01-12 08:10:52.597 --- Processing ST040100 at level 200100.000000.
+2019-01-12 08:10:52.601 --- Processing ST100200 at level 200100.000000.
+2019-01-12 08:10:52.604 --- Processing SEAICE at level 200100.000000.
+2019-01-12 08:10:52.607 --- Processing LANDSEA at level 200100.000000.
+2019-01-12 08:10:52.610 --- Processing SOILHGT at level 200100.000000.
+2019-01-12 08:10:52.613 --- Processing SKINTEMP at level 200100.000000.
+2019-01-12 08:10:52.617 --- Processing SNOW at level 200100.000000.
+2019-01-12 08:10:52.620 --- Processing SNOWH at level 200100.000000.
+2019-01-12 08:10:52.623 --- Processing TT at level 100000.000000.
+2019-01-12 08:10:52.627 --- Processing UU at level 100000.000000.
+2019-01-12 08:10:52.630 --- Processing VV at level 100000.000000.
+2019-01-12 08:10:52.634 --- Processing RH at level 100000.000000.
+2019-01-12 08:10:52.637 --- Processing GHT at level 100000.000000.
+2019-01-12 08:10:52.641 --- Processing TT at level 97500.000000.
+2019-01-12 08:10:52.644 --- Processing UU at level 97500.000000.
+2019-01-12 08:10:52.648 --- Processing VV at level 97500.000000.
+2019-01-12 08:10:52.652 --- Processing RH at level 97500.000000.
+2019-01-12 08:10:52.655 --- Processing GHT at level 97500.000000.
+2019-01-12 08:10:52.659 --- Processing TT at level 95000.000000.
+2019-01-12 08:10:52.663 --- Processing UU at level 95000.000000.
+2019-01-12 08:10:52.666 --- Processing VV at level 95000.000000.
+2019-01-12 08:10:52.670 --- Processing RH at level 95000.000000.
+2019-01-12 08:10:52.673 --- Processing GHT at level 95000.000000.
+2019-01-12 08:10:52.677 --- Processing TT at level 92500.000000.
+2019-01-12 08:10:52.680 --- Processing UU at level 92500.000000.
+2019-01-12 08:10:52.684 --- Processing VV at level 92500.000000.
+2019-01-12 08:10:52.691 --- Processing RH at level 92500.000000.
+2019-01-12 08:10:52.695 --- Processing GHT at level 92500.000000.
+2019-01-12 08:10:52.698 --- Processing TT at level 90000.000000.
+2019-01-12 08:10:52.702 --- Processing UU at level 90000.000000.
+2019-01-12 08:10:52.705 --- Processing VV at level 90000.000000.
+2019-01-12 08:10:52.709 --- Processing RH at level 90000.000000.
+2019-01-12 08:10:52.713 --- Processing GHT at level 90000.000000.
+2019-01-12 08:10:52.716 --- Processing TT at level 85000.000000.
+2019-01-12 08:10:52.720 --- Processing UU at level 85000.000000.
+2019-01-12 08:10:52.723 --- Processing VV at level 85000.000000.
+2019-01-12 08:10:52.727 --- Processing RH at level 85000.000000.
+2019-01-12 08:10:52.730 --- Processing GHT at level 85000.000000.
+2019-01-12 08:10:52.734 --- Processing TT at level 80000.000000.
+2019-01-12 08:10:52.737 --- Processing UU at level 80000.000000.
+2019-01-12 08:10:52.741 --- Processing VV at level 80000.000000.
+2019-01-12 08:10:52.744 --- Processing RH at level 80000.000000.
+2019-01-12 08:10:52.748 --- Processing GHT at level 80000.000000.
+2019-01-12 08:10:52.752 --- Processing TT at level 75000.000000.
+2019-01-12 08:10:52.755 --- Processing UU at level 75000.000000.
+2019-01-12 08:10:52.759 --- Processing VV at level 75000.000000.
+2019-01-12 08:10:52.762 --- Processing RH at level 75000.000000.
+2019-01-12 08:10:52.766 --- Processing GHT at level 75000.000000.
+2019-01-12 08:10:52.769 --- Processing TT at level 70000.000000.
+2019-01-12 08:10:52.773 --- Processing UU at level 70000.000000.
+2019-01-12 08:10:52.776 --- Processing VV at level 70000.000000.
+2019-01-12 08:10:52.780 --- Processing RH at level 70000.000000.
+2019-01-12 08:10:52.783 --- Processing GHT at level 70000.000000.
+2019-01-12 08:10:52.787 --- Processing TT at level 65000.000000.
+2019-01-12 08:10:52.791 --- Processing UU at level 65000.000000.
+2019-01-12 08:10:52.795 --- Processing VV at level 65000.000000.
+2019-01-12 08:10:52.798 --- Processing RH at level 65000.000000.
+2019-01-12 08:10:52.801 --- Processing GHT at level 65000.000000.
+2019-01-12 08:10:52.805 --- Processing TT at level 60000.000000.
+2019-01-12 08:10:52.808 --- Processing UU at level 60000.000000.
+2019-01-12 08:10:52.812 --- Processing VV at level 60000.000000.
+2019-01-12 08:10:52.816 --- Processing RH at level 60000.000000.
+2019-01-12 08:10:52.819 --- Processing GHT at level 60000.000000.
+2019-01-12 08:10:52.824 --- Processing TT at level 55000.000000.
+2019-01-12 08:10:52.828 --- Processing UU at level 55000.000000.
+2019-01-12 08:10:52.833 --- Processing VV at level 55000.000000.
+2019-01-12 08:10:52.836 --- Processing RH at level 55000.000000.
+2019-01-12 08:10:52.840 --- Processing GHT at level 55000.000000.
+2019-01-12 08:10:52.843 --- Processing TT at level 50000.000000.
+2019-01-12 08:10:52.847 --- Processing UU at level 50000.000000.
+2019-01-12 08:10:52.850 --- Processing VV at level 50000.000000.
+2019-01-12 08:10:52.854 --- Processing RH at level 50000.000000.
+2019-01-12 08:10:52.858 --- Processing GHT at level 50000.000000.
+2019-01-12 08:10:52.861 --- Processing TT at level 45000.000000.
+2019-01-12 08:10:52.865 --- Processing UU at level 45000.000000.
+2019-01-12 08:10:52.869 --- Processing VV at level 45000.000000.
+2019-01-12 08:10:52.872 --- Processing RH at level 45000.000000.
+2019-01-12 08:10:52.876 --- Processing GHT at level 45000.000000.
+2019-01-12 08:10:52.879 --- Processing TT at level 40000.000000.
+2019-01-12 08:10:52.883 --- Processing UU at level 40000.000000.
+2019-01-12 08:10:52.886 --- Processing VV at level 40000.000000.
+2019-01-12 08:10:52.890 --- Processing RH at level 40000.000000.
+2019-01-12 08:10:52.894 --- Processing GHT at level 40000.000000.
+2019-01-12 08:10:52.899 --- Processing TT at level 35000.000000.
+2019-01-12 08:10:52.902 --- Processing UU at level 35000.000000.
+2019-01-12 08:10:52.906 --- Processing VV at level 35000.000000.
+2019-01-12 08:10:52.910 --- Processing RH at level 35000.000000.
+2019-01-12 08:10:52.914 --- Processing GHT at level 35000.000000.
+2019-01-12 08:10:52.917 --- Processing TT at level 30000.000000.
+2019-01-12 08:10:52.921 --- Processing UU at level 30000.000000.
+2019-01-12 08:10:52.925 --- Processing VV at level 30000.000000.
+2019-01-12 08:10:52.928 --- Processing RH at level 30000.000000.
+2019-01-12 08:10:52.932 --- Processing GHT at level 30000.000000.
+2019-01-12 08:10:52.935 --- Processing TT at level 25000.000000.
+2019-01-12 08:10:52.939 --- Processing UU at level 25000.000000.
+2019-01-12 08:10:52.943 --- Processing VV at level 25000.000000.
+2019-01-12 08:10:52.946 --- Processing RH at level 25000.000000.
+2019-01-12 08:10:52.950 --- Processing GHT at level 25000.000000.
+2019-01-12 08:10:52.953 --- Processing TT at level 20000.000000.
+2019-01-12 08:10:52.957 --- Processing UU at level 20000.000000.
+2019-01-12 08:10:52.961 --- Processing VV at level 20000.000000.
+2019-01-12 08:10:52.964 --- Processing RH at level 20000.000000.
+2019-01-12 08:10:52.968 --- Processing GHT at level 20000.000000.
+2019-01-12 08:10:52.972 --- Processing TT at level 15000.000000.
+2019-01-12 08:10:52.975 --- Processing UU at level 15000.000000.
+2019-01-12 08:10:52.979 --- Processing VV at level 15000.000000.
+2019-01-12 08:10:52.982 --- Processing RH at level 15000.000000.
+2019-01-12 08:10:52.986 --- Processing GHT at level 15000.000000.
+2019-01-12 08:10:52.989 --- Processing TT at level 10000.000000.
+2019-01-12 08:10:52.993 --- Processing UU at level 10000.000000.
+2019-01-12 08:10:52.996 --- Processing VV at level 10000.000000.
+2019-01-12 08:10:53.000 --- Processing RH at level 10000.000000.
+2019-01-12 08:10:53.004 --- Processing GHT at level 10000.000000.
+2019-01-12 08:10:53.008 --- Processing TT at level 7000.000000.
+2019-01-12 08:10:53.012 --- Processing UU at level 7000.000000.
+2019-01-12 08:10:53.015 --- Processing VV at level 7000.000000.
+2019-01-12 08:10:53.019 --- Processing RH at level 7000.000000.
+2019-01-12 08:10:53.025 --- Processing GHT at level 7000.000000.
+2019-01-12 08:10:53.028 --- Processing TT at level 5000.000000.
+2019-01-12 08:10:53.032 --- Processing UU at level 5000.000000.
+2019-01-12 08:10:53.036 --- Processing VV at level 5000.000000.
+2019-01-12 08:10:53.039 --- Processing RH at level 5000.000000.
+2019-01-12 08:10:53.045 --- Processing GHT at level 5000.000000.
+2019-01-12 08:10:53.048 --- Processing TT at level 3000.000000.
+2019-01-12 08:10:53.052 --- Processing UU at level 3000.000000.
+2019-01-12 08:10:53.055 --- Processing VV at level 3000.000000.
+2019-01-12 08:10:53.059 --- Processing RH at level 3000.000000.
+2019-01-12 08:10:53.065 --- Processing GHT at level 3000.000000.
+2019-01-12 08:10:53.069 --- Processing TT at level 2000.000000.
+2019-01-12 08:10:53.072 --- Processing UU at level 2000.000000.
+2019-01-12 08:10:53.076 --- Processing VV at level 2000.000000.
+2019-01-12 08:10:53.079 --- Processing RH at level 2000.000000.
+2019-01-12 08:10:53.085 --- Processing GHT at level 2000.000000.
+2019-01-12 08:10:53.089 --- Processing TT at level 1000.000000.
+2019-01-12 08:10:53.093 --- Processing UU at level 1000.000000.
+2019-01-12 08:10:53.096 --- Processing VV at level 1000.000000.
+2019-01-12 08:10:53.100 --- Processing RH at level 1000.000000.
+2019-01-12 08:10:53.106 --- Processing GHT at level 1000.000000.
+2019-01-12 08:10:53.107 --- Filling missing levels.
+2019-01-12 08:10:53.107 --- INFORM: GHT at level 200100.000000 already exists; leaving it alone.
+2019-01-12 08:10:53.107 --- INFORM: LANDSEA at level 200100.000000 already exists; leaving it alone.
+2019-01-12 08:10:53.107 --- INFORM: PSFC at level 200100.000000 already exists; leaving it alone.
+2019-01-12 08:10:53.107 --- INFORM: RH at level 200100.000000 already exists; leaving it alone.
+2019-01-12 08:10:53.107 --- INFORM: VV at level 200100.000000 already exists; leaving it alone.
+2019-01-12 08:10:53.107 --- INFORM: UU at level 200100.000000 already exists; leaving it alone.
+2019-01-12 08:10:53.107 --- INFORM: TT at level 200100.000000 already exists; leaving it alone.
+2019-01-12 08:10:53.113 --- Creating derived fields.
+2019-01-12 08:10:53.113 --- INFORM: Going to create the field ST
+2019-01-12 08:10:53.113 --- INFORM: ST at level 10.000000 already exists; leaving it alone.
+2019-01-12 08:10:53.114 --- INFORM: Couldn't find ST010035 at level 200100.000000 to fill level 35.000000 of ST.
+2019-01-12 08:10:53.114 --- INFORM: ST at level 100.000000 already exists; leaving it alone.
+2019-01-12 08:10:53.114 --- INFORM: Couldn't find ST100300 at level 200100.000000 to fill level 300.000000 of ST.
+2019-01-12 08:10:53.114 --- INFORM: ST at level 10.000000 already exists; leaving it alone.
+2019-01-12 08:10:53.114 --- INFORM: ST at level 200.000000 already exists; leaving it alone.
+2019-01-12 08:10:53.114 --- INFORM: Couldn't find ST000007 at level 200100.000000 to fill level 7.000000 of ST.
+2019-01-12 08:10:53.114 --- INFORM: Couldn't find ST007028 at level 200100.000000 to fill level 28.000000 of ST.
+2019-01-12 08:10:53.114 --- INFORM: ST at level 100.000000 already exists; leaving it alone.
+2019-01-12 08:10:53.114 --- INFORM: Couldn't find ST100289 at level 200100.000000 to fill level 289.000000 of ST.
+2019-01-12 08:10:53.114 --- INFORM: Going to create the field SM
+2019-01-12 08:10:53.114 --- INFORM: SM at level 10.000000 already exists; leaving it alone.
+2019-01-12 08:10:53.115 --- INFORM: Couldn't find SM010035 at level 200100.000000 to fill level 35.000000 of SM.
+2019-01-12 08:10:53.115 --- INFORM: SM at level 100.000000 already exists; leaving it alone.
+2019-01-12 08:10:53.115 --- INFORM: Couldn't find SM100300 at level 200100.000000 to fill level 300.000000 of SM.
+2019-01-12 08:10:53.115 --- INFORM: SM at level 10.000000 already exists; leaving it alone.
+2019-01-12 08:10:53.115 --- INFORM: SM at level 200.000000 already exists; leaving it alone.
+2019-01-12 08:10:53.115 --- INFORM: Couldn't find SM000007 at level 200100.000000 to fill level 7.000000 of SM.
+2019-01-12 08:10:53.115 --- INFORM: Couldn't find SM007028 at level 200100.000000 to fill level 28.000000 of SM.
+2019-01-12 08:10:53.115 --- INFORM: SM at level 100.000000 already exists; leaving it alone.
+2019-01-12 08:10:53.115 --- INFORM: Couldn't find SM100289 at level 200100.000000 to fill level 289.000000 of SM.
+2019-01-12 08:10:53.115 --- INFORM: Going to create the field SW
+2019-01-12 08:10:53.115 --- INFORM: Couldn't find SW000010 at level 200100.000000 to fill level 1.000000 of SW.
+2019-01-12 08:10:53.115 --- INFORM: Couldn't find SW010040 at level 200100.000000 to fill level 2.000000 of SW.
+2019-01-12 08:10:53.115 --- INFORM: Couldn't find SW040100 at level 200100.000000 to fill level 3.000000 of SW.
+2019-01-12 08:10:53.115 --- INFORM: Couldn't find SW100200 at level 200100.000000 to fill level 4.000000 of SW.
+2019-01-12 08:10:53.115 --- INFORM: Couldn't find SW000010 at level 200100.000000 to fill level 1.000000 of SW.
+2019-01-12 08:10:53.115 --- INFORM: Couldn't find SW010200 at level 200100.000000 to fill level 2.000000 of SW.
+2019-01-12 08:10:53.115 --- INFORM: Going to create the field SOIL_LAYERS
+2019-01-12 08:10:53.115 --- INFORM: Going to create the field SOILM
+2019-01-12 08:10:53.115 --- INFORM: Couldn't find SOILM000 at level 200100.000000 to fill level 0.000000 of SOILM.
+2019-01-12 08:10:53.115 --- INFORM: Couldn't find SOILM005 at level 200100.000000 to fill level 5.000000 of SOILM.
+2019-01-12 08:10:53.116 --- INFORM: Couldn't find SOILM020 at level 200100.000000 to fill level 20.000000 of SOILM.
+2019-01-12 08:10:53.116 --- INFORM: Couldn't find SOILM040 at level 200100.000000 to fill level 40.000000 of SOILM.
+2019-01-12 08:10:53.116 --- INFORM: Couldn't find SOILM160 at level 200100.000000 to fill level 160.000000 of SOILM.
+2019-01-12 08:10:53.116 --- INFORM: Couldn't find SOILM300 at level 200100.000000 to fill level 300.000000 of SOILM.
+2019-01-12 08:10:53.116 --- INFORM: Going to create the field SOILT
+2019-01-12 08:10:53.116 --- INFORM: Couldn't find SOILT000 at level 200100.000000 to fill level 0.000000 of SOILT.
+2019-01-12 08:10:53.116 --- INFORM: Couldn't find SOILT005 at level 200100.000000 to fill level 5.000000 of SOILT.
+2019-01-12 08:10:53.116 --- INFORM: Couldn't find SOILT020 at level 200100.000000 to fill level 20.000000 of SOILT.
+2019-01-12 08:10:53.116 --- INFORM: Couldn't find SOILT040 at level 200100.000000 to fill level 40.000000 of SOILT.
+2019-01-12 08:10:53.116 --- INFORM: Couldn't find SOILT160 at level 200100.000000 to fill level 160.000000 of SOILT.
+2019-01-12 08:10:53.116 --- INFORM: Couldn't find SOILT300 at level 200100.000000 to fill level 300.000000 of SOILT.
+2019-01-12 08:10:53.116 --- INFORM: Couldn't find SOILT050 at level 200100.000000 to fill level 49.000000 of SOILT.
+2019-01-12 08:10:53.116 --- INFORM: Couldn't find SOILT050 at level 200100.000000 to fill level 51.000000 of SOILT.
+2019-01-12 08:10:53.116 --- INFORM: Going to create the field SOIL_LEVELS
+2019-01-12 08:10:53.116 --- INFORM: Going to create the field PRES
+2019-01-12 08:10:53.117 --- INFORM: PRES at level 200100.000000 already exists; leaving it alone.
+2019-01-12 08:10:53.126 --- INFORM: Field LANDSEA.mask does not have a valid mask and will not be checked for missing values
+2019-01-12 08:10:53.137 --- Initializing output module.
+2019-01-12 08:10:53.148 --- Writing global attributes to output.
+2019-01-12 08:10:53.188 --- Writing field PRES to output.
+2019-01-12 08:10:53.201 --- Writing field SOIL_LAYERS to output.
+2019-01-12 08:10:53.201 --- Writing field SM to output.
+2019-01-12 08:10:53.202 --- Writing field ST to output.
+2019-01-12 08:10:53.202 --- Writing field GHT to output.
+2019-01-12 08:10:53.204 --- Writing field SNOWH to output.
+2019-01-12 08:10:53.204 --- Writing field SNOW to output.
+2019-01-12 08:10:53.204 --- Writing field SKINTEMP to output.
+2019-01-12 08:10:53.204 --- Writing field SOILHGT to output.
+2019-01-12 08:10:53.204 --- Writing field LANDSEA to output.
+2019-01-12 08:10:53.204 --- Writing field SEAICE to output.
+2019-01-12 08:10:53.204 --- Writing field ST100200 to output.
+2019-01-12 08:10:53.204 --- Writing field ST040100 to output.
+2019-01-12 08:10:53.204 --- Writing field ST010040 to output.
+2019-01-12 08:10:53.204 --- Writing field ST000010 to output.
+2019-01-12 08:10:53.204 --- Writing field SM100200 to output.
+2019-01-12 08:10:53.204 --- Writing field SM040100 to output.
+2019-01-12 08:10:53.204 --- Writing field SM010040 to output.
+2019-01-12 08:10:53.205 --- Writing field SM000010 to output.
+2019-01-12 08:10:53.205 --- Writing field PSFC to output.
+2019-01-12 08:10:53.205 --- Writing field RH to output.
+2019-01-12 08:10:53.206 --- Writing field VV to output.
+2019-01-12 08:10:53.208 --- Writing field UU to output.
+2019-01-12 08:10:53.209 --- Writing field TT to output.
+2019-01-12 08:10:53.210 --- Writing field PMSL to output.
+2019-01-12 08:10:53.210 --- Writing field CANFRA to output.
+2019-01-12 08:10:53.210 --- Writing field IMPERV to output.
+2019-01-12 08:10:53.213 --- Writing field URB_PARAM to output.
+2019-01-12 08:10:53.220 --- Writing field LAKE_DEPTH to output.
+2019-01-12 08:10:53.220 --- Writing field VAR_SSO to output.
+2019-01-12 08:10:53.220 --- Writing field OL4 to output.
+2019-01-12 08:10:53.220 --- Writing field OL3 to output.
+2019-01-12 08:10:53.220 --- Writing field OL2 to output.
+2019-01-12 08:10:53.220 --- Writing field OL1 to output.
+2019-01-12 08:10:53.220 --- Writing field OA4 to output.
+2019-01-12 08:10:53.221 --- Writing field OA3 to output.
+2019-01-12 08:10:53.221 --- Writing field OA2 to output.
+2019-01-12 08:10:53.221 --- Writing field OA1 to output.
+2019-01-12 08:10:53.221 --- Writing field VAR to output.
+2019-01-12 08:10:53.221 --- Writing field CON to output.
+2019-01-12 08:10:53.221 --- Writing field SLOPECAT to output.
+2019-01-12 08:10:53.221 --- Writing field SNOALB to output.
+2019-01-12 08:10:53.221 --- Writing field LAI12M to output.
+2019-01-12 08:10:53.222 --- Writing field GREENFRAC to output.
+2019-01-12 08:10:53.223 --- Writing field ALBEDO12M to output.
+2019-01-12 08:10:53.223 --- Writing field SCB_DOM to output.
+2019-01-12 08:10:53.224 --- Writing field SOILCBOT to output.
+2019-01-12 08:10:53.225 --- Writing field SCT_DOM to output.
+2019-01-12 08:10:53.225 --- Writing field SOILCTOP to output.
+2019-01-12 08:10:53.226 --- Writing field SOILTEMP to output.
+2019-01-12 08:10:53.226 --- Writing field HGT_M to output.
+2019-01-12 08:10:53.226 --- Writing field LU_INDEX to output.
+2019-01-12 08:10:53.226 --- Writing field LANDUSEF to output.
+2019-01-12 08:10:53.227 --- Writing field COSALPHA_V to output.
+2019-01-12 08:10:53.228 --- Writing field SINALPHA_V to output.
+2019-01-12 08:10:53.228 --- Writing field COSALPHA_U to output.
+2019-01-12 08:10:53.228 --- Writing field SINALPHA_U to output.
+2019-01-12 08:10:53.228 --- Writing field XLONG_C to output.
+2019-01-12 08:10:53.228 --- Writing field XLAT_C to output.
+2019-01-12 08:10:53.228 --- Writing field LANDMASK to output.
+2019-01-12 08:10:53.228 --- Writing field COSALPHA to output.
+2019-01-12 08:10:53.228 --- Writing field SINALPHA to output.
+2019-01-12 08:10:53.228 --- Writing field F to output.
+2019-01-12 08:10:53.228 --- Writing field E to output.
+2019-01-12 08:10:53.229 --- Writing field MAPFAC_UY to output.
+2019-01-12 08:10:53.229 --- Writing field MAPFAC_VY to output.
+2019-01-12 08:10:53.229 --- Writing field MAPFAC_MY to output.
+2019-01-12 08:10:53.229 --- Writing field MAPFAC_UX to output.
+2019-01-12 08:10:53.229 --- Writing field MAPFAC_VX to output.
+2019-01-12 08:10:53.230 --- Writing field MAPFAC_MX to output.
+2019-01-12 08:10:53.230 --- Writing field MAPFAC_U to output.
+2019-01-12 08:10:53.230 --- Writing field MAPFAC_V to output.
+2019-01-12 08:10:53.230 --- Writing field MAPFAC_M to output.
+2019-01-12 08:10:53.230 --- Writing field CLONG to output.
+2019-01-12 08:10:53.230 --- Writing field CLAT to output.
+2019-01-12 08:10:53.230 --- Writing field XLONG_U to output.
+2019-01-12 08:10:53.230 --- Writing field XLAT_U to output.
+2019-01-12 08:10:53.230 --- Writing field XLONG_V to output.
+2019-01-12 08:10:53.231 --- Writing field XLAT_V to output.
+2019-01-12 08:10:53.231 --- Writing field XLONG_M to output.
+2019-01-12 08:10:53.231 --- Writing field XLAT_M to output.
+2019-01-12 08:10:53.231 --- Closing output file.
+2019-01-12 08:10:53.231 --- Preparing to process output time 2005-08-30_00
+2019-01-12 08:10:53.231 --- Getting input fields from FILE
+2019-01-12 08:10:53.668 --- Processing PMSL at level 201300.000000.
+2019-01-12 08:10:53.672 --- Processing TT at level 200100.000000.
+2019-01-12 08:10:53.675 --- Processing UU at level 200100.000000.
+2019-01-12 08:10:53.679 --- Processing VV at level 200100.000000.
+2019-01-12 08:10:53.682 --- Processing RH at level 200100.000000.
+2019-01-12 08:10:53.686 --- Processing PSFC at level 200100.000000.
+2019-01-12 08:10:53.690 --- Processing SM000010 at level 200100.000000.
+2019-01-12 08:10:53.693 --- Processing SM010040 at level 200100.000000.
+2019-01-12 08:10:53.697 --- Processing SM040100 at level 200100.000000.
+2019-01-12 08:10:53.700 --- Processing SM100200 at level 200100.000000.
+2019-01-12 08:10:53.704 --- Processing ST000010 at level 200100.000000.
+2019-01-12 08:10:53.707 --- Processing ST010040 at level 200100.000000.
+2019-01-12 08:10:53.710 --- Processing ST040100 at level 200100.000000.
+2019-01-12 08:10:53.713 --- Processing ST100200 at level 200100.000000.
+2019-01-12 08:10:53.717 --- Processing SEAICE at level 200100.000000.
+2019-01-12 08:10:53.720 --- Processing LANDSEA at level 200100.000000.
+2019-01-12 08:10:53.723 --- Processing SOILHGT at level 200100.000000.
+2019-01-12 08:10:53.726 --- Processing SKINTEMP at level 200100.000000.
+2019-01-12 08:10:53.730 --- Processing SNOW at level 200100.000000.
+2019-01-12 08:10:53.733 --- Processing SNOWH at level 200100.000000.
+2019-01-12 08:10:53.736 --- Processing TT at level 100000.000000.
+2019-01-12 08:10:53.739 --- Processing UU at level 100000.000000.
+2019-01-12 08:10:53.743 --- Processing VV at level 100000.000000.
+2019-01-12 08:10:53.747 --- Processing RH at level 100000.000000.
+2019-01-12 08:10:53.750 --- Processing GHT at level 100000.000000.
+2019-01-12 08:10:53.754 --- Processing TT at level 97500.000000.
+2019-01-12 08:10:53.757 --- Processing UU at level 97500.000000.
+2019-01-12 08:10:53.761 --- Processing VV at level 97500.000000.
+2019-01-12 08:10:53.764 --- Processing RH at level 97500.000000.
+2019-01-12 08:10:53.768 --- Processing GHT at level 97500.000000.
+2019-01-12 08:10:53.772 --- Processing TT at level 95000.000000.
+2019-01-12 08:10:53.775 --- Processing UU at level 95000.000000.
+2019-01-12 08:10:53.779 --- Processing VV at level 95000.000000.
+2019-01-12 08:10:53.783 --- Processing RH at level 95000.000000.
+2019-01-12 08:10:53.786 --- Processing GHT at level 95000.000000.
+2019-01-12 08:10:53.790 --- Processing TT at level 92500.000000.
+2019-01-12 08:10:53.793 --- Processing UU at level 92500.000000.
+2019-01-12 08:10:53.797 --- Processing VV at level 92500.000000.
+2019-01-12 08:10:53.801 --- Processing RH at level 92500.000000.
+2019-01-12 08:10:53.805 --- Processing GHT at level 92500.000000.
+2019-01-12 08:10:53.808 --- Processing TT at level 90000.000000.
+2019-01-12 08:10:53.812 --- Processing UU at level 90000.000000.
+2019-01-12 08:10:53.815 --- Processing VV at level 90000.000000.
+2019-01-12 08:10:53.819 --- Processing RH at level 90000.000000.
+2019-01-12 08:10:53.825 --- Processing GHT at level 90000.000000.
+2019-01-12 08:10:53.829 --- Processing TT at level 85000.000000.
+2019-01-12 08:10:53.834 --- Processing UU at level 85000.000000.
+2019-01-12 08:10:53.841 --- Processing VV at level 85000.000000.
+2019-01-12 08:10:53.844 --- Processing RH at level 85000.000000.
+2019-01-12 08:10:53.848 --- Processing GHT at level 85000.000000.
+2019-01-12 08:10:53.854 --- Processing TT at level 80000.000000.
+2019-01-12 08:10:53.858 --- Processing UU at level 80000.000000.
+2019-01-12 08:10:53.862 --- Processing VV at level 80000.000000.
+2019-01-12 08:10:53.866 --- Processing RH at level 80000.000000.
+2019-01-12 08:10:53.869 --- Processing GHT at level 80000.000000.
+2019-01-12 08:10:53.873 --- Processing TT at level 75000.000000.
+2019-01-12 08:10:53.876 --- Processing UU at level 75000.000000.
+2019-01-12 08:10:53.880 --- Processing VV at level 75000.000000.
+2019-01-12 08:10:53.884 --- Processing RH at level 75000.000000.
+2019-01-12 08:10:53.887 --- Processing GHT at level 75000.000000.
+2019-01-12 08:10:53.891 --- Processing TT at level 70000.000000.
+2019-01-12 08:10:53.895 --- Processing UU at level 70000.000000.
+2019-01-12 08:10:53.898 --- Processing VV at level 70000.000000.
+2019-01-12 08:10:53.902 --- Processing RH at level 70000.000000.
+2019-01-12 08:10:53.906 --- Processing GHT at level 70000.000000.
+2019-01-12 08:10:53.910 --- Processing TT at level 65000.000000.
+2019-01-12 08:10:53.913 --- Processing UU at level 65000.000000.
+2019-01-12 08:10:53.917 --- Processing VV at level 65000.000000.
+2019-01-12 08:10:53.920 --- Processing RH at level 65000.000000.
+2019-01-12 08:10:53.924 --- Processing GHT at level 65000.000000.
+2019-01-12 08:10:53.927 --- Processing TT at level 60000.000000.
+2019-01-12 08:10:53.931 --- Processing UU at level 60000.000000.
+2019-01-12 08:10:53.935 --- Processing VV at level 60000.000000.
+2019-01-12 08:10:53.938 --- Processing RH at level 60000.000000.
+2019-01-12 08:10:53.942 --- Processing GHT at level 60000.000000.
+2019-01-12 08:10:53.946 --- Processing TT at level 55000.000000.
+2019-01-12 08:10:53.949 --- Processing UU at level 55000.000000.
+2019-01-12 08:10:53.953 --- Processing VV at level 55000.000000.
+2019-01-12 08:10:53.956 --- Processing RH at level 55000.000000.
+2019-01-12 08:10:53.960 --- Processing GHT at level 55000.000000.
+2019-01-12 08:10:53.966 --- Processing TT at level 50000.000000.
+2019-01-12 08:10:53.970 --- Processing UU at level 50000.000000.
+2019-01-12 08:10:53.973 --- Processing VV at level 50000.000000.
+2019-01-12 08:10:53.977 --- Processing RH at level 50000.000000.
+2019-01-12 08:10:53.980 --- Processing GHT at level 50000.000000.
+2019-01-12 08:10:53.984 --- Processing TT at level 45000.000000.
+2019-01-12 08:10:53.988 --- Processing UU at level 45000.000000.
+2019-01-12 08:10:53.992 --- Processing VV at level 45000.000000.
+2019-01-12 08:10:53.996 --- Processing RH at level 45000.000000.
+2019-01-12 08:10:53.999 --- Processing GHT at level 45000.000000.
+2019-01-12 08:10:54.003 --- Processing TT at level 40000.000000.
+2019-01-12 08:10:54.007 --- Processing UU at level 40000.000000.
+2019-01-12 08:10:54.011 --- Processing VV at level 40000.000000.
+2019-01-12 08:10:54.014 --- Processing RH at level 40000.000000.
+2019-01-12 08:10:54.018 --- Processing GHT at level 40000.000000.
+2019-01-12 08:10:54.021 --- Processing TT at level 35000.000000.
+2019-01-12 08:10:54.025 --- Processing UU at level 35000.000000.
+2019-01-12 08:10:54.028 --- Processing VV at level 35000.000000.
+2019-01-12 08:10:54.032 --- Processing RH at level 35000.000000.
+2019-01-12 08:10:54.036 --- Processing GHT at level 35000.000000.
+2019-01-12 08:10:54.039 --- Processing TT at level 30000.000000.
+2019-01-12 08:10:54.043 --- Processing UU at level 30000.000000.
+2019-01-12 08:10:54.046 --- Processing VV at level 30000.000000.
+2019-01-12 08:10:54.050 --- Processing RH at level 30000.000000.
+2019-01-12 08:10:54.054 --- Processing GHT at level 30000.000000.
+2019-01-12 08:10:54.057 --- Processing TT at level 25000.000000.
+2019-01-12 08:10:54.061 --- Processing UU at level 25000.000000.
+2019-01-12 08:10:54.064 --- Processing VV at level 25000.000000.
+2019-01-12 08:10:54.068 --- Processing RH at level 25000.000000.
+2019-01-12 08:10:54.072 --- Processing GHT at level 25000.000000.
+2019-01-12 08:10:54.075 --- Processing TT at level 20000.000000.
+2019-01-12 08:10:54.079 --- Processing UU at level 20000.000000.
+2019-01-12 08:10:54.082 --- Processing VV at level 20000.000000.
+2019-01-12 08:10:54.086 --- Processing RH at level 20000.000000.
+2019-01-12 08:10:54.090 --- Processing GHT at level 20000.000000.
+2019-01-12 08:10:54.093 --- Processing TT at level 15000.000000.
+2019-01-12 08:10:54.097 --- Processing UU at level 15000.000000.
+2019-01-12 08:10:54.100 --- Processing VV at level 15000.000000.
+2019-01-12 08:10:54.104 --- Processing RH at level 15000.000000.
+2019-01-12 08:10:54.108 --- Processing GHT at level 15000.000000.
+2019-01-12 08:10:54.112 --- Processing TT at level 10000.000000.
+2019-01-12 08:10:54.115 --- Processing UU at level 10000.000000.
+2019-01-12 08:10:54.119 --- Processing VV at level 10000.000000.
+2019-01-12 08:10:54.124 --- Processing RH at level 10000.000000.
+2019-01-12 08:10:54.129 --- Processing GHT at level 10000.000000.
+2019-01-12 08:10:54.132 --- Processing TT at level 7000.000000.
+2019-01-12 08:10:54.137 --- Processing UU at level 7000.000000.
+2019-01-12 08:10:54.141 --- Processing VV at level 7000.000000.
+2019-01-12 08:10:54.144 --- Processing RH at level 7000.000000.
+2019-01-12 08:10:54.151 --- Processing GHT at level 7000.000000.
+2019-01-12 08:10:54.156 --- Processing TT at level 5000.000000.
+2019-01-12 08:10:54.160 --- Processing UU at level 5000.000000.
+2019-01-12 08:10:54.164 --- Processing VV at level 5000.000000.
+2019-01-12 08:10:54.168 --- Processing RH at level 5000.000000.
+2019-01-12 08:10:54.175 --- Processing GHT at level 5000.000000.
+2019-01-12 08:10:54.179 --- Processing TT at level 3000.000000.
+2019-01-12 08:10:54.183 --- Processing UU at level 3000.000000.
+2019-01-12 08:10:54.186 --- Processing VV at level 3000.000000.
+2019-01-12 08:10:54.190 --- Processing RH at level 3000.000000.
+2019-01-12 08:10:54.197 --- Processing GHT at level 3000.000000.
+2019-01-12 08:10:54.201 --- Processing TT at level 2000.000000.
+2019-01-12 08:10:54.204 --- Processing UU at level 2000.000000.
+2019-01-12 08:10:54.208 --- Processing VV at level 2000.000000.
+2019-01-12 08:10:54.213 --- Processing RH at level 2000.000000.
+2019-01-12 08:10:54.219 --- Processing GHT at level 2000.000000.
+2019-01-12 08:10:54.226 --- Processing TT at level 1000.000000.
+2019-01-12 08:10:54.229 --- Processing UU at level 1000.000000.
+2019-01-12 08:10:54.233 --- Processing VV at level 1000.000000.
+2019-01-12 08:10:54.237 --- Processing RH at level 1000.000000.
+2019-01-12 08:10:54.243 --- Processing GHT at level 1000.000000.
+2019-01-12 08:10:54.244 --- Filling missing levels.
+2019-01-12 08:10:54.244 --- INFORM: GHT at level 200100.000000 already exists; leaving it alone.
+2019-01-12 08:10:54.245 --- INFORM: LANDSEA at level 200100.000000 already exists; leaving it alone.
+2019-01-12 08:10:54.245 --- INFORM: PSFC at level 200100.000000 already exists; leaving it alone.
+2019-01-12 08:10:54.245 --- INFORM: RH at level 200100.000000 already exists; leaving it alone.
+2019-01-12 08:10:54.245 --- INFORM: VV at level 200100.000000 already exists; leaving it alone.
+2019-01-12 08:10:54.245 --- INFORM: UU at level 200100.000000 already exists; leaving it alone.
+2019-01-12 08:10:54.245 --- INFORM: TT at level 200100.000000 already exists; leaving it alone.
+2019-01-12 08:10:54.250 --- Creating derived fields.
+2019-01-12 08:10:54.250 --- INFORM: Going to create the field ST
+2019-01-12 08:10:54.251 --- INFORM: ST at level 10.000000 already exists; leaving it alone.
+2019-01-12 08:10:54.251 --- INFORM: Couldn't find ST010035 at level 200100.000000 to fill level 35.000000 of ST.
+2019-01-12 08:10:54.251 --- INFORM: ST at level 100.000000 already exists; leaving it alone.
+2019-01-12 08:10:54.251 --- INFORM: Couldn't find ST100300 at level 200100.000000 to fill level 300.000000 of ST.
+2019-01-12 08:10:54.251 --- INFORM: ST at level 10.000000 already exists; leaving it alone.
+2019-01-12 08:10:54.251 --- INFORM: ST at level 200.000000 already exists; leaving it alone.
+2019-01-12 08:10:54.251 --- INFORM: Couldn't find ST000007 at level 200100.000000 to fill level 7.000000 of ST.
+2019-01-12 08:10:54.251 --- INFORM: Couldn't find ST007028 at level 200100.000000 to fill level 28.000000 of ST.
+2019-01-12 08:10:54.251 --- INFORM: ST at level 100.000000 already exists; leaving it alone.
+2019-01-12 08:10:54.251 --- INFORM: Couldn't find ST100289 at level 200100.000000 to fill level 289.000000 of ST.
+2019-01-12 08:10:54.251 --- INFORM: Going to create the field SM
+2019-01-12 08:10:54.252 --- INFORM: SM at level 10.000000 already exists; leaving it alone.
+2019-01-12 08:10:54.252 --- INFORM: Couldn't find SM010035 at level 200100.000000 to fill level 35.000000 of SM.
+2019-01-12 08:10:54.252 --- INFORM: SM at level 100.000000 already exists; leaving it alone.
+2019-01-12 08:10:54.252 --- INFORM: Couldn't find SM100300 at level 200100.000000 to fill level 300.000000 of SM.
+2019-01-12 08:10:54.252 --- INFORM: SM at level 10.000000 already exists; leaving it alone.
+2019-01-12 08:10:54.252 --- INFORM: SM at level 200.000000 already exists; leaving it alone.
+2019-01-12 08:10:54.252 --- INFORM: Couldn't find SM000007 at level 200100.000000 to fill level 7.000000 of SM.
+2019-01-12 08:10:54.252 --- INFORM: Couldn't find SM007028 at level 200100.000000 to fill level 28.000000 of SM.
+2019-01-12 08:10:54.252 --- INFORM: SM at level 100.000000 already exists; leaving it alone.
+2019-01-12 08:10:54.252 --- INFORM: Couldn't find SM100289 at level 200100.000000 to fill level 289.000000 of SM.
+2019-01-12 08:10:54.252 --- INFORM: Going to create the field SW
+2019-01-12 08:10:54.252 --- INFORM: Couldn't find SW000010 at level 200100.000000 to fill level 1.000000 of SW.
+2019-01-12 08:10:54.252 --- INFORM: Couldn't find SW010040 at level 200100.000000 to fill level 2.000000 of SW.
+2019-01-12 08:10:54.252 --- INFORM: Couldn't find SW040100 at level 200100.000000 to fill level 3.000000 of SW.
+2019-01-12 08:10:54.252 --- INFORM: Couldn't find SW100200 at level 200100.000000 to fill level 4.000000 of SW.
+2019-01-12 08:10:54.252 --- INFORM: Couldn't find SW000010 at level 200100.000000 to fill level 1.000000 of SW.
+2019-01-12 08:10:54.252 --- INFORM: Couldn't find SW010200 at level 200100.000000 to fill level 2.000000 of SW.
+2019-01-12 08:10:54.252 --- INFORM: Going to create the field SOIL_LAYERS
+2019-01-12 08:10:54.252 --- INFORM: Going to create the field SOILM
+2019-01-12 08:10:54.252 --- INFORM: Couldn't find SOILM000 at level 200100.000000 to fill level 0.000000 of SOILM.
+2019-01-12 08:10:54.253 --- INFORM: Couldn't find SOILM005 at level 200100.000000 to fill level 5.000000 of SOILM.
+2019-01-12 08:10:54.253 --- INFORM: Couldn't find SOILM020 at level 200100.000000 to fill level 20.000000 of SOILM.
+2019-01-12 08:10:54.253 --- INFORM: Couldn't find SOILM040 at level 200100.000000 to fill level 40.000000 of SOILM.
+2019-01-12 08:10:54.253 --- INFORM: Couldn't find SOILM160 at level 200100.000000 to fill level 160.000000 of SOILM.
+2019-01-12 08:10:54.253 --- INFORM: Couldn't find SOILM300 at level 200100.000000 to fill level 300.000000 of SOILM.
+2019-01-12 08:10:54.253 --- INFORM: Going to create the field SOILT
+2019-01-12 08:10:54.253 --- INFORM: Couldn't find SOILT000 at level 200100.000000 to fill level 0.000000 of SOILT.
+2019-01-12 08:10:54.253 --- INFORM: Couldn't find SOILT005 at level 200100.000000 to fill level 5.000000 of SOILT.
+2019-01-12 08:10:54.253 --- INFORM: Couldn't find SOILT020 at level 200100.000000 to fill level 20.000000 of SOILT.
+2019-01-12 08:10:54.253 --- INFORM: Couldn't find SOILT040 at level 200100.000000 to fill level 40.000000 of SOILT.
+2019-01-12 08:10:54.253 --- INFORM: Couldn't find SOILT160 at level 200100.000000 to fill level 160.000000 of SOILT.
+2019-01-12 08:10:54.253 --- INFORM: Couldn't find SOILT300 at level 200100.000000 to fill level 300.000000 of SOILT.
+2019-01-12 08:10:54.253 --- INFORM: Couldn't find SOILT050 at level 200100.000000 to fill level 49.000000 of SOILT.
+2019-01-12 08:10:54.253 --- INFORM: Couldn't find SOILT050 at level 200100.000000 to fill level 51.000000 of SOILT.
+2019-01-12 08:10:54.253 --- INFORM: Going to create the field SOIL_LEVELS
+2019-01-12 08:10:54.253 --- INFORM: Going to create the field PRES
+2019-01-12 08:10:54.254 --- INFORM: PRES at level 200100.000000 already exists; leaving it alone.
+2019-01-12 08:10:54.262 --- INFORM: Field LANDSEA.mask does not have a valid mask and will not be checked for missing values
+2019-01-12 08:10:54.274 --- Initializing output module.
+2019-01-12 08:10:54.284 --- Writing global attributes to output.
+2019-01-12 08:10:54.317 --- Writing field PRES to output.
+2019-01-12 08:10:54.330 --- Writing field SOIL_LAYERS to output.
+2019-01-12 08:10:54.330 --- Writing field SM to output.
+2019-01-12 08:10:54.330 --- Writing field ST to output.
+2019-01-12 08:10:54.331 --- Writing field GHT to output.
+2019-01-12 08:10:54.332 --- Writing field SNOWH to output.
+2019-01-12 08:10:54.332 --- Writing field SNOW to output.
+2019-01-12 08:10:54.332 --- Writing field SKINTEMP to output.
+2019-01-12 08:10:54.332 --- Writing field SOILHGT to output.
+2019-01-12 08:10:54.332 --- Writing field LANDSEA to output.
+2019-01-12 08:10:54.332 --- Writing field SEAICE to output.
+2019-01-12 08:10:54.332 --- Writing field ST100200 to output.
+2019-01-12 08:10:54.333 --- Writing field ST040100 to output.
+2019-01-12 08:10:54.333 --- Writing field ST010040 to output.
+2019-01-12 08:10:54.333 --- Writing field ST000010 to output.
+2019-01-12 08:10:54.333 --- Writing field SM100200 to output.
+2019-01-12 08:10:54.333 --- Writing field SM040100 to output.
+2019-01-12 08:10:54.333 --- Writing field SM010040 to output.
+2019-01-12 08:10:54.333 --- Writing field SM000010 to output.
+2019-01-12 08:10:54.333 --- Writing field PSFC to output.
+2019-01-12 08:10:54.333 --- Writing field RH to output.
+2019-01-12 08:10:54.335 --- Writing field VV to output.
+2019-01-12 08:10:54.336 --- Writing field UU to output.
+2019-01-12 08:10:54.338 --- Writing field TT to output.
+2019-01-12 08:10:54.339 --- Writing field PMSL to output.
+2019-01-12 08:10:54.339 --- Writing field CANFRA to output.
+2019-01-12 08:10:54.339 --- Writing field IMPERV to output.
+2019-01-12 08:10:54.341 --- Writing field URB_PARAM to output.
+2019-01-12 08:10:54.348 --- Writing field LAKE_DEPTH to output.
+2019-01-12 08:10:54.348 --- Writing field VAR_SSO to output.
+2019-01-12 08:10:54.348 --- Writing field OL4 to output.
+2019-01-12 08:10:54.349 --- Writing field OL3 to output.
+2019-01-12 08:10:54.349 --- Writing field OL2 to output.
+2019-01-12 08:10:54.349 --- Writing field OL1 to output.
+2019-01-12 08:10:54.349 --- Writing field OA4 to output.
+2019-01-12 08:10:54.349 --- Writing field OA3 to output.
+2019-01-12 08:10:54.349 --- Writing field OA2 to output.
+2019-01-12 08:10:54.349 --- Writing field OA1 to output.
+2019-01-12 08:10:54.349 --- Writing field VAR to output.
+2019-01-12 08:10:54.349 --- Writing field CON to output.
+2019-01-12 08:10:54.349 --- Writing field SLOPECAT to output.
+2019-01-12 08:10:54.350 --- Writing field SNOALB to output.
+2019-01-12 08:10:54.350 --- Writing field LAI12M to output.
+2019-01-12 08:10:54.351 --- Writing field GREENFRAC to output.
+2019-01-12 08:10:54.351 --- Writing field ALBEDO12M to output.
+2019-01-12 08:10:54.352 --- Writing field SCB_DOM to output.
+2019-01-12 08:10:54.352 --- Writing field SOILCBOT to output.
+2019-01-12 08:10:54.353 --- Writing field SCT_DOM to output.
+2019-01-12 08:10:54.353 --- Writing field SOILCTOP to output.
+2019-01-12 08:10:54.354 --- Writing field SOILTEMP to output.
+2019-01-12 08:10:54.354 --- Writing field HGT_M to output.
+2019-01-12 08:10:54.354 --- Writing field LU_INDEX to output.
+2019-01-12 08:10:54.355 --- Writing field LANDUSEF to output.
+2019-01-12 08:10:54.356 --- Writing field COSALPHA_V to output.
+2019-01-12 08:10:54.356 --- Writing field SINALPHA_V to output.
+2019-01-12 08:10:54.356 --- Writing field COSALPHA_U to output.
+2019-01-12 08:10:54.356 --- Writing field SINALPHA_U to output.
+2019-01-12 08:10:54.356 --- Writing field XLONG_C to output.
+2019-01-12 08:10:54.356 --- Writing field XLAT_C to output.
+2019-01-12 08:10:54.357 --- Writing field LANDMASK to output.
+2019-01-12 08:10:54.357 --- Writing field COSALPHA to output.
+2019-01-12 08:10:54.357 --- Writing field SINALPHA to output.
+2019-01-12 08:10:54.357 --- Writing field F to output.
+2019-01-12 08:10:54.357 --- Writing field E to output.
+2019-01-12 08:10:54.357 --- Writing field MAPFAC_UY to output.
+2019-01-12 08:10:54.357 --- Writing field MAPFAC_VY to output.
+2019-01-12 08:10:54.357 --- Writing field MAPFAC_MY to output.
+2019-01-12 08:10:54.357 --- Writing field MAPFAC_UX to output.
+2019-01-12 08:10:54.357 --- Writing field MAPFAC_VX to output.
+2019-01-12 08:10:54.358 --- Writing field MAPFAC_MX to output.
+2019-01-12 08:10:54.358 --- Writing field MAPFAC_U to output.
+2019-01-12 08:10:54.358 --- Writing field MAPFAC_V to output.
+2019-01-12 08:10:54.358 --- Writing field MAPFAC_M to output.
+2019-01-12 08:10:54.358 --- Writing field CLONG to output.
+2019-01-12 08:10:54.358 --- Writing field CLAT to output.
+2019-01-12 08:10:54.358 --- Writing field XLONG_U to output.
+2019-01-12 08:10:54.358 --- Writing field XLAT_U to output.
+2019-01-12 08:10:54.358 --- Writing field XLONG_V to output.
+2019-01-12 08:10:54.359 --- Writing field XLAT_V to output.
+2019-01-12 08:10:54.359 --- Writing field XLONG_M to output.
+2019-01-12 08:10:54.359 --- Writing field XLAT_M to output.
+2019-01-12 08:10:54.359 --- Closing output file.
+2019-01-12 08:10:54.361 ---  *** Successful completion of program metgrid.exe ***
